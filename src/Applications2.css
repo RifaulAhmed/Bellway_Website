@@ -1,0 +1,352 @@
+.app-main {
+    height: 100vh;
+}
+
+.border-rectangle {
+    position: absolute;
+    width: 100px; 
+    height: 350px; 
+    margin-top: 8rem;
+    background-color: green;
+    border-left: 5px solid green; 
+    border-top: 5px solid green; 
+    border-bottom: 5px solid green;
+    border-right: 5px solid green;
+    
+}
+
+.burgir {
+    width: 35%;
+    height: 30rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    position: absolute;
+    border-radius: 40px;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    
+}
+@keyframes scalePulseOnHover {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.burgir:hover {
+    animation: rotateOnHover 2s ease-in-out infinite, scalePulseOnHover 2s ease-in-out infinite, hueRotateOnHover 5s linear infinite;
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.line1 {
+    position: absolute;
+    width: 35%;
+    height: 8px;
+    margin-top: 37rem;
+    margin-left: 2rem;
+}
+
+.line2 {
+    position: absolute;
+    width: 8px;
+    height: 30rem;
+    margin-left: 33rem;
+    margin-top: 10rem;
+}
+
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.0); 
+    border-radius: 15px;
+    border: none;
+
+    box-shadow: 0 0 20px green;
+    backdrop-filter: blur(10px) saturate(200%); 
+    -webkit-backdrop-filter: blur(100px) saturate(150%);
+    width: 600px;
+    padding: 20px;
+    margin-left: 38rem;
+    height: 80vh;
+    margin-top: 4rem;
+    position: absolute;
+}
+
+.glass-card h2 {
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+
+    font-size: 3rem;
+}
+
+.glass-card p {
+    color: black;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+
+
+.app-main2 {
+    height: 100vh;
+    margin-top: 5rem;
+    margin-left: -4rem;
+}
+
+.glass-card2 {
+        background: rgba(255, 255, 255, 0.0); 
+        border-radius: 15px;
+        border: none;
+
+        box-shadow: 0 0 20px green;
+        backdrop-filter: blur(10px) saturate(200%); 
+        -webkit-backdrop-filter: blur(100px) saturate(150%);
+        width: 90%;
+        padding: 20px;
+        margin-left: 4rem;
+        height: 80vh;
+        margin-top: 4rem;
+        position: absolute;
+}
+
+.burgir2 {
+    position: absolute;
+    width: 35%;
+    height: 28rem;
+    margin-left: 43rem;
+    margin-top: -1.8rem;
+}
+
+.p1 {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.p2 {
+    position: absolute;
+    margin-top: 7rem;
+    font-size: 2rem;
+    margin-top: 4.6rem;
+}
+.p3 {
+    position: absolute;
+    margin-top: 8rem;
+}
+
+
+
+.app-main3 {
+    height: 80vh;
+    background-color: antiquewhite;
+}
+
+.clients {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 7rem;
+    color: black;
+    margin-top: 10.5rem;
+    margin-left: -10rem;
+    font-weight: 700;
+}
+
+.r, .e, .v, .i, .e2, .w, .s {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    transform-origin: bottom left; 
+    margin-left: 10.5rem; 
+}
+
+.r {
+    margin-top: 22rem;
+}
+
+.e {
+    margin-top: 18rem;
+}
+
+.v {
+    margin-top: 14rem;
+}
+
+.i {
+    margin-top: 10rem;
+}
+
+.e2 {
+    margin-top: 6.6rem;
+}
+
+.w {
+    margin-top: 2.5rem;
+}
+
+.s {
+    margin-top: -2rem;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+.app-main4 {
+    
+    justify-content: center;
+    align-items: center;
+    padding-left: 38rem;
+    position: relative;
+    margin-top: -3rem;
+    margin-left: 1rem;
+    
+    
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    gap: 10px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-item {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.slider-item:nth-of-type(1) {
+    background: url(./assets/Alonso.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(2) {
+    background: url(./assets/Kimi.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(3) {
+    background: url(./assets/SEB.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(4) {
+    background: url(./assets/Lewis.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(5) {
+    background: url(./assets/SEB.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(6) {
+    background: url(./assets/Alonso.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(7) {
+    background: url(./assets/Lewis.jpg) no-repeat 50% / cover;
+}
+.slider-item:nth-of-type(8) {
+    background: url(./assets/Kimi.jpg) no-repeat 50% / cover;
+}
+
+
+.slider-item .content {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: rgb(2, 2, 46);
+    background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+}
+
+.slider-item:hover {
+    flex: 0 0 250px;
+    box-shadow: 1px 3px 15px black;
+    transform: translateY(-30px);
+}
+
+.slider-item:hover .content {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.slider-item .content span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+    .slider-item {
+        flex: 0 0 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-item {
+        flex: 0 0 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-item {
+        flex: 0 0 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-item {
+        flex: 0 0 100px;
+    }
+
+    .slider-item:hover {
+        flex: 0 0 120px;
+    }
+    @media (max-width: 576px) {
+    .slider-item {
+        flex: 0 0 100px;
+    }
+
+    .slider-item:hover {
+        flex: 0 0 120px;
+    }
+}
+}
+
+
+

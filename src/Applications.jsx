@@ -1,0 +1,83 @@
+import React from "react";
+import './Applications.css';
+import burgir from './assets/burgir.jpg';
+import burgir2 from './assets/burgir2.jpg';
+import line1 from './assets/line.jpg';
+import line2 from './assets/line2.jpg';
+
+function Applications(){
+    return(
+        <>
+        <div className="app-main" >
+            <div className="border-rectangle" ></div>
+            <div>
+                <img className="burgir" src={burgir} alt="" />
+            </div>
+            <div  ><img className="line1" src={line1} alt="" /></div>
+            <div  ><img className="line2" src={line2} alt="" /></div>
+            <div className="glass-card">
+            <h2>Delicious Meals Delivery</h2><hr />
+            <p>Tired after a long day? Craving your favourite cuisine? Don't worry, Delicious Meals Delivery App is here to satisfy your cravings and make mealtime a delightful experience. Discover the amazing ways you can use our app to enjoy scrumptious meals delivered right to your doorstep. <br /><br />
+
+            Open the app and explore a diverse range of restaurants and cuisines in your area. From Italian to Thai, burgers to sushi, our app offers an array of options to please every palate.</p>
+        </div>
+        </div>
+
+        <div className="app-main2" >
+            <div className="glass-card2">
+            <p className="p1" >WHAT IS,</p> 
+            <p className="p2" > Delicious Meals Delivery Service <hr /></p><br />
+            <p className="p3" >In today's fast-paced world, finding time to prepare a nutritious and mouthwatering meal can be <br />a challenge. That's where Delicious Meal Delivery Service comes to the rescue! Our service is <br /> designed to provide you with a convenient and flavorful dining experience, offering a wide variety <br />of delectable dishes delivered straight to your doorstep. <br /><br />
+
+            Have specific dietary requirements or preferences? Customize your order accordingly. Whether it's <br />vegan, gluten-free, or extra spicy, we aim to cater to your unique needs. <br /><br />
+
+            Planning a family dinner or a meal with friends? The app makes it easy to place large orders, <br />ensuring everyone gets their favourite dish.</p>
+                <div><img className="burgir2" src={burgir2} alt="" /></div>
+                
+            </div>
+        </div>
+
+        <div className="app-main3" >
+            <h1 className="clients" > CLIENTS</h1><br />
+            <p className="r" >R</p>
+            <p className="e" >E</p>
+            <p className="v" >V</p>
+            <p className="i" >I</p>
+            <p className="e2">E</p>
+            <p className="w" >W</p>
+            <p className="s" >S</p>
+        </div>
+
+<div class="app-main4">
+        <div class="container">
+            <div class="container-item">
+                <div class="content">
+                    <h2>Fernando Alonso</h2>
+                    <span>UI & UX Designer</span>
+                </div>
+            </div>
+            <div class="container-item">
+                <div class="content">
+                    <h2>Kimi Raikkonen</h2>
+                    <span>CEO Expert</span>
+                </div>
+            </div>
+            <div class="container-item">
+                <div class="content">
+                    <h2>Sebastian Vettel</h2>
+                    <span>Web Designer</span>
+                </div>
+            </div>
+            <div class="container-item">
+                <div class="content">
+                    <h2>Lewis Hamilton</h2>
+                    <span>Marketing Coordinator</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        </>
+    );
+}
+
+export default Applications;

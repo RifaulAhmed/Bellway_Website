@@ -1,0 +1,158 @@
+
+  .appp {
+      display: flex;
+     
+    
+    }
+    
+    .button-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background-color: hsl(0, 5%, 83%);
+     left: 1px;
+     scroll-behavior: smooth;
+    }
+    
+    .button {
+    
+      margin: 10px;
+     color: black;
+     background: none;
+      cursor: pointer;
+      /* height: 3rem;
+      width: 24rem; */
+     
+      padding: 10px 20px; 
+      font-size: 16px; 
+      min-width: 180px; 
+      min-height: 40px; 
+      border-radius: 10px;
+      transition: text-decoration 0.3s ease-in-out;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  
+      
+    }
+    
+    .button.active {
+  
+      /* / box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /
+      / color: white; / */
+      /* text-decoration: underline;
+      color: red; */
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-container .button.active{
+      border: 1px solid red;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .content-container {
+      background-color:white;
+      color:black;
+      position: relative;
+     
+      width: 790px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+    }
+    
+    .background{
+     background-color: hsl(0, 5%, 83%);
+     width: 1020px;
+     margin-left: 230px;
+    height: 450px;
+    }
+    .background{
+     
+      margin-top: 100px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .background:hover{
+      
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transform: scale(1.1);
+    }
+    .lp{
+      height: 624px;
+  
+    }
+   .content{
+    font-size: 30px;
+    position: relative;
+    /* left: 180px;
+    top: 70px; */
+   }
+   .content1{
+    font-size: 20px;
+    position: relative;
+    /* top: 70px;
+    width: 85% */
+  
+   }
+   .content2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+   }
+   #mlp{
+    position: relative;
+    /* top: 100px;
+    left: 200px; */
+  margin-left: 780px;
+  margin-top: 10px;
+   }
+   html {
+    scroll-behavior: smooth;
+  }
+  @media screen and (max-width: 768px) {
+    .appp {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    .button-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .content-container {
+      width: 90%;
+      margin-top: 40px;
+    }
+    .content2{
+      width: auto;
+      height: auto;
+    }
+  
+    .background {
+      width: 100%;
+      margin-left:29px;
+      margin-top: 70rem;
+      
+    }
+  
+    #mlp {
+   position: relative;
+  
+      margin-top: 20px;
+    }
+  }

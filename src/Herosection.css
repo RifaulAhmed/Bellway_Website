@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero-main {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 38rem;
+    width: 100vw;
+    margin-left: -75px;
+}
+
+
+.main-text {
+    color: white;
+    margin-bottom: 8rem;
+    margin-left: 9rem;
+    margin-right: 16rem;
+    font-size: 40px;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #d62b2b 50%, white 50%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: redFlow 20s infinite;
+    font-weight: 850;
+    
+}
+@keyframes redFlow {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.sub-text{
+    color: white;
+    margin-top: -20rem;
+    font-size: large;
+    margin-left: -41rem;
+    
+}
+
+
+.image {
+    width: 40rem;
+    margin-top: 3.8rem;
+    margin-right: -2.1rem;
+    height: 90%;
+}
+
+
+.icons {
+    margin-left: -21rem;
+    margin-top: -4.4rem;
+}
+
+
+.phone {
+    color: white;
+    margin-top: 8rem;
+    margin-left: -59rem;
+}
+
+
+.number {
+    color: white;
+    margin-left: -56rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+

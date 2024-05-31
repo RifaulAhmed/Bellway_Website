@@ -1,0 +1,75 @@
+/* Carousel.css */
+.carousel-item:hover .carousel-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .carousel-item:hover img {
+    filter: blur(4px);
+  }
+  
+  .carousel-item .carousel-content {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item img {
+    transition: filter 0.5s ease-in-out;
+  }
+  
+  
+  .containerForm{
+    border: 2px solid red;
+    background-color: black;
+    height: 50rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 6rem 0 6rem;
+    margin-top: 10rem;
+  }
+  .form1{
+    border: 2px solid white;
+    height: 35rem;
+    width: 40rem;
+   
+  }
+  .form2{
+   
+    border: 2px solid white;
+    height: 35rem;
+    width: 40rem;
+   
+  }
+  .hr{
+    height: 20rem;
+   
+    
+  }
+  
+  button{
+    padding: 5rem;
+  }
+  
+  h1{
+    color: white;
+  }
+  .paraCa{
+    color: white;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .headF{
+  color: red;
+  }
+  
+  .mybg{
+    background-color: #ebf0f5;
+  }
+  
+  
+  .hScreen{
+    height: 65vh;
+  }

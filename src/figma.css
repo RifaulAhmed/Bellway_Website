@@ -1,0 +1,504 @@
+
+.carousel-container {
+    width: 100%;
+    height: 37rem;
+    overflow: hidden;
+    margin-top: 12rem;
+ 
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    animation: scroll 20s linear infinite;
+  }
+  
+  
+  .carousel img {
+    width: 50rem;
+    height:27rem;
+    object-fit: cover;
+  }
+  .mlq{
+    height: 450px;
+    width: 700px;
+    margin-top: 60px;
+  position: relative;
+  left: 70px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-70%);
+    }
+  }
+  
+  /* @media (max-width: 600px) {
+    .carousel-container {
+      height: 20rem;
+    }
+  
+    .carousel-item {
+      flex: 0 0 20rem;
+    }
+
+    
+  } */
+  .figma{
+    height: 50rem;
+    width: 50rem;
+    margin-top: 8rem;
+  }
+  .bx{
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+   
+    margin-left: 12rem;
+    background-color: black;
+   
+    margin-left: -20PX;
+
+  }
+  .hy{
+    font-size: 5rem;
+    margin-top: 20rem;
+
+
+margin-left: -20rem;
+color:white;
+background: linear-gradient(to right, red 50%, white 50%);
+  
+background-size: 200% 100%;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: redFlow 20s infinite;
+  }
+  .jb{
+    background-color: black;
+    width: 110.9%;
+   margin-left: -68px;
+    height: 31.8rem;
+    margin-top: 20px;
+    
+    
+  }
+  .hx
+  {
+    font-size: 5rem;
+    margin-top: 16rem;
+position: relative;
+top: 13px;
+margin-left: 10px;
+margin-top: -1rem;
+color:white;
+background: linear-gradient(to right, red 50%, white 50%);
+  
+background-size: 200% 100%;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: redFlow 20s infinite;
+  }
+
+  .hz{
+    font-size: 3rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+margin-top: -9rem;
+color:white;
+background: linear-gradient(to right, red 50%, white 50%);
+  
+background-size: 200% 100%;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: redFlow 20s infinite;
+  }
+
+
+
+
+  .large {
+   
+    
+    font-size: 6rem;
+    font-weight: bolder;
+    
+   
+    background: linear-gradient(to right, red 50%, white 50%);
+  
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: redFlow 20s infinite;
+  }
+  
+  @keyframes redFlow {
+    0% {
+      background-position: 200% 0;
+    }
+    
+    100% {
+      background-position: -300% 0;
+    }
+  }
+
+
+
+  .hover-container {
+   
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.hover-button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.hover-content {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border: 0.1rem solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+    transition: all 0.3s ease;
+}
+
+.hovered .hover-button {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hovered .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+.gc{
+  display: flex;
+}
+
+.vn{
+  display: flex;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+
+.arrows{
+ height: 5rem;
+ width: 5rem;
+ margin-left: 3rem;
+
+
+}
+.btn1{
+ 
+width: 73rem;
+height: 6rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+}
+.btn33{
+  width: 103rem;
+height: 6rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+
+}
+.btn44{
+  width: 103rem;
+height: 6rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+
+}
+.btn55{
+  
+    width: 88rem;
+  height: 6rem;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+    margin-left: 1rem;
+  
+  
+}
+.btn66{
+  width: 103rem;
+height: 6rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+
+}
+
+
+
+.btn2{
+ height: 6rem;
+width: 60rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+}
+.btn3{
+  height: 6rem;
+width: 56rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+}
+.btn4{
+  height: 6rem;
+width: 60rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+}
+
+.btn5{
+  height: 6rem;
+width: 60rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.865) 0px 3px 8px;
+  margin-left: 1rem;
+}
+.co{
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  border: 0.2rem solid black;
+  box-shadow: rgba(240, 5, 5, 0.384) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  transform-origin: left center;;
+  margin-left: 2rem;
+}
+.mkl{
+  height: 30rem;
+  width: 35rem;
+
+}
+.bxa{
+  display: flex;
+  width: 55%;
+  justify-content: center;
+  border: 0.4rem solid black;
+margin-left: 19rem;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+.co:hover {
+  transform: scale(1.2);
+  border: 0.2rem solid red;
+}
+.text1{
+  height: 8rem;
+  width: 30rem;
+  font-size: 2rem;
+}
+/* @media (max-width:600px) {
+  html{
+font-size: 24%;
+  }
+  
+} */
+/* @media (max-width: 600px) {
+  
+  .carousel-container {
+    height: 20rem;
+    margin-left: -60px;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  .bx{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .jb{
+    height: auto;
+    
+  }
+  .hy{
+    position: relative;
+    left: 20px;
+ 
+  }
+  .hx{
+    position: relative;
+    left: 70px;
+  }
+  .hz{
+    position: relative;
+    left: 210px;
+  }
+
+} */
+/* @media (max-width: 1200px) {
+  .bx {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .jb{
+    height: auto;
+  }
+
+  .carousel-container {
+    height: 30rem;
+  }
+
+  .carousel img {
+    height: auto;
+  }
+
+  .klu {
+    margin-top: 2rem;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  .carousel-container {
+    height: 25rem;
+    margin-left: -95px;
+  }
+
+  .hy {
+    font-size: 4rem;
+  }
+
+  .hx {
+    font-size: 4rem;
+  }
+
+  .hz {
+    font-size: 2rem;
+  }
+  .hy {
+    margin-top: 1rem;
+   
+    position: relative;
+    left: -120px;
+  }
+
+  .hx {
+    margin-top: 0.5rem;
+    position: relative;
+    left: 30px;
+    top: 5px;
+
+  }
+
+  .hz {
+    margin-top: 0.5rem;
+    position: relative;
+    top: 15px;
+    left: 90px;
+  }
+} */
+/* 
+@media (max-width: 600px) {
+  .carousel-container {
+    height: 20rem;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bx {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+  .hy {
+    margin-top: 1rem;
+   
+    position: relative;
+    left: -120px;
+  }
+
+  .hx {
+    margin-top: 0.5rem;
+    position: relative;
+    left: 30px;
+    top: 5px;
+
+  }
+
+  .hz {
+    margin-top: 0.5rem;
+    position: relative;
+    top: 15px;
+    left: 90px;
+  }
+} */
+.ad4{
+  margin-left: -120px;
+}
+.klu{
+position: relative;
+left: 200px;
+top: -200px;
+}
+.talk{
+  margin-left: -9rem;
+}
+.talk2{
+  margin-left: -9rem;
+}
+.talk3{
+  margin-left: -9rem;
+}

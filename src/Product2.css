@@ -1,0 +1,117 @@
+.rifaul-grocery2 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), 
+                url(./assets/groceryBG.jpg) center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    width: 99.3vw;
+    margin-left: -76px;
+}
+
+.hollow-border-rectangle {
+    width: 200px; 
+    height: 360px; 
+    border-left: 5px solid green; 
+    border-top: 5px solid green; 
+    border-bottom: 5px solid green; 
+    border-right: 0px solid green; 
+    background-color: transparent; 
+    position: absolute;
+    left: calc(50% - 10rem - 25rem); /* Centered and adjusted with margin-left */
+    top: 7.5rem  /* Centered and adjusted with margin-top */
+}
+
+.text-container {
+    text-align: center;
+}
+
+.bellway {
+    font-size: 7rem;
+    font-weight: 600;
+    margin-left: -25rem;
+}
+
+.grocery {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: -35rem;
+}
+
+
+
+/* @media (max-width: 1200px) {
+    .hollow-border-rectangle {
+        width: 180px;
+        height: 320px;
+        margin-left: -20rem;
+    }
+
+    .bellway {
+        font-size: 6rem;
+        margin-left: -2rem;
+    }
+
+    .grocery {
+        font-size: 3.5rem;
+        margin-left: -4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hollow-border-rectangle {
+        width: 150px;
+        height: 270px;
+        margin-left: -10rem;
+    }
+
+    .bellway {
+        font-size: 5rem;
+        margin-left: 0;
+    }
+
+    .grocery {
+        font-size: 3rem;
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hollow-border-rectangle {
+        width: 120px;
+        height: 220px;
+        margin-left: 0;
+    }
+
+    .bellway {
+        font-size: 4rem;
+        margin-left: 0;
+    }
+
+    .grocery {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hollow-border-rectangle {
+        width: 100px;
+        height: 180px;
+        margin-left: 0;
+    }
+
+    .bellway {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .grocery {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+} */
+

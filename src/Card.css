@@ -1,0 +1,35 @@
+/* Card.css */
+.card {
+    width: 220px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    /* gap: 10px; */
+    border-radius: 10px;
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transitions */
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Scale up the card on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-text {
+    padding: 10px;
+  }
+  
+  .card-text h2 {
+    margin-bottom: 2px;
+  }
+  
+  .card-text p {
+    margin: 0;
+  }
+  

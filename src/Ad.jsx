@@ -1,0 +1,106 @@
+import React, { useState,useEffect} from 'react';
+import './Ad.css'; // Assuming you will add your styles in App.css
+
+function Ad() {
+  const [activeButton, setActiveButton] = useState(null);
+  const [content, setContent] = useState('');
+  const [content1, setContent1] = useState('');
+  const [buttonColors, setButtonColors] = useState(['red', '#1CD6CE', '#D895DA', '#EF2F88', '#9F70FD']);
+  const [currentChangingButton, setCurrentChangingButton] = useState(0);
+
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId);
+    switch (buttonId) {
+      case 1:
+        setContent('Web-Based Platform');
+        setContent1('Unlike many traditional design tools that require installation and are platform-specific, Figma runs entirely in the browser. This makes it accessible from any device with internet connectivity, eliminating compatibility issues across different operating systems.');
+        break;
+      case 2:
+        setContent('Real-Time Collaboration');
+        setContent1(' Figma allows multiple users to work on the same design file simultaneously, similar to Google Docs. Team members can see each other changes in real-time, which enhances collaboration and reduces the back-and-forth typically required in design projects.');
+        break;
+      case 3:
+        setContent('Multiplayer Editing');
+        setContent1('Beyond simple collaboration, Figma multiplayer editing features let users see who is working on what in real-time, complete with cursor tracking and the ability to leave comments directly on the design. This feature fosters a truly interactive design process.');
+        break;
+        case 4:
+        setContent('Vector Networks');
+        setContent1('Figma introduces a unique approach to vector editing with its vector networks, which are more flexible than traditional path editing tools. This allows designers to create complex shapes more intuitively and efficiently');
+        break;
+      default:
+        setContent('Design Systems and Libraries');
+        setContent1(' Figma excels in managing design systems, enabling teams to create and share libraries of components and styles across projects. These design systems ensur');
+    }
+  };
+  useEffect(() => {
+    // Set default content when component mounts
+    handleButtonClick(1);
+
+    const buttonInterval = setInterval(() => {
+      setCurrentChangingButton((prevButton) => (prevButton + 1) % buttonColors.length);
+    }, 3000); // Change button every 3 seconds
+
+    return () => clearInterval(buttonInterval); // Clear interval on component unmount
+  }, []);
+  const getButtonStyle = (index) => {
+    if (index === currentChangingButton) {
+      return { backgroundColor: buttonColors[index], color: 'white' };
+    }
+    return {};
+  };
+
+  return (
+    <div className='lp'>
+      <div className='background'>
+        <div className="appp">
+          <div className="button-container">
+            <div
+              className={activeButton === 1 ? 'button active' : 'button'}
+              style={getButtonStyle(0)}
+              onClick={() => handleButtonClick(1)}
+            >
+              Web-Based Platform
+            </div>
+            <div
+              className={activeButton === 2 ? 'button active' : 'button'}
+              style={getButtonStyle(1)}
+              onClick={() => handleButtonClick(2)}
+            >
+              Real-Time Collaboration
+            </div>
+            <div
+              className={activeButton === 3 ? 'button active' : 'button'}
+              style={getButtonStyle(2)}
+              onClick={() => handleButtonClick(3)}
+            >
+              Multiplayer Editing
+            </div>
+            <div
+              className={activeButton === 4 ? 'button active' : 'button'}
+              style={getButtonStyle(3)}
+              onClick={() => handleButtonClick(4)}
+            >
+              Vector Networks
+            </div>
+            <div
+              className={activeButton === 5 ? 'button active' : 'button'}
+              style={getButtonStyle(4)}
+              onClick={() => handleButtonClick(5)}
+            >
+              Design Systems and Libraries
+            </div>
+          </div>
+          <div className="content-container">
+            <h1 className='content'>{content}</h1>
+            <div className='content2'>
+              <p className='content1'>{content1}</p>
+            </div>
+            <button id="mlp" className="animated-button">Click Here</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Ad;

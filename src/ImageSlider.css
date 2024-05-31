@@ -1,0 +1,13 @@
+src/ImageSlider.css
+.slick-slide {
+    padding: 0 !important;
+  }
+  
+  .slick-list {
+    margin: 0 250px; /* Adjust this value to control the space between slides */
+  }
+  
+  .slick-slide > div {
+   margin-right: 0px; /* Adjust this value to control the space between slides */
+  }
+  

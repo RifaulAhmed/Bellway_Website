@@ -1,0 +1,56 @@
+.rifaul-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), 
+                url('./assets/p7.jpg') center/cover no-repeat;
+    height: 90vh;
+    width: 99vw;
+    display: flex;
+    margin-left: -77px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+  }
+
+  
+  .hollow-border-rectangle {
+    width: 200px;
+    height: 360px;
+    border-left: 5px solid #d62b2b;
+    border-top: 5px solid #d62b2b;
+    border-bottom: 5px solid #d62b2b;
+    border-right: 0px solid #d62b2b;
+    background-color: transparent;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+  }
+  
+  .we {
+    margin-left: -40rem;
+    font-size: 7rem;
+    font-weight: 600;
+    margin-top: 3rem;
+  }
+  
+  .implement {
+    margin-left: -40rem;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: -3rem;
+  }
+  
+  .corporate {
+    margin-left: -40rem;
+    margin-top: -2rem;
+  }
+  
+
+
+
+
+
+
+
+
+
