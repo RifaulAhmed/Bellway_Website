@@ -3,7 +3,7 @@ import CNavbar from './CNavbar'
 import './figma.css';
 
 import { useState,useEffect } from 'react';
-
+import Footer from './Footer'
 import Ad5 from './Ad5';
 const Dedicated = () => {
   return (
@@ -40,7 +40,7 @@ const Dedicated = () => {
    <div  className='talk'>
    <Ad5/>
    </div>
-
+<Footer/>
     </>
   )
 }

@@ -27,9 +27,9 @@ import './BoxSlider.css'; // Create this CSS file for custom styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Google from './assets/Google2.jpg';
 import CNavbar from './CNavbar';
-import Header from './Header';
+// import Header from './Header';
 import Footer from './Footer'
-import Form4 from './Form4'
+// import Form4 from './Form4'
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import About from './About';
 // import Contact from './Contact';
@@ -170,12 +170,12 @@ const Home = () => {
   return (
     <div className="container-fluid mt-1">
       <CNavbar/>
-          <Header />
+          {/* <Header /> */}
           
-      <Form4/>
+      {/* <Form4/> */}
       <div className="row mt-5">
         <div className="col-12 text-center">
-          <h1 className="title" style={{color:'black',marginTop:'-102px',fontFamily:'sans-serif',fontWeight:'bold'}}>Why Choose Bellway Infotech?</h1>
+          <h1 className="title" style={{color:'black',marginTop:'-20px',fontFamily:'sans-serif',fontWeight:'bold'}}>Why Choose Bellway Infotech?</h1>
         </div>
         <div className="col-md-4 order-md-3 d-flex align-items-center mt-4 img-container">
           <img src={Mobile} alt="Mobile representation" className="img-fluid1" />
@@ -252,15 +252,15 @@ const Home = () => {
           <Slider {...settings}>
             {boxes.map(box => (
               <div key={box.id} className="box px-2">
-                <img src={box.image} alt={box.text} className="img-fluid6" />
+                <img style={{height:'300px'}} src={box.image} alt={box.text} className="img-fluid6" />
                 <p>{box.text}</p>
               </div>
             ))}
           </Slider>
-        </div>
+        </div> 
 
-      </div>
-    
+        </div>
+      
       <Footer/>
   
     </div>

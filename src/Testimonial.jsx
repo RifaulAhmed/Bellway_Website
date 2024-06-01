@@ -1,7 +1,7 @@
 import React from 'react'
 import './Career.css'
 import CNavbar from './CNavbar'
-
+import Footer from './Footer'
 const Testimonial = () => {
   return (
     <>
@@ -20,8 +20,8 @@ const Testimonial = () => {
   </div>
 </div>
 <br/> */}
-
-<div class="container mx-auto sm:my-5 bg-black p-8">
+      <div className='w-screen ml-[-34px]'>
+<div class=" mx-auto sm:my-5 bg-black p-8">
   <div class="flex flex-col md:flex-row items-center">
     <div class="md:w-1/2 text-left mb-4 md:mb-0">
       <h1 class="text-5xl font-bold mb-4 text-white">Testimonials...</h1>
@@ -188,7 +188,8 @@ const Testimonial = () => {
             
         </div>
     </div>
-    
+    </div>
+    <Footer/>
     </>
   )
 }

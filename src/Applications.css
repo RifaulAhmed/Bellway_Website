@@ -2,7 +2,7 @@
     height: 100vh;
 }
 
-.border-rectangle {
+.border-rectangleTT {
     position: absolute;
     width: 100px; 
     height: 350px; 
@@ -203,7 +203,7 @@
     width: 100%;
     padding: 1rem 0;
     position: relative;
-    top: -31rem;
+    top: -28rem;
 }
 
 .container {

@@ -15,10 +15,10 @@
 .hollow-border-rectangle {
     width: 200px; 
     height: 360px; 
-    border-left: 5px solid green; 
-    border-top: 5px solid green; 
-    border-bottom: 5px solid green; 
-    border-right: 0px solid green; 
+    border-left: 5px solid #d62b2b; 
+    border-top: 5px solid #d62b2b; 
+    border-bottom: 5px solid #d62b2b; 
+    border-right: 0px solid #d62b2b; 
     background-color: transparent; 
     position: absolute;
     left: calc(50% - 10rem - 25rem); /* Centered and adjusted with margin-left */

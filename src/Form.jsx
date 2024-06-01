@@ -29,22 +29,22 @@ function Login() {
     };
 
     return (
-        <div className="login-container">
+        <div className="login-containerTT">
             <img className="background-image" src={backg} alt="Background" />
-            <div className="login-form">
+            <div className="login-formTT">
                 <h2>Get in Touch</h2>
                 <form>
                     <div className="form-group">
                         <label htmlFor="username">Email</label>
-                        <input type="text" id="username" name="username" required />
+                        <input style={{backgroundColor:'white'}} type="text" id="username" name="username" required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" name="password" required />
+                        <input style={{backgroundColor:'white'}} type="password" id="password" name="password" required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <textarea style={{backgroundColor:'white'}}  id="message" name="message" rows="4" required></textarea>
                     </div>
                     <div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
                         <button className="form-button" type="submit">Submit</button>
@@ -60,10 +60,10 @@ function Login() {
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLongTitle">Schedule a Call</h5>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <h5  className="modal-title" id="exampleModalLongTitle">Schedule a Call</h5>
+                            {/* <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button>
+                            </button> */}
                         </div>
                         <div className="modal-body">
                             {!submitted ? (
@@ -71,7 +71,7 @@ function Login() {
                                     <form onSubmit={handleSubmit}>
                                         <div className="form-group">
                                             <label htmlFor="name">Name</label>
-                                            <input
+                                            <input style={{backgroundColor:'white'}} 
                                                 type="text"
                                                 id="name"
                                                 name="name"
@@ -83,7 +83,7 @@ function Login() {
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="phone">Phone</label>
-                                            <input
+                                            <input style={{backgroundColor:'white'}} 
                                                 type="tel"
                                                 id="phone"
                                                 name="phone"
@@ -95,7 +95,7 @@ function Login() {
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="date">Date</label>
-                                            <input
+                                            <input style={{backgroundColor:'white'}} 
                                                 type="date"
                                                 id="date"
                                                 name="date"
@@ -106,7 +106,7 @@ function Login() {
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="time">Time</label>
-                                            <input
+                                            <input style={{backgroundColor:'white'}} 
                                                 type="time"
                                                 id="time"
                                                 name="time"
@@ -117,7 +117,7 @@ function Login() {
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="message">Message</label>
-                                            <textarea
+                                            <textarea style={{backgroundColor:'white'}} 
                                                 id="message"
                                                 name="message"
                                                 value={formData.message}
@@ -135,13 +135,13 @@ function Login() {
                             ) : (
                                 <div className="meeting-details">
                                     <h3>Call Scheduled Successfully</h3>
-                                    <p>Your Call is scheduled with the following details:</p>
-                                    <p><strong>Name:</strong> {formData.name}</p>
-                                    <p><strong>Phone:</strong> {formData.phone}</p>
-                                    <p><strong>Date:</strong> {formData.date}</p>
-                                    <p><strong>Time:</strong> {formData.time}</p>
-                                    <p><strong>Message:</strong> {formData.message}</p>
-                                    <button type="button" className="form-button-2" data-dismiss="modal">Close</button>
+                                    <p  style={{color:'white'}}>Your Call is scheduled with the following details:</p>
+                                    <p style={{color:'white'}} ><strong>Name:</strong> {formData.name}</p>
+                                    <p style={{color:'white'}}><strong>Phone:</strong> {formData.phone}</p>
+                                    <p style={{color:'white'}}><strong>Date:</strong> {formData.date}</p>
+                                    <p style={{color:'white'}}><strong>Time:</strong> {formData.time}</p>
+                                    <p style={{color:'white'}}><strong>Message:</strong> {formData.message}</p>
+                                    <button  type="button" className="form-button-2" data-dismiss="modal">Close</button>
                                 </div>
                             )}
                         </div>

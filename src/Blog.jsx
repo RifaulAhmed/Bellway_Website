@@ -5,10 +5,10 @@ import CNavbar from './CNavbar'
 
 const Blogs = () => {
   return (
-   <>
- <CNavbar/>
-
-<div class="container mx-auto my-5 bg-black p-8">
+  <>
+  <CNavbar/>
+<div className='w-screen ml-[-34px]'>
+<div class="mx-auto my-5 bg-black p-8">
   <div class="flex flex-col md:flex-row items-center">
     <div class="md:w-screen text-left mb-4 md:mb-0">
       <h1 class="text-8xl font-bold mb-4 text-white">Blogs...</h1>
@@ -189,7 +189,7 @@ The future of mobile applications is poised to be transformative, driven by adva
     </div>
   </div>
 
-
+</div>
 
    </>
   )

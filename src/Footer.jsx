@@ -19,7 +19,7 @@ function Footer() {
             </div>
 
             <div className='footer-section'>
-                <p className='footer-title'>Quick Links</p>
+                <p style={{marginLeft:'-130px'}} className='footer-title'>Quick Links</p>
                 <a href="#Home" className='footer-link'><i className="fas fa-home"></i> Home</a>
                 <a href="#AboutUs" className='footer-link'><i className="fas fa-info-circle"></i> About Us</a>
                 <a href="#Services" className='footer-link'><i className="fas fa-cogs"></i> Services</a>
@@ -29,18 +29,18 @@ function Footer() {
             </div>
 
             <div className='footer-section'>
-                <p className='footer-title'>Services</p>
-                <p className='footer-link'>Web Application Development</p>
-                <p className='footer-link'>Mobile Application Development</p>
-                <p className='footer-link'>UI/UX Designing</p>
-                <p className='footer-link'>Digital Marketing</p>
-                <p className='footer-link'>SaaS Development</p>
-                <p className='footer-link'>MVP Development</p>
-                <p className='footer-link'>WordPress Development</p>
+                <p style={{marginLeft:'-220px'}}className='footer-title'>Services</p>
+                <p style={{marginLeft:'-30px'}}className='footer-link'>Web Application Development</p>
+                <p style={{marginLeft:'-30px'}} className='footer-link'>Mobile Application Development</p>
+                <p style={{marginLeft:'-30px'}}className='footer-link'>UI/UX Designing</p>
+                <p style={{marginLeft:'-30px'}}className='footer-link'>Digital Marketing</p>
+                <p style={{marginLeft:'-30px'}}className='footer-link'>SaaS Development</p>
+                <p style={{marginLeft:'-30px'}}className='footer-link'>MVP Development</p>
+                <p style={{marginLeft:'-30px'}} className='footer-link'>WordPress Development</p>
             </div>
 
             <div className='footer-section'>
-                <p className='footer-title'>Company Info</p>
+                <p style={{marginLeft:'-110px'}}className='footer-title'>Company Info</p>
                 <p className='footer-link'>About Us</p>
                 <p className='footer-link'>Careers</p>
                 <p className='footer-link'>FAQ</p>
@@ -50,10 +50,10 @@ function Footer() {
             </div>
 
             <div className='footer-section'>
-                <p className='footer-title'>Contact</p>
+                <p style={{marginLeft:'-110px'}}className='footer-title'>Contact</p>
                 <div className='contact-item'>
                     <i style={{marginTop: '-55px'}} className="fas fa-map-marker-alt"></i>
-                    <p>B-405 Anmol Space Baikunth Dham, Khajrana Main Road Indore 452018</p>
+                    <p style={{textAlign:'left'}}>B-405 Anmol Space Baikunth Dham, Khajrana Main Road Indore 452018</p>
                 </div>
                 
                 <div className='contact-item'>
@@ -67,7 +67,7 @@ function Footer() {
             </div>
 
             <div className='dmca-rights' >
-                <p>© 2024 All right reserved by Bellway <img src="https://www.bellwayinfotech.com/assets/uploads/media-uploader/dmca-logo1660313111.jpg" alt="Image"/> </p>
+                <p>© 2024 All right reserved by Bellway <img style={{marginLeft:'25rem',marginTop:'-20px'}}src="https://www.bellwayinfotech.com/assets/uploads/media-uploader/dmca-logo1660313111.jpg" alt="Image"/> </p>
             </div>
         </div>
       

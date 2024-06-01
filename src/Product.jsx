@@ -2,20 +2,21 @@ import React from 'react';
 import CNavbar from './CNavbar';
 import './Product.css';
 import Applications from './Applications';
-
+import Footer from './Footer'
 const Product = () => {
   return (
     <>
       <CNavbar />
-      <div className="rifaul-container">
-        <div className="hollow-border-rectangle"></div>
+      <div className="rifaul-containerTT">
+        <div className="hollow-border-rectangleTT"></div>
         <div>
-          <p className="we">WE</p>
-          <p className="implement">IMPLEMENT</p>
-          <p className="corporate">CORPORATE SOFTWARES</p>
+          <p className="weTT">WE</p>
+          <p className="implementTT">IMPLEMENT</p>
+          <p className="corporateTT">CORPORATE SOFTWARES</p>
         </div>
       </div>
       <Applications/>
+      <Footer/>
     </>
   );
 };

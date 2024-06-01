@@ -9,12 +9,12 @@ import whatsapp from './assets/whatsapp.png';
 function Touch() {
     return(
         <div className="t-main">
-            <h1 className="text-main" >Reach Us Here</h1>
-            <img className="line" src={line} alt="" />
+            <h1  className="text-main" >Reach Us Here</h1>
+            <img className="line" src={line} alt=""/>
             <h5 className="text-sub" >Let's discuss your specific requirements and how we <br />can assist you further.</h5>
 
-            <div className="address" >
-            <img src={mark} alt="" />
+            <div className="address">
+            <img style={{marginLeft:'20rem'}} src={mark} alt=""/>
                 <h4>Address</h4>
                 <h6>405 B, Anmol Space <br /> Baikundham Indore</h6>
             </div>

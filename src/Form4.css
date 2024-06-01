@@ -20,7 +20,7 @@
     border-radius: 5px;
     border: 1px solid #ced4da;
     padding: 15px 10px;  /* Adjusted padding for more space */
-     font-size: 1rem;
+    font-size: 1rem;
   }
   
   .form-control::placeholder {
@@ -28,7 +28,7 @@
     opacity: 1;  /* Ensures placeholder is visible */
   }
   
-   .form-control:focus {
+  .form-control:focus {
     border-color: #80bdff;
     /* box-shadow: 0 0 5px rgba(130, 13, 13, 0.25); */
   }

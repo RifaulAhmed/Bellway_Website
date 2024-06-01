@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    height: 38rem;
+    height: 30rem;
     width: 100vw;
     margin-left: -75px;
 }
@@ -19,7 +19,7 @@
 .main-text {
     color: white;
     margin-bottom: 8rem;
-    margin-left: 9rem;
+    margin-left: 8rem;
     margin-right: 16rem;
     font-size: 40px;
     font-family: sans-serif;
@@ -41,19 +41,24 @@
     }
 }
 
-
 .sub-text{
     color: white;
-    margin-top: -20rem;
+    margin-top: -15rem;
     font-size: large;
-    margin-left: -41rem;
-    
+    margin-left: -47rem;
+}
+
+
+.sub-text2{
+    color: white;
+    /* margin-top: 0.1rem; */
+    margin-left: -52rem;
 }
 
 
 .image {
     width: 40rem;
-    margin-top: 3.8rem;
+    margin-top: 3rem;
     margin-right: -2.1rem;
     height: 90%;
 }

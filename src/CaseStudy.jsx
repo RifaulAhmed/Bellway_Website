@@ -1,129 +1,72 @@
 import React from 'react'
-import { useState } from 'react';
 import CNavbar from './CNavbar';
 
+const Card = ({ image, title, link }) => (
+  <div className="w-2/3  bg-white rounded overflow-hidden shadow-lg mx-auto my-8 p-4 " style={{ boxShadow: '0 0 30px rgba(0, 0, 0, 0.8)' }}>
+    <img className="w-full h-96 rounded" src={image} alt={title} />
+    <div className="px-6 py-4">
+      <div className="font-bold text-4xl mb-2 text-center">{title}</div>
+    </div>
+    <div className="px-6 pt-4 pb-2 text-center">
+      <a
+        href={link}
+        className="inline-block bg-black text-white font-bold px-20 py-4 rounded"
+      >
+        Visit
+      </a>
+    </div>
+  </div>
+);
 
-const slides = [
-  {
-    image: 'https://images.unsplash.com/photo-1626178793926-22b28830aa30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D',
-    url: '/case-study/graphic-design/property-dekho',
-    buttonText: 'Checkout Property Dekho'
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRvY3RvcnN8ZW58MHx8MHx8fDA%3D',
-    url: '/case-study/graphic-design/ur-fine',
-    buttonText: 'Discover Ur-Fine'
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1601121141499-17ae80afc03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D',
-    url: '/case-study/graphic-design/hazel-jewells',
-    buttonText: 'Checkout Hazel View'
-  }
-];
-
-const HazelJewells = () => {
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
-  };
-
-  const goToNext = () => {
-    setCurrentIndex(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
-  };
+const CS = () => {
   return (
     <>
     <CNavbar/>
-          <div class="container mx-auto my-5 bg-black p-8">
+
+    <div className='w-screen ml-[-34px]'>
+<div class=" mx-auto my-5 bg-black p-8">
   <div class="flex flex-col md:flex-row items-center">
     <div class="md:w-1/2 text-left mb-4 md:mb-0">
-      <h1 class="text-8xl font-bold mb-4 text-white">Hazel Jewells...</h1>
+      <h1 class="text-8xl font-bold mb-4 text-white">Case Study...</h1>
       <h3 class="text-2xl text-white">
-        <a href="/" class="text-red-600 hover:underline">Home</a> / Case-Study / Hazel Jewells
+        <a href="/" class="text-red-600 hover:underline">Home</a> / Case-Study 
       </h3>
     </div>
     <div class="md:w-1/2 text-right">
-      <img src="https://images.unsplash.com/photo-1600862754152-80a263dd564f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Team" class="w-full h-auto"/>
+      <img src="https://plus.unsplash.com/premium_photo-1661396926941-b7bb38f76313?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhc2UlMjBzdHVkeXxlbnwwfHwwfHx8MA%3D%3D" alt="Web Image" class="w-full h-auto"/>
     </div>
   </div>
 </div>
 
-<div class="sm:mx-20 sm:w-100 p-8 my-10 mx-2 mybg text-black rounded-lg shadow-lg borderb">
-    <h2 class="text-3xl font-bold mb-6 text-center  hover:text-red-600">"Discover the exquisite world of Haze Jewells with our user-friendly website overview"</h2>
-    
-    <div class="flex justify-center mb-6">
-      <img src="https://bellwayinfotech.com/assets/uploads/media-uploader/haze-poster-2-compressed1691750565.jpg" alt="Blog Post Image" class="w-full max-w-md h-auto rounded-lg shadow-lg"/>
+
+
+    <div className="min-h-screen flex flex-col items-center bg-gray-100 py-8">
+      <h1 className="text-5xl font-bold mb-12 text-black">Our Case Studies</h1>
+      <Card
+        image="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
+        title="Graphic Design"
+        link="/case-study/graphic-design/GD"
+      />
+         <Card
+        image="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D"
+        title="Digital Marketing"
+        link="/case-study/digital-marketing/DM"
+      />
+      <Card
+        image="https://plus.unsplash.com/premium_photo-1661375427386-64ac35086427?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FzZSUyMHN0dWR5fGVufDB8fDB8fHww"
+        title="Web Development"
+        link="/case-study/web/WD"
+      />
+
+      <Card
+        image="https://images.unsplash.com/photo-1587840178393-079769787b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW5kcm9pZHxlbnwwfHwwfHx8MA%3D%3D"
+        title="App Development"
+        link="/case-study/app/AD"
+      />
     </div>
-    
-    <p class="text-black mb-6 sm:text-left  sm:mx-10">"
-    We, at Haze Jewells, do our best to provide you with the best 925 Silver jewellery which we design/select. Our only goal is to provide you with the finest trendy jewellery available on the internet.
-
-Explore our curated collections of jewellery, each reflecting a unique blend of artistry, craftsmanship, and inspiration. From timeless classics to contemporary designs, we offer a piece for every style and occasion."
-    <br/><br/>
-<h1 className='text-black text-lg font-bold'>Exquisite Collections</h1>
-
-Hazel Jawells offers a diverse range of exquisite jewelry collections, from timeless classics to modern designs. Each piece is crafted with meticulous attention to detail, ensuring a perfect blend of elegance and sophistication for every occasion.
-    <br/><br/>
-
-    <h1 className='text-black text-lg font-bold'>Quality Craftsmanship</h1>
-
-    Our jewelry is created by skilled artisans who use only the finest materials, including ethically sourced diamonds, precious metals, and gemstones. This commitment to quality craftsmanship ensures that every piece is not only beautiful but also durable and long-lasting.
-    <br/><br/>
-
-
-<h1 className='text-black text-lg font-bold'> Custom Design Services</h1>
-
-At Hazel Jewells, we believe in celebrating individuality. Our custom design services allow you to create bespoke jewelry that reflects your unique style and personality. Work with our expert designers to bring your vision to life, creating a one-of-a-kind piece that you’ll cherish forever.
-<br/><br/>
-
-<h1 className='text-black text-lg font-bold'>Exceptional Customer Service</h1>
-
-Hazel Jewells is dedicated to providing exceptional customer service. Our knowledgeable and friendly team is always ready to assist you with any questions or concerns, ensuring a seamless and enjoyable shopping experience from start to finish.
-    <br/><br/>
-
-    
-
-    <h1 className='text-black text-lg font-bold'>Conclusion</h1>
-
-    In conclusion, Hazel Jewells stands out as a premier jewelry destination, offering exquisite collections, quality craftsmanship, and personalized custom designs. With a secure online shopping platform and exceptional customer service, we ensure that every customer enjoys a seamless and satisfying experience. Discover the perfect piece that reflects your style and celebrates your special moments with Hazel Jewells.
-<br/><br/>
-</p>
-
-<div className="md:flex-1 sm:grid sm:grid-cols-3 flex-row  justify-center items-center  ">
-           <div className='border flex border-black px-40 sm:px-3 p-2 hover:bg-red-300'><h1 className="text-lg mb-2 text-black text-nowrap "><i class="fa-solid fa-user"></i> Kunal</h1>
-           </div> 
-           <div className='border border-black px-40 sm:px-4 p-2 hover:bg-red-300'><h1 className="text-xl mb-2 text-black text-nowrap "><i class="fa-solid fa-wallet"></i> Budget: $1500</h1></div>
-           <div className='border border-black px-40 sm:px-5 p-2 hover:bg-red-300'><h1 className="text-lg mb-2 text-black text-nowrap"><i class="fa-solid fa-clock"></i> Duration: 35 Days</h1></div>
-          
-          </div>
     </div>
-
-    <div className="containerx mx-auto py-8">
-      <h2 className="text-3xl font-bold mb-6 text-center hover:text-red-600">Our Related Case Studies</h2>
-
-      <div className="relative w-full max-w-3xl mx-auto">
-        <div className="overflow-hidden relative">
-          <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-            {slides.map((slide, index) => (
-              <div key={index} className="w-full flex-shrink-0 text-center">
-                <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-lg" />
-                <a href={slide.url} className="inline-block mt-8 bg-black text-white px-32 py-5 rounded">{slide.buttonText}</a>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <button onClick={goToPrevious} className=" absolute w-9 top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
-          Prev
-        </button>
-        <button onClick={goToNext} className=" w-9 absolute  top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
-          Next
-        </button>
-      </div>
-    </div> 
     </>
   )
 }
 
-export default HazelJewells
+export default CS

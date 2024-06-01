@@ -98,9 +98,9 @@ const CNavbar = () => {
         <Navbar.Brand>
           <a href="/">
             <img
-              style={{ marginLeft: '-200px' }}
+              style={{marginLeft:'-45px'}}
               src={logo}
-             width="530px"
+              width="280px"
               className="logo d-inline-block align-top"
               alt="Logo"
             />
@@ -109,29 +109,27 @@ const CNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <a style={{ color: 'white', position: 'relative', left: '-53px', top: '18px' ,fontSize:'19px'}} href="/">Home</a>
+            <Link style={{ color: 'white', paddingTop:'15.5px',paddingRight:'15.5px' ,fontSize:'18px'}} to="/">Home</Link>
             <NavDropdown title="About" id="about-dropdown">
-              <a href="/about/1" className="dropdown-item">About Us</a>
-              <a href="/testimonial" className="dropdown-item">Testimonial</a>
-              <a href="/career" className="dropdown-item">Career With Us</a>
+              <Link to="/about/1" className="dropdown-item">About Us</Link>
+              <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
+              <Link to="/career" className="dropdown-item">Career With Us</Link>
             </NavDropdown>
             <NavDropdown title="Product" id="product-dropdown">
-              <a href="/product" className="dropdown-item">Food Delivery Business</a>
-              <a href="/commerce" className="dropdown-item">Ecommerce Business</a>
-              <a href="/product/3" className="dropdown-item">Product 3</a>
+              <Link to="/product" className="dropdown-item">Food Delivery Business</Link>
+              <Link to="/commerce" className="dropdown-item">Ecommerce Business</Link>
+              <Link  to="/product/3" className="dropdown-item">Product 3</Link >
             </NavDropdown>
             <NavDropdown title="Service" id="service-dropdown">
-              <a href="/service/1" className="dropdown-item">Web Application Development</a>
-              <a href="/mobileapp" className="dropdown-item">Mobile Application Development</a>
-              <a href="/design" className="dropdown-item">UX/UI Design</a>
+              <Link  to="/service/1" className="dropdown-item">Web Application Development</Link >
+              <Link  to="/mobileapp" className="dropdown-item">Mobile Application Development</Link >
+              <Link  to="/design" className="dropdown-item">UX/UI Design</Link >
             </NavDropdown>
-            <NavDropdown title="Case Study" id="case-study-dropdown">
-              <a href="/casestudy" className="dropdown-item">Graphic Design</a>
-              <a href="/digital2" className="dropdown-item">Digital Marketing</a>
-              <a href="/web4" className="dropdown-item">Web Development</a>
-            </NavDropdown>
-            <a style={{position: 'relative', top: '10px',fontSize:'19px'}}  href="/blog" className="nav-link">Blog</a>
-            <a style={{position: 'relative', top: '10px',fontSize:'19px'}} href="/contact" className="nav-link">Contact</a>
+            
+              <Link  style={{color:'white',position: 'relative', top: '18px',left:'2px'}}href="/case-study/CS" className="dropdown-item">Case Study</Link >
+            
+            <Link  style={{position: 'relative', top: '9px',left:'16px',fontSize:'17px'}}  to="/blog" className="nav-link">Blog</Link >
+            <Link  style={{position: 'relative', top: '9px',left:'-30px',fontSize:'17px'}} to="/contact" className="nav-link">Contact</Link >
           </Nav>
         
         </Navbar.Collapse>

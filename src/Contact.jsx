@@ -9,11 +9,12 @@ import CNavbar from './CNavbar';
 import Touch from './Touch';
 import Form from './Form';
 import Map from './Map';
+import Footer from './Footer';
 function Herosection() {
     return (
     
         <>
-          <CNavbar/>
+            <CNavbar/>
             <div className='hero-main'>
                 <div className='main-text'>
                     <p>Contact Us...</p>
@@ -21,7 +22,8 @@ function Herosection() {
                 <img className='image' src={picture} alt="" />
             </div>
             <div>
-                <p className='sub-text'>Looking for help? Tell us your requirements,<br /> and we'll link you with the right team.</p>
+                <p className='sub-text'>Looking for help? Tell us your requirements,</p>
+                <p className='sub-text2' >and we'll link you with the right team.</p>
             </div>
             <h4 className='phone'>Phone</h4>
             <a href=""><h6 className='number'>+91 9752196529</h6></a>
@@ -34,6 +36,7 @@ function Herosection() {
             <Form/>
             <Touch/>
             <Map/>
+            <Footer/>
         </>
     );
 }

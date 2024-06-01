@@ -61,7 +61,7 @@
     border-radius: 15px;
     border: none;
 
-    box-shadow: 0 0 20px green;
+    box-shadow: 0 0 20px black;
     backdrop-filter: blur(10px) saturate(200%); 
     -webkit-backdrop-filter: blur(100px) saturate(150%);
     width: 600px;
@@ -99,7 +99,7 @@
         border-radius: 15px;
         border: none;
 
-        box-shadow: 0 0 20px green;
+        box-shadow: 0 0 20px black;
         backdrop-filter: blur(10px) saturate(200%); 
         -webkit-backdrop-filter: blur(100px) saturate(150%);
         width: 90%;

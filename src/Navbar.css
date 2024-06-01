@@ -1,13 +1,12 @@
-/* Navbar.css */
 .navbar {
-    position: fixed; /* Fixed position */
-    top: 0; /* Stick to the top */
+    position: fixed; 
+    top: 0; 
     left: 0;
     width: 100%; 
     height: 90px;
-    z-index: 1000; /* Ensure it's above other content */
-    margin: 0; /* Remove margins */
-    padding: 0; /* Remove padding */
+    z-index: 1000; 
+    margin: 0;
+    padding: 0; 
 }
 
 @media only screen and (max-width: 600px) {
@@ -19,48 +18,53 @@
     }
 }
 
-/* Remove default text color of nav links */
+
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffff !important; /* Inherit color */
-    margin-right: 50px; /* Add margin to nav links */
+    color: #ffff !important; 
+    margin-right: 50px;
 }
 
-/* Ensure the text color changes on hover */
+
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
     color: #ffff !important; 
-    /* White color on hover/focus */
+
 }
 
-/* Hide dropdown menu items by default */
+
 .navbar-dark .navbar-nav .dropdown-menu {
-    display: none; /* Hide the dropdown menu by default */
-    background-color: #000 !important; /* Ensure the entire dropdown menu has a black background */
-    border: none; /* Remove any default borders */
+    display: none; 
+    background-color: #000 !important;
+    border: none; 
 }
 
-/* Show dropdown menu items when hovering over the parent nav item */
+
 .navbar-dark .navbar-nav .nav-item:hover .dropdown-menu {
-    display: block; /* Show the dropdown menu on hover */
+    display: block; 
 }
 
-/* Add margin-right to NavDropdowns */
+
 .navbar-dark .navbar-nav .dropdown-menu .dropdown-item {
     color: #fff !important; 
-    background-color: #000 !important; /* Black background color */
-    margin: 0; /* Remove margin to ensure full coverage */
+    background-color: #000 !important; 
+    margin: 0; 
 }
 
-/* Ensure the background color changes on hover */
+
 .navbar-dark .navbar-nav .nav-item:hover .dropdown-menu .dropdown-item:hover,
 .navbar-dark .navbar-nav .nav-item:hover .dropdown-menu .dropdown-item:focus {
-    background-color: #d62b2b !important; /* Red background color on hover/focus */
-    color: #fff !important; /* Ensure text color remains white */
+    background-color: #d62b2b !important; 
+    color: #fff !important;
 }
 
-/* Ensure full width of dropdown items */
+
 .navbar-dark .navbar-nav .dropdown-menu .dropdown-item {
     width: 100%;
-    padding: 10px 20px; /* Adjust padding as needed */
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+
+.navbar-dark .navbar-nav .nav-item {
+    margin-right: -44px;
 }

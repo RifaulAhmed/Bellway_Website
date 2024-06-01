@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './figma.css';
-
+import Footer from './Footer'
 import { useState,useEffect } from 'react';
 
 import Ad4 from './Ad4';
@@ -62,7 +62,7 @@ function Cloud() {
   
 
     
-
+<Footer/>
 
 
 

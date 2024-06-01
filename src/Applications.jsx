@@ -9,7 +9,7 @@ function Applications(){
     return(
         <>
         <div className="app-main" >
-            <div className="border-rectangle" ></div>
+            <div className="border-rectangleTT" ></div>
             <div>
                 <img className="burgir" src={burgir} alt="" />
             </div>

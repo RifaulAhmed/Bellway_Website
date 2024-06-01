@@ -1,7 +1,7 @@
 import React from 'react'
 import CNavbar from './CNavbar'
 import './figma.css';
-
+import Footer from './Footer'
 import { useState,useEffect } from 'react';
 
 import Ad6 from './Ad6';
@@ -39,6 +39,7 @@ const Data = () => {
    <div className='talk2' >
    <Ad6/>
    </div>
+   <Footer/>
     </>
   )
 }

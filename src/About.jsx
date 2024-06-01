@@ -2,14 +2,15 @@ import React from 'react'
 import CNavbar from './CNavbar'
 import './About.css'
 import Slider from 'react-infinite-logo-slider'
+import Footer from './Footer'
 const About = () => {
   return (
     <>
     <CNavbar />
-      <div>
+      <div className='w-screen ml-[-34px]'>
 
         
-        <div  className="containerx mx-auto my-9 bg-black p-8">
+        <div  className=" mx-auto my-9 bg-black p-8">
           <div className="flex flex-col  md:flex-row items-center">
             <div className="lg:w-1/2 text-left mb-4 md:mb-0">
               <h1 className="text-8xl font-bold mb-4 text-white text-left">About...</h1>
@@ -24,7 +25,7 @@ const About = () => {
         </div>
 
 
-        <div className="containerx mx-auto  my-12 p-8">
+        <div className=" mx-auto  my-12 p-8">
           <div className="flex  justify-around flex-col md:flex-row items-center">
             {/* Image Section */}
             <div className=" md:h-1/2 md:w-1/4  sm:w-80">
@@ -174,6 +175,7 @@ const About = () => {
         </div>
 
       </div>
+      <Footer/>
     </>
   )
 }
