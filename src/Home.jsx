@@ -27,7 +27,7 @@ import './BoxSlider.css'; // Create this CSS file for custom styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Google from './assets/Google2.jpg';
 import CNavbar from './CNavbar';
-// import Header from './Header';
+import Header from './Header';
 import Footer from './Footer'
 // import Form4 from './Form4'
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -170,7 +170,7 @@ const Home = () => {
   return (
     <div className="container-fluid mt-1">
       <CNavbar/>
-          {/* <Header /> */}
+           <Header /> 
           
       {/* <Form4/> */}
       <div className="row mt-5">
