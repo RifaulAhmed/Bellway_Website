@@ -1,7 +1,9 @@
 .title {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 20px;
+  color: black;
+  margin-top: -100px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .description {
@@ -9,8 +11,7 @@
   font-size: 18px;
   line-height: 1.5;
   font-family: 'Poppins';
-  margin-top: 20px; /* Adjust margin as needed */
-  margin-left: 20px; /* Adjust margin as needed */
+  margin-top: 20px; 
 }
 
 .img-fluid1 {
@@ -20,27 +21,89 @@
 }
 
 @keyframes content {
-  from {
+  0% {
     transform: translateX(-100%);
   }
-  to {
+  100% {
     transform: translateX(0);
   }
 }
 
-.car-container,
+.professional-services {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  margin-top: -5rem;
+}
+
+.our-process {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3rem;
+}
+
+.recent-work {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+
+.appreciation {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 1rem;
+}
+
+
+/* .car-container,
 .card-container2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+
+
+
+
+.our-specialities {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3rem;
+}
+
+.row .mt-5 {
 
 }
+
+
 
 .img-fluid {
   width: 100%;
   height: auto;
+
 }
+
+
+.row5 .mt-5 {
+
+}
+
+
+
 
 .car-container img,
 .card-container2 img {
@@ -56,11 +119,11 @@
 }
 
 .card-abc {
-  width: 100%; /* Adjust width as needed */
+  width: 100%; 
 }
 
 @media only screen and (max-width: 600px) {
   .card-abc {
     width: 100%;
   }
-}
+} */

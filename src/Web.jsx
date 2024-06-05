@@ -1,8 +1,10 @@
 import React from 'react'
 // import Navbar from './Navbar'
 import './Card2.css'
+import CNavbar from './CNavbar';
 import { useNavigate } from 'react-router-dom';
 function Web() {
+  
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -33,9 +35,9 @@ function Web() {
         },
       ];
   return (
-   
+    
         <div>
-          
+          <CNavbar/>
           
           <h1 className='nbs' style={{marginTop:'150px',fontFamily:'sans-serif',fontWeight:'bold',color:'black'}}>Web Application Devlopement</h1>
           <div className="card-container">

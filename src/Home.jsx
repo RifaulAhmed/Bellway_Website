@@ -17,18 +17,18 @@ import Recent from './Recent';
 import Online from './assets/Online.jpg';
 import Mentor from './assets/Mentoring.jpg';
 import Client1 from './assets/Client1.png'
-import Client2 from './assets/Client2.jpg'
-import Client3 from './assets/Client3.jpg'
-import Client4 from './assets/Client4.jpg'
+import Client2 from './assets/Client2.jpg';
+import Client3 from './assets/Client3.jpg';
+import Client4 from './assets/Client4.jpg';
 import Live from './assets/Live.jpg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './BoxSlider.css'; // Create this CSS file for custom styling
+import './BoxSlider.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Google from './assets/Google2.jpg';
 import CNavbar from './CNavbar';
 import Header from './Header';
-import Footer from './Footer'
+import Footer from './Footer';
 // import Form4 from './Form4'
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import About from './About';
@@ -168,29 +168,33 @@ const Home = () => {
   ];
 
   return (
-    <div className="container-fluid mt-1">
+    <div >
       <CNavbar/>
-           <Header /> 
+            <Header /> 
           
       {/* <Form4/> */}
+      <div className="container mx-auto mt-5">
       <div className="row mt-5">
         <div className="col-12 text-center">
-          <h1 className="title" style={{color:'black',marginTop:'-20px',fontFamily:'sans-serif',fontWeight:'bold'}}>Why Choose Bellway Infotech?</h1>
+          <p className="title">Why Choose Bellway Infotech?</p>
         </div>
         <div className="col-md-4 order-md-3 d-flex align-items-center mt-4 img-container">
           <img src={Mobile} alt="Mobile representation" className="img-fluid1" />
         </div>
         <div className="col-md-6 order-md-1 d-flex align-items-center hey">
           <p className="description">
-            We, at Bellway Infotech, are a team of thinkers and <br />doers, who constantly look for different ways to  improve things using the latest technology. In fact, we have worked with top enterprises and on-demand delivery startups to solve organizational challenges, boost profit and engage their audience. Throughout these years, here’s what we have achieved.
+            We, at Bellway Infotech, are a team of thinkers and doers, who will constantly look for different ways to improve things using the latest technology. In fact, we have worked with the top enterprises and on the demand delivery startups to solve organizational challenges, boost profit and engage their audience. Throughout these years, here’s what we have achieved.
           </p>
         </div>
       </div>
-      <div className="row mt-5">
+    </div>
+
+    <div className="container mx-auto mt-5">
+      <div className="row mt-5 ml-16">
         <div className="col-12 text-center">
-          <h1 style={{color:'black',fontFamily:'sans-serif',fontWeight:'bold'}}>Professional Services</h1>
+          <h1 className="professional-services">Professional Services</h1>
         </div>
-        <div className="col-12 d-flex flex-wrap justify-content-center car-container mt-5">
+        <div className="col-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-content-center mt-5">
           {cards.map((card, index) => (
             <FlipCard
               key={index}
@@ -202,11 +206,13 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="row mt-5">
+    </div>
+
+      {/* <div className="row mt-5">
         <div className="col-12 text-center">
-          <h1 style={{color:'black',fontFamily:'sans-serif',fontWeight:'bold'}}>Our Specialities</h1>
+          <h1 className='our-specialities'>Our Specialities</h1>
         </div>
-        <div className="col-12   border  d-flex mt-5">
+        <div className="col-12 d-flex mt-5">
           {cards2.map((card, index) => (
             <Card
               key={index}
@@ -217,20 +223,22 @@ const Home = () => {
             />
           ))}
         </div>
+      </div> */}
+
+      <div>
+        <div>
+          <h1 className='our-process'>Our Process</h1>
+          <div className="col-9 ml-16 justify-content-center">
+          <img src={Testing} alt="Process representation" className="img-fluid w-3/3 mt-2"/>
+        </div>
+        </div>
       </div>
-      <div className="row mt-5">
+
+      <div>
         <div className="col-12 text-center">
-          <h1 style={{color:'black',fontFamily:'sans-serif',fontWeight:'bold'}}>Our Process</h1>
+          <h1 className='recent-work'>Our Recent Work</h1>
         </div>
-        <div className="col-12">
-          <img src={Testing} alt="Process representation" className="img-fluid w-100 mt-0" />
-        </div>
-      </div>
-      <div className="row mt-5">
-        <div className="col-12 text-center">
-          <h1 style={{color:'black',fontFamily:'sans-serif',fontWeight:'bold'}}>Our Recent Work</h1>
-        </div>
-        <div className="col-12 d-flex flex-wrap justify-content-center">
+        <div className="col-11 mt-5  d-flex flex-wrap justify-content-center">
           <Wrapper className="row">
             {cardsData.map((card, index) => (
               <Recent
@@ -244,22 +252,24 @@ const Home = () => {
           </Wrapper>
         </div>
       </div>
-      <div className="row mt-5">
-        <div className="col-12 text-center">
-          <h1 style={{color:'black',fontFamily:'sans-serif',fontWeight:'bold'}}>Appreciation from Clients</h1>
-        </div>
-        <div className='card-abc'>
-          <Slider {...settings}>
-            {boxes.map(box => (
-              <div key={box.id} className="box px-2">
-                <img style={{height:'300px'}} src={box.image} alt={box.text} className="img-fluid6" />
-                <p>{box.text}</p>
-              </div>
-            ))}
-          </Slider>
-        </div> 
 
-        </div>
+      
+
+      <div>
+    <div className="w-full text-center">
+      <h1 className="appreciation ">Appreciation from Clients</h1>
+    </div>
+    <div className="mt-10 ml-10 px-10 py-10 card-abc">
+      <Slider {...settings}>
+        {boxes.map(box => (
+          <div key={box.id} className="box px-2">
+            <img style={{height:'300px'}} src={box.image} alt={box.text} className="img-fluid6 w-full h-20px"/>
+            <p>{box.text}</p>
+          </div>
+        ))}
+      </Slider>
+    </div> 
+  </div>
       
       <Footer/>
   

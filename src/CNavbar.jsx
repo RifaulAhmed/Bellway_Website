@@ -1,254 +1,186 @@
+
 import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import * as Icons from "react-icons/fa";
 import logo from './assets/logo9.png';
 import './Navbar.css';
 
-// Configuration
-const navItems = [
-  {
-    id: 1,
-    title: "Home",
-    path: "/",
-    cName: "nav-item",
-  },
-  {
-    id: 2,
-    title: "Services",
-    path: "/services",
-    cName: "nav-item",
-  },
-  {
-    id: 3,
-    title: "Products",
-    path: "/products",
-    cName: "nav-item",
-  },
-  {
-    id: 4,
-    title: "Contact Us",
-    path: "/contact",
-    cName: "nav-item",
-  },
-];
-
 const serviceDropdown = [
-  {
-    id: 1,
-    title: "Marketing",
-    path: "/marketing",
-    cName: "submenu-item",
-  },
-  {
-    id: 2,
-    title: "Consulting",
-    path: "/consulting",
-    cName: "submenu-item",
-  },
-  {
-    id: 3,
-    title: "Design",
-    path: "/design",
-    cName: "submenu-item",
-  },
-  {
-    id: 4,
-    title: "Development",
-    path: "/development",
-    cName: "submenu-item",
-  },
+  { id: 1, title: "AI", path: "/web", cName: "submenu-item" },
+  { id: 1, title: "Web Application Development", path: "/web", cName: "submenu-item" },
+  { id: 2, title: "Mobile Application Development", path: "/mobileapp", cName: "submenu-item" },
+  { id: 3, title: "UX/UI Design", path: "/design", cName: "submenu-item" },
+  { id: 4, title: "Digital Marketing", path: "/development", cName: "submenu-item" },
 ];
 
-// Dropdown Component
-function Dropdown() {
-  const [dropdown, setDropdown] = useState(false);
+const productDropdown = [
+  { id: 1, title: "Food Delivery Business", path: "/product" },
+  { id: 2, title: "Ecommerce Business", path: "/commerce" },
+  { id: 3, title: "Product 3", path: "/product/3" },
+];
 
+const aboutDropdown = [
+  { id: 1, title: "About", path: "/about/1" },
+  // { id: 2, title: "Testimonial", path: "/testimonial" },
+  { id: 3, title: "Career With Us", path: "/career" },
+];
+
+const dropdownIcon = <span className="dropdown-icon">&#9660;</span>;
+
+function Dropdown({ visible, items }) {
   return (
-    <>
-      <ul
-        className={dropdown ? "services-submenu clicked" : "services-submenu"}
-        onClick={() => setDropdown(!dropdown)}
-      >
-        {serviceDropdown.map((item) => {
-          return (
-            <li key={item.id}>
-              <Link
-                to={item.path}
-                className={item.cName}
-                onClick={() => setDropdown(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <ul className={`services-submenu ${visible ? 'show' : ''}`}>
+      {items.map((item) => (
+        <li key={item.id}>
+          <Link to={item.path} className="submenu-item">
+            {item.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 
-// Main Navbar Component
 const CNavbar = () => {
-  const [dropdown, setDropdown] = useState(false);
+  const [serviceDropdownVisible, setServiceDropdownVisible] = useState(false);
+  const [productDropdownVisible, setProductDropdownVisible] = useState(false);
+  const [aboutDropdownVisible, setAboutDropdownVisible] = useState(false);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(!mobileMenuVisible);
+  };
 
   return (
-    <Navbar bg="black" variant="dark" expand="lg">
-      <Container>
-        <Navbar.Brand>
+    <nav style={{border:''}} className="navbar">
+      <div style={{border:''}} className="container">
+        <div style={{border:''}} className="navbar-brand">
           <a href="/">
-            <img
-              style={{marginLeft:'-45px'}}
-              src={logo}
-              width="280px"
-              className="logo d-inline-block align-top"
-              alt="Logo"
-            />
+            <img src={logo} className="logo " alt="Logo" style={{ width: '198px', marginLeft:"0.2rem", marginTop:"-2rem"}} />
           </a>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Link style={{ color: 'white', paddingTop:'15.5px',paddingRight:'15.5px' ,fontSize:'18px'}} to="/">Home</Link>
-            <NavDropdown title="About" id="about-dropdown">
-              <Link to="/about/1" className="dropdown-item">About Us</Link>
-              <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
-              <Link to="/career" className="dropdown-item">Career With Us</Link>
-            </NavDropdown>
-            <NavDropdown title="Product" id="product-dropdown">
-              <Link to="/product" className="dropdown-item">Food Delivery Business</Link>
-              <Link to="/commerce" className="dropdown-item">Ecommerce Business</Link>
-              <Link  to="/product/3" className="dropdown-item">Product 3</Link >
-            </NavDropdown>
-            <NavDropdown title="Service" id="service-dropdown">
-              <Link  to="/service/1" className="dropdown-item">Web Application Development</Link >
-              <Link  to="/mobileapp" className="dropdown-item">Mobile Application Development</Link >
-              <Link  to="/design" className="dropdown-item">UX/UI Design</Link >
-            </NavDropdown>
-            
-              <Link  style={{color:'white',position: 'relative', top: '18px',left:'2px'}}href="/case-study/CS" className="dropdown-item">Case Study</Link >
-            
-            <Link  style={{position: 'relative', top: '9px',left:'16px',fontSize:'17px'}}  to="/blog" className="nav-link">Blog</Link >
-            <Link  style={{position: 'relative', top: '9px',left:'-30px',fontSize:'17px'}} to="/contact" className="nav-link">Contact</Link >
-          </Nav>
-        
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </div>
+        <div style={{marginRight:"-4rem", marginTop:"-6rem"}} className="navbar-toggle" onClick={toggleMobileMenu}>
+          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
+        </div>
+        <div style={{ marginTop:"-100px"}} className={`navbar-collapse ${mobileMenuVisible ? 'show' : ''}`}>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Home</Link>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onMouseEnter={() => setAboutDropdownVisible(true)}
+                onMouseLeave={() => setAboutDropdownVisible(false)}
+              >
+                About Us {dropdownIcon}
+                <Dropdown visible={aboutDropdownVisible} items={aboutDropdown} />
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onMouseEnter={() => setServiceDropdownVisible(true)}
+                onMouseLeave={() => setServiceDropdownVisible(false)}
+              >
+                Services {dropdownIcon}
+                <Dropdown visible={serviceDropdownVisible} items={serviceDropdown}/>
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                className="nav-link"
+                onMouseEnter={() => setProductDropdownVisible(true)}
+                onMouseLeave={() => setProductDropdownVisible(false)}
+              >
+                Products {dropdownIcon}
+                <Dropdown visible={productDropdownVisible} items={productDropdown} />
+              </div>
+            </li>
+            <li className="nav-item">
+              <Link to="/faq" className="nav-link">FAQ</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/blog" className="nav-link">Blog</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link">Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
 export default CNavbar;
 
-// Styles
-const styles = `
-.navbar {
-  height: 15vh;
-  background: #1b1919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-logo {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 10rem;
-}
-
-.nav-items {
-  display: flex;
-  list-style: none;
-  text-align: center;
-  width: 70vw;
-  justify-content: flex-end;
-  margin-right: 2rem;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  height: 10vh;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  margin-right: 2rem;
-  padding: 6px 16px;
-  border-radius: 5px;
-}
-
-.nav-item a:hover {
-  background: #d62b2b;
-}
-
-.services-submenu {
-  width: 10rem;
-  position: absolute;
-  top: 67px;
-  list-style: none;
-  text-align: start;
-}
-
-.services-submenu li {
-  background: rgb(0, 212, 212);
-  cursor: pointer;
-}
-
-.services-submenu li a:hover {
-  background: rgb(0, 175, 175);
-}
-
-.services-submenu.clicked {
-  display: none;
-}
-
-.submenu-item {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: white;
-  padding: 16px;
-}
-
-.btn {
-  border: none;
-  background: transparent;
-  padding: 6px 16px;
-  font-size: 1.1rem;
-  color: white;
-  background: rgb(0, 212, 212);
-  border-radius: 5px;
-  transition: 0.3s all ease-out;
-  cursor: pointer;
-}
-
-.btn:hover {
-  color: rgb(0, 212, 212);
-  background: black;
-}
-`;
-
-// Inject styles into the document head
-const styleSheet = document.createElement("style");
-styleSheet.type = "text/css";
-styleSheet.innerText = styles;
-document.head.appendChild(styleSheet);
 
 
 
 
+// import React, { useState } from 'react';
+// import Logo from './assets/logo.png'
+// import { Link } from 'react-router-dom';
 
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
 
+//   const toggleMenu = () => {
+//     setIsOpen(!isOpen);
+//   };
 
+//   return (
+//     <nav className="bg-gray-800 text-white">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 " style={{ maxWidth: '90rem' }} >
+//         <div className="flex items-center justify-between h-16">
+//           <div className="flex items-center">
+//             <div className="flex-shrink-0">
+//               <img className="h-20 " src={Logo} alt="Logo" />
+//             </div>
+//           </div>
+//           <div className="hidden md:flex items-center space-x-4">
+//             <Link to='/home' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+//             <Link to ="/about/1" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link>
+//             <Link to ="/product" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Product</Link>
+//             <Link to ="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</Link>
+//             <Link to='/blogs' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blogs</Link>
+//             <Link to ="/case-study/CS" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Case Study</Link>
+//             <Link to='/faq-page' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</Link>
+//             <Link to ="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+//           </div>
+//           <div className="flex md:hidden">
+//             <button
+//               onClick={toggleMenu}
+//               className="text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white p-2 rounded-md"
+//             >
+//               <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+//                 {isOpen ? (
+//                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+//                 ) : (
+//                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+//                 )}
+//               </svg>
+//             </button>
+//           </div>
+//         </div>
+//       </div>
 
+//       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
+//         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+//           <Link to ="/" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</Link>
+//           <Link to="/about/1" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</Link>
+//           <Link to="/product" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Product</Link>
+//           <Link to ="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</Link>
+//           <Link to ="/blogs" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blogs</Link>
+//           <Link to ="/case-study/CS" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Case Study</Link>
+//           <Link to ="/faq-page" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</Link>
+//           <Link to ="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
 
-
-
+// export default Navbar;

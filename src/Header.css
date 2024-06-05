@@ -1,11 +1,10 @@
 .header-container {
-  width: 104vw;
-  height: 80vh; 
+  width: 100vw;
+  height: 85vh; 
   background-color: black;
   color: white;
-  padding: 50px 0; /* Adjust padding to your needs */
-
-  margin-left: -90px;
+  padding: 50px 0; 
+  margin-left: -12px;
   overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
@@ -17,7 +16,7 @@
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px; /* Add padding to prevent content from touching edges */
+  padding: 0 10px; 
 }
 
 .header-text h1 {
