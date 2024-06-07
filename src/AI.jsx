@@ -7,6 +7,17 @@ import FaqPage from './AIFaq';
 import PopupForm from './PopupForm';
 
 
+import Footer from './Footer';
+
+
+
+import Slider2 from 'react-slick';
+import Client1 from './assets/face1.jpeg'
+import Client2 from './assets/face2.jpeg';
+import Client3 from './assets/face3.jpeg';
+import Client4 from './assets/face4.jpeg';
+
+
 const AI = () => {
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -14,27 +25,70 @@ const AI = () => {
     setIsPopupVisible(!isPopupVisible);
   }
 
-  const testimonials = [
+
+
+  const boxes = [
     {
       id: 1,
-      image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/karen-agresti1694611721.jpg',
-      name: 'Rifaul',
-      text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!'
+      text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
+      image: Client1,
+      name: 'Ana Perez',
+      position: 'CEO, ITgers',
     },
     {
       id: 2,
-      image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/karen-agresti1694611721.jpg',
-      name: 'Yachna',
-      text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!.'
+      text: '"Highly recommend tapping into their unparalleled expertise and innovative solutions for any business striving to excel and thrive in today\'s fiercely competitive landscape."',
+      image: Client2,
+      name: 'Nick Divris',
+      position: 'CTO, Coursera',
     },
     {
       id: 3,
-      image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/karen-agresti1694611721.jpg',
-      name: 'Sakshi',
-      text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!.'
+      text: '"Their commitment to delivering outstanding service alongside groundbreaking and forward-looking solutions has been pivotal for our continued and remarkable success."',
+      image: Client3,
+      name: 'Yuki ',
+      position: 'Manager, Alpine',
     },
+    {
+      id: 4,
+      text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
+      image: Client4,
+      name: 'Zehan Darula',
+      position: 'Designer, E-papcups',
+    }
+  ];;
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
-  ];
+
+
+
+
 
   const technologies = [
     { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1', title: 'Laravel' }, // Replace with actual URLs
@@ -75,7 +129,7 @@ const AI = () => {
         <h1 class="sm:text-5xl  font-bold mb-4 text-black mt-16">"Accelerate Business Growth with
           Our AI Services"</h1>
 
-        <div className="space-y-20 mt-14 mx-auto">
+        <div className="space-y-20 mt-20 mx-auto">
           <div className="flex flex-col md:flex-row   bg-black text-white">
             <img
               src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww"
@@ -135,7 +189,7 @@ const AI = () => {
               alt="Brain Image"
               className="w-1/2 md:w-1/3 "
             />
-            <div className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
+            <div className="md:ml-28  md:mt-0 text-center md:text-left">
               <h2 className="text-4xl font-semibold mt-3">Computer vision </h2>
               <p className="mt-9 text-lg">Computer vision is a field of artificial intelligence that focuses on enabling computers to interpret and understand visual information from the world, similar to how humans use their eyesight. This area of study involves the development of algorithms and models that allow machines to recognize patterns, objects, and scenes in images and videos. Applications of computer vision include facial recognition, autonomous vehicles, medical image analysis, and augmented reality. Studying computer vision requires knowledge of image processing, machine learning, and deep learning techniques. Researchers and practitioners in this field work on improving the accuracy and efficiency of visual recognition systems, making it possible for machines to analyze visual data and make informed decisions based on that data.
                 <br /><br />
@@ -170,31 +224,9 @@ const AI = () => {
         </div>
       </div>
 
-      <div className=" py-16">
-        <h2 className="text-5xl font-bold text-center text-black mb-8 mt-8">Testimonial</h2>
-        <div className="container w-full  mx-auto px-4">
-          <div className="relative overflow-hidden">
-            <div className="flex animate-slide">
-              {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="flex-none w-full  md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
-                  <div className="bg-black p-20 rounded-lg text-white shadow-md">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-24 h-24 rounded-full mx-auto mb-4"
-                    />
-                    <h2 className="text-xl font-semibold text-center mb-2">{testimonial.name}</h2>
-                    <p className="text-white text-center">{testimonial.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
-        <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap">
+      <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-20 p-20"  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
+        <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap ">
           {/* Left Div */}
           <div className="w-full md:w-1/2 p-4">
             <h2 className="text-3xl font-bold mb-4">Trusted Web & Mobile App Development Company</h2>
@@ -250,7 +282,35 @@ const AI = () => {
         </div>
       </div>
       <br /><br />
+
+
+      <div className="w-full overflow-hidden mt-20">
+        <div className="w-full text-center">
+          <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
+        </div>
+        <div className="mt-10 px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-6 md:py-8 lg:py-10 bg-gray-50 shadow-md rounded-md p-4 text-center transition duration-300 hover:bg-gray-200 hover:shadow-2xl">
+          <Slider2 {...settings}>
+            {boxes.map((box, index) => (
+              <div key={index} className="px-2 sm:px-4">
+                <div className="bg-white rounded-md p-4 sm:p-6 md:p-8 text-center transition duration-300 hover:bg-gray-100 shadow-md hover:shadow-lg relative">
+                  <div className="client-image mb-4">
+                    <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
+                  </div>
+                  <div className="text-gray-700 text-lg mb-4">{box.text}</div>
+                  <div className="absolute bottom-2 left-2 text-left">
+                    <p className="text-gray-800 font-bold mb-1">{box.name}</p>
+                    <p className="text-gray-600 text-sm">{box.position}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider2>
+        </div>
+      </div>
+
       <FaqPage />
+
+      <Footer/>
     </>
   )
 }
