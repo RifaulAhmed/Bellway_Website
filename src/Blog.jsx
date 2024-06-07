@@ -7,7 +7,7 @@ const Blogs = () => {
   return (
   <>
   <CNavbar/>
-<div className='w-screen ml-[-34px]'>
+<div className='containerx w-screen ml-[-34px]'>
 <div class="mx-auto my-5 bg-black p-8">
   <div class="flex flex-col md:flex-row items-center">
     <div class="md:w-screen text-left mb-4 md:mb-0">

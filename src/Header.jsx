@@ -38,7 +38,8 @@
 
 
 import React from 'react';
-import video1 from './assets/video2.mp4';
+// import video1 from './assets/video2.mp4';
+import video2 from './assets/video1.mp4';
 
 function Header() {
     return (
@@ -67,7 +68,7 @@ function Header() {
                             loop
                             muted
                             className="rounded-lg border-4 border-red-600 w-full max-w-full mt-2 md:mt-0">
-                            <source src={video1} type="video/mp4" />
+                            <source src={video2} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> 
                     </div>

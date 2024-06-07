@@ -49,7 +49,7 @@ function Applications() {
             <div className="app-main2">
                 <div className="glass-card2">
                     <p className="p1">WHAT IS,</p>
-                    <p className="p2"> Delicious Meals Delivery Service <hr /></p>
+                    <p className="p2"> Bellway Grocery <hr /></p>
                     <br />
                     <p className="p3">
                         In today's fast-paced world, finding time to prepare a nutritious and mouthwatering meal can be <br />a challenge. That's where Delicious Meal Delivery Service comes to the rescue! Our service is <br />designed to provide you with a convenient and flavorful dining experience, offering a wide variety <br /> of delectable dishes delivered straight to your doorstep.

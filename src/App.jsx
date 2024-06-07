@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+// import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './Home'
@@ -21,14 +21,17 @@ import ExperienceJoineeForm from './ExperienceJoineeForm'
 import Digital_Marketing from './Components/CaseStudy/Digital Marketing/DM'
 import Design from './Design'
 import Figma from './Figma'
-import Commerce from './Commerce'
-import MobileApp from './MobileApp'
+import Commerce from './Product2'
+// import MobileApp from './MobileApp'
 import Digital2 from './Digital2'
 import Web4 from './Web4'
 import Case_Study  from './Components/CaseStudy/CS'
 import Graphic_Design from './Components/CaseStudy/Graphic Design/GD'
 import App_Development from './Components/CaseStudy/App Development/AD'
 import Web_Development from './Components/CaseStudy/Web Development/WD'
+import AI from './AI'; 
+import Mobile1 from './Mobile1';
+import Web1 from './Web1';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -54,7 +57,7 @@ function App() {
         <Route path="/design" element={<Design/>} />
         <Route path="/figma" element={<Figma/>} />
         <Route path="/commerce" element={<Commerce/>} />
-        <Route path="/mobileapp" element={<MobileApp/>} />
+        {/* <Route path="/mobileapp" element={<MobileApp/>} /> */}
         <Route path="/digital2" element={<Digital2/>} />
         <Route path="/web4" element={<Web4/>} />
         <Route path="/case-study/CS" element={<Case_Study></Case_Study>}></Route>
@@ -62,6 +65,9 @@ function App() {
         <Route path="/case-study/digital-marketing/DM" element={<Digital_Marketing></Digital_Marketing>}></Route>
         <Route path="/case-study/app/AD" element={<App_Development></App_Development>}></Route>
         <Route path="/case-study/web/WD" element={<Web_Development></Web_Development>}></Route>
+        <Route path="/ai" element={<AI />} /> /
+        <Route path="/mobile1" element={<Mobile1 />} /> /
+        <Route path="/web1" element={<Web1 />} /> /
       </Routes>
       </>
   )

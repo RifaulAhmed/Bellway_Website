@@ -60,7 +60,6 @@
     background: rgba(255, 255, 255, 0.0); 
     border-radius: 15px;
     border: none;
-
     box-shadow: 0 0 20px black;
     backdrop-filter: blur(10px) saturate(200%); 
     -webkit-backdrop-filter: blur(100px) saturate(150%);
@@ -91,7 +90,7 @@
 .app-main2 {
     height: 100vh;
     margin-top: 5rem;
-    margin-left: -4rem;
+    /* margin-left: -4rem; */
 }
 
 .glass-card2 {
@@ -138,7 +137,7 @@
 
 
 .app-main3 {
-    height: 80vh;
+    height: 100vh;
     background-color: antiquewhite;
 }
 
@@ -147,8 +146,8 @@
     transform: rotate(-90deg);
     font-size: 7rem;
     color: black;
-    margin-top: 10.5rem;
-    margin-left: -10rem;
+    margin-top: 12rem;
+    /* margin-left: -10rem; */
     font-weight: 700;
 }
 
@@ -159,35 +158,35 @@
     font-weight: 500;
     color: black;
     transform-origin: bottom left; 
-    margin-left: 10.5rem; 
+    /* margin-left: 10.5rem;  */
 }
 
 .r {
-    margin-top: 22rem;
+    margin-top: 24rem;
 }
 
 .e {
-    margin-top: 18rem;
+    margin-top: 20rem;
 }
 
 .v {
-    margin-top: 14rem;
+    margin-top: 16rem;
 }
 
 .i {
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
 
 .e2 {
-    margin-top: 6.6rem;
+    margin-top: 8.6rem;
 }
 
 .w {
-    margin-top: 2.5rem;
+    margin-top: 4.5rem;
 }
 
 .s {
-    margin-top: -2rem;
+    margin-top: -0.5rem;
 }
 
 
@@ -199,8 +198,8 @@
     align-items: center;
     padding-left: 38rem;
     position: relative;
-    margin-top: -3rem;
-    margin-left: 1rem;
+    margin-top: -37rem;
+    /* margin-left: 1rem; */
     
     
 }

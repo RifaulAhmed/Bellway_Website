@@ -18,6 +18,13 @@ module.exports = {
         redFlow: 'redFlow 20s infinite',
         pulse: 'pulse 2s infinite',
       },
+      rotate: {
+        '45': '45deg',
+        '135': '135deg',
+        '225': '225deg',
+        '270': '270deg',
+        '315': '315deg',
+      },
     },
   },
   plugins: [],

@@ -1,0 +1,12 @@
+.client-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+}
+
+.client-image img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border-radius: 50%;
+}

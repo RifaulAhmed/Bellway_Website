@@ -8,7 +8,7 @@ import line2 from './assets/line2.jpg';
 function Applications(){
     return(
         <>
-        <div className="app-main" >
+        <div className="app-maint" >
             <div className="border-rectangleTT" ></div>
             <div>
                 <img className="burgir" src={burgir} alt="" />
@@ -23,12 +23,11 @@ function Applications(){
         </div>
         </div>
 
-        <div className="app-main2" >
+        <div className="app-main2t" >
             <div className="glass-card2">
             <p className="p1" >WHAT IS,</p> 
             <p className="p2" > Delicious Meals Delivery Service <hr /></p><br />
             <p className="p3" >In today's fast-paced world, finding time to prepare a nutritious and mouthwatering meal can be <br />a challenge. That's where Delicious Meal Delivery Service comes to the rescue! Our service is <br /> designed to provide you with a convenient and flavorful dining experience, offering a wide variety <br />of delectable dishes delivered straight to your doorstep. <br /><br />
-
             Have specific dietary requirements or preferences? Customize your order accordingly. Whether it's <br />vegan, gluten-free, or extra spicy, we aim to cater to your unique needs. <br /><br />
 
             Planning a family dinner or a meal with friends? The app makes it easy to place large orders, <br />ensuring everyone gets their favourite dish.</p>
@@ -37,7 +36,7 @@ function Applications(){
             </div>
         </div>
 
-        <div className="app-main3" >
+        <div className="app-main3t" >
             <h1 className="clients" > CLIENTS</h1><br />
             <p className="r" >R</p>
             <p className="e" >E</p>
@@ -48,7 +47,7 @@ function Applications(){
             <p className="s" >S</p>
         </div>
 
-<div class="app-main4">
+<div class="app-main4t">
         <div class="container">
             <div class="container-item">
                 <div class="content">

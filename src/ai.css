@@ -1,0 +1,15 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% / 4));
+    }
+}
+
+.animate-slide {
+    display: flex;
+    width: calc(100% * 4);
+    animation: slide 20s linear infinite;
+}

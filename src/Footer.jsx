@@ -108,7 +108,7 @@ function Footer() {
                     <Link to="#ContactUs" className="text-white hover:text-gray-400 mb-2"><i className="fas fa-envelope mr-2"></i> Contact Us</Link>
                 </div>
 
-                <div className="flex flex-col col-span-1">
+                <div className="flex flex-col col-span-1 mt-3">
                     <p className="text-lg font-semibold mb-4">Services</p>
                     <p className="text-white hover:text-gray-400 mb-2">Web Application Development</p>
                     <p className="text-white hover:text-gray-400 mb-2">Mobile Application Development</p>
@@ -119,7 +119,7 @@ function Footer() {
                     <p className="text-white hover:text-gray-400 mb-2">WordPress Development</p>
                 </div>
 
-                <div className="flex flex-col col-span-1 mb-20 lg:mb-20">
+                <div className="flex flex-col col-span-1 mb-16 lg:mb-16">
                     <p className="text-lg font-semibold mb-4">Company Info</p>
                     <p className="text-white hover:text-gray-400 mb-2">About Us</p>
                     <p className="text-white hover:text-gray-400 mb-2">Careers</p>
@@ -129,7 +129,7 @@ function Footer() {
                     <p className="text-white hover:text-gray-400 mb-2">E-commerce Business</p>
                 </div>
 
-                <div className="flex flex-col col-span-1 mb-16">
+                <div className="flex flex-col col-span-1 mb-16 lg:mb-16">
                     <p className="text-lg font-semibold mb-4">Contact</p>
                     <div className="flex items-start mb-4">
                         <i className="fas fa-map-marker-alt mr-2"></i>

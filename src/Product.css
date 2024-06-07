@@ -2,9 +2,9 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), 
                 url('./assets/p7.jpg') center/cover no-repeat;
     height: 90vh;
-    width: 103vw;
+    width: 100vw;
     display: flex;
-    margin-left: -77px;
+    /* margin-left: -77px; */
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -12,7 +12,7 @@
     position: relative;
   }
 
-  
+
   .hollow-border-rectangleTT {
     width: 200px;
     height: 360px;
@@ -27,21 +27,21 @@
   }
   
   .weTT {
-    margin-left: -40rem;
+    margin-left: -23rem;
     font-size: 7rem;
     font-weight: 600;
     margin-top: 3rem;
   }
   
   .implementTT {
-    margin-left: -40rem;
+    margin-left: -28rem;
     font-size: 4rem;
     font-weight: 500;
     margin-top: -3rem;
   }
   
   .corporateTT {
-    margin-left: -40rem;
+    margin-left: -28.5rem;
     margin-top: -2rem;
   }
   

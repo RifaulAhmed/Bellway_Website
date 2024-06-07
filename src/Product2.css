@@ -8,8 +8,8 @@
     font-size: 2rem;
     color: white;
     position: relative;
-    width: 99.3vw;
-    margin-left: -76px;
+    width: 100vw;
+    /* margin-left: -76px; */
 }
 
 .hollow-border-rectangle {

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 // import Navbar from '../../Navbar'
 import CNavbar from './CNavbar';
 import Footer from './Footer';
-import Header from './Header';
 
 
 const About = () => {
@@ -13,7 +12,7 @@ const About = () => {
   return (
     <>
 <CNavbar/>
-<Header/>
+
 <div class="containerx mx-auto  bg-black p-8">
   <div class="flex flex-col md:flex-row items-center">
     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">

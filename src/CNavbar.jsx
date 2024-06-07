@@ -5,17 +5,17 @@ import logo from './assets/logo9.png';
 import './Navbar.css';
 
 const serviceDropdown = [
-  { id: 1, title: "AI", path: "/web", cName: "submenu-item" },
-  { id: 1, title: "Web Application Development", path: "/web", cName: "submenu-item" },
-  { id: 2, title: "Mobile Application Development", path: "/mobileapp", cName: "submenu-item" },
+  { id: 1, title: "AI", path: "/ai", cName: "submenu-item" },
+  { id: 2, title: "Mobile Application Development", path: "/mobile1", cName: "submenu-item" },
+  { id: 1, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
   { id: 3, title: "UX/UI Design", path: "/design", cName: "submenu-item" },
   { id: 4, title: "Digital Marketing", path: "/development", cName: "submenu-item" },
 ];
 
 const productDropdown = [
-  { id: 1, title: "Food Delivery Business", path: "/product" },
   { id: 2, title: "Ecommerce Business", path: "/commerce" },
-  { id: 3, title: "Product 3", path: "/product/3" },
+  { id: 1, title: "Food Delivery Business", path: "/product" },
+  // { id: 3, title: "Product 3", path: "/product/3" },
 ];
 
 const aboutDropdown = [
@@ -98,9 +98,9 @@ const CNavbar = () => {
                 <Dropdown visible={productDropdownVisible} items={productDropdown} />
               </div>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/faq" className="nav-link">FAQ</Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link to="/blog" className="nav-link">Blog</Link>
             </li>

@@ -1,4 +1,4 @@
-.app-main {
+.app-maint {
     height: 100vh;
 }
 
@@ -85,10 +85,7 @@
 }
 
 
-
-
-
-.app-main2 {
+.app-main2t {
     height: 100vh;
 }
 
@@ -134,8 +131,8 @@
 
 /* / App-main-3 / */
 
-.app-main3 {
-    height: 80vh;
+.app-main3t {
+    height: 100vh;
     background-color: antiquewhite;
 }
 
@@ -144,7 +141,7 @@
     transform: rotate(-90deg);
     font-size: 7rem;
     color: black;
-    margin-top: 10.5rem;
+    margin-top: 15rem;
     margin-left: -10rem;
     font-weight: 700;
 }
@@ -190,20 +187,19 @@
 
 
 
-
-
 /* / CLIENTS REVIEWS / */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
-.app-main4 {
+.app-main4t {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 1rem 0;
-    position: relative;
-    top: -28rem;
+    /* position: relative; */
+    /* top: -35rem; */
+    margin-top: -37rem;
 }
 
 .container {
@@ -278,5 +274,3 @@
     margin-top: 5px;
     font-size: 1.2rem;
 }
-
-
