@@ -10,7 +10,7 @@ import Cloud from './assets/AI5.jpg';
 import App2 from './assets/AI8.jpg';
 import Dedicated from './assets/Reduced.jpg';
 import Digital from './assets/Marketing.jpg';
-import Testing from './assets/OurProcess.jpg';
+import Testing from './assets/ourprocessnew.png';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Recent from './Recent';
@@ -43,6 +43,8 @@ import Faq from './HomeFaq';
 import Solutions from './Solutions';
 import './cards.css'
 import HomeSlider from './HomeSlider';
+import WhyBell from './WhyBell';
+// import HomeServices from './HomeServices';
 const Wrapper = styled.div`
   justify-content: space-around;
   margin: auto;
@@ -83,28 +85,28 @@ const Home = () => {
       text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
       image: Client1,
       name: 'Ana Perez',
-      position: 'CEO, ITgers',
+      position: '( CEO, ITgers )',
     },
     {
       id: 2,
       text: '"Highly recommend tapping into their unparalleled expertise and innovative solutions for any business striving to excel and thrive in today\'s fiercely competitive landscape."',
       image: Client2,
       name: 'Nick Divris',
-      position: 'CTO, Coursera',
+      position: '( CTO, Coursera )',
     },
     {
       id: 3,
       text: '"Their commitment to delivering outstanding service alongside groundbreaking and forward-looking solutions has been pivotal for our continued and remarkable success."',
       image: Client3,
       name: 'Yuki ',
-      position: 'Manager, Alpine',
+      position: '( Manager, Alpine )',
     },
     {
       id: 4,
       text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
       image: Client4,
       name: 'Zehan Darula',
-      position: 'Designer, E-papcups',
+      position: '( Designer, E-papcups )',
     }
   ];;
   const cardsData = [
@@ -123,39 +125,6 @@ const Home = () => {
       title: 'Lazy Bazar',
       description: 'Website Development, App Development',
     },
-  ];
-
-  const cards = [
-    {
-      image: Web,
-      title: 'Graphic Designing',
-      description: 'Creating scalable and robust web solutions.'
-    },
-    {
-      image: App,
-      title: 'Web Application Development',
-      description: 'Implementing AI to enhance business processes.'
-    },
-    {
-      image: Cloud,
-      title: 'Cloud Development',
-      description: 'Offering cloud solutions to streamline your operations.'
-    },
-    {
-      image: App2,
-      title: 'Mobile Application',
-      description: 'Integrating various apps to work seamlessly together.'
-    },
-    {
-      image: Dedicated,
-      title: 'Dedicated Support',
-      description: 'Providing dedicated support for your projects.'
-    },
-    {
-      image: Digital,
-      title: 'Digital Marketing',
-      description: 'Boosting your online presence with digital marketing strategies.'
-    }
   ];
 
   const cards2 = [
@@ -207,124 +176,29 @@ const Home = () => {
     ]
   };
 
-  // const boxesnew = [
-  //   { id: 1, image: 'image1.jpg', text: 'Client 1 Feedback' },
-  //   { id: 2, image: 'image2.jpg', text: 'Client 2 Feedback' },
-  //   { id: 3, image: 'image3.jpg', text: 'Client 3 Feedback' },
-  // ];
-
   return (
     <div >
       <CNavbar />
+
       <Header />
 
-      {/* <Form4/> */}
-      <div className="container mx-auto mt-5">
-        <div className="row mt-5">
-          <div className="col-12 text-center">
-            <p className="title">Why Choose Bellway Infotech?</p>
-          </div>
-          <div className="col-md-4 order-md-3 d-flex align-items-center mt-4 img-container">
-            <img src={Mobile} alt="Mobile representation" className="img-fluid1" />
-          </div>
-          <div className="col-md-6 order-md-1 d-flex align-items-center hey">
-            <p className="description">
-              We, at Bellway Infotech, are a team of thinkers and doers, who will constantly look for different ways to improve things using the latest technology. In fact, we have worked with the top enterprises and on the demand delivery startups to solve organizational challenges, boost profit and engage their audience. Throughout these years, here’s what we have achieved.
-            </p>
-          </div>
-        </div>
-      </div>
+      <WhyBell />
 
-      <div className="container mx-auto mt-5 bg-gray-100">
-        <div className="row mt-5 ml-16">
-          <div className="col-12 text-center">
-            <h1 className="professional-services">Professional Services</h1>
-          </div>
-          <div className="col-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-content-center mt-5">
-            {cards.map((card, index) => (
-              <FlipCard
-                key={index}
-                image={card.image}
-                title={card.title}
-                description={card.description}
-                className="m-3"
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="row mt-5">
-        <div className="col-12 text-center">
-          <h1 className='our-specialities'>Our Specialities</h1>
-        </div>
-        <div className="col-12 d-flex mt-5">
-          {cards2.map((card, index) => (
-            <Card
-              key={index}
-              image={card.image}
-              title={card.title}
-              description={card.description}
-              className="m-3 "
-            />
-          ))}
-        </div>
-      </div> */}
+      {/* <HomeServices/> */}
 
       <Industries />
 
-      {/* <div>
-        <div>
-          <h1 className='our-process'>Our Process</h1>
-          <div className="col-9 ml-16 justify-content-center">
-            <img src={Testing} alt="Process representation" className="img-fluid w-3/3 mt-5" />
-          </div>
-        </div>
-      </div> */}
       <div className="flex flex-col items-center">
         <h1 className='our-process'>Our Process</h1>
         <div className="flex justify-center">
-          <img src={Testing} alt="Process representation" className="img-fluid w-120 h-120 mt-5" />
+          <img src={Testing} alt="Process representation" className="img-fluid w-120 h-120" />
         </div>
       </div>
-
-
-
-
-
-      {/* <br /><div className="mt-5">
-        <div className="text-center">
-          <h1 className="recent-work">Our Recent Work</h1>
-        </div>
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-3/4 max-w-screen-lg">
-            {cardsData.slice(0, 2).map((card, index) => (
-              <Recent
-                key={index}
-                image={card.image}
-                title={card.title}
-                description={card.description}
-                className="m-3"
-              />
-            ))}
-            {cardsData.length > 2 && (
-              <div className="md:col-span-2 lg:col-span-2 flex justify-center">
-                <Recent
-                  key={2}
-                  image={cardsData[2].image}
-                  title={cardsData[2].title}
-                  description={cardsData[2].description}
-                  className="m-3"
-                />
-              </div>
-            )}
-          </div>
-        </div>
-      </div> */}
 
       <HomeSlider />
 
       <Solutions />
+
       <div className="w-full overflow-hidden">
         <div className="w-full text-center">
           <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
@@ -337,11 +211,9 @@ const Home = () => {
                   <div className="client-image mb-4">
                     <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
                   </div>
-                  <div className="text-gray-700 text-lg mb-4">{box.text}</div>
-                  <div className="absolute bottom-2 left-2 text-left">
-                    <p className="text-gray-800 font-bold mb-1">{box.name}</p>
-                    <p className="text-gray-600 text-sm">{box.position}</p>
-                  </div>
+                  <div className="text-gray-700 text-lg font-bold mb-1">{box.name}</div>
+                  <div className="text-gray-600 text-sm">{box.position}</div>
+                  <div className="text-gray-700 text-lg">{box.text}</div>
                 </div>
               </div>
             ))}
@@ -352,6 +224,7 @@ const Home = () => {
       <br /><br />
 
       <Faq />
+
       <Footer />
 
     </div>
