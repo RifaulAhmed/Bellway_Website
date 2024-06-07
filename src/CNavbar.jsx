@@ -8,8 +8,8 @@ const serviceDropdown = [
   { id: 1, title: "AI", path: "/ai", cName: "submenu-item" },
   { id: 2, title: "Mobile Application Development", path: "/mobile1", cName: "submenu-item" },
   { id: 1, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
-  { id: 3, title: "UX/UI Design", path: "/design", cName: "submenu-item" },
-  { id: 4, title: "Digital Marketing", path: "/development", cName: "submenu-item" },
+  { id: 3, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
+  { id: 4, title: "Digital Marketing", path: "/digital", cName: "submenu-item" },
 ];
 
 const productDropdown = [

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState,useEffect } from 'react'
-import Slider from 'react-slick';
-import CNavbar from './CNavbar'
+
 import PopupForm from './PopupForm';
 import image9 from './assets/image9.png'
 import image10 from './assets/image10.png'
@@ -20,15 +19,25 @@ import image21 from './assets/image22.png'
 import image22 from './assets/image23.png'
 import image23 from './assets/image24.png'
 import image24 from './assets/image25.png'
-import Solutions from './Solutions';
+import CNavbar from './CNavbar'
 import './Form1.css'
-import FaqPage from './FaqPage'
-import Footer from './Footer'
+import Slider from 'react-slick';
 import Client1 from './assets/face1.jpeg'
 import Client2 from './assets/face2.jpeg';
 import Client3 from './assets/face3.jpeg';
 import Client4 from './assets/face4.jpeg';
-const Mobile1 = () => {
+
+// import image8 from './assets/image8.avif'
+
+import Footer from './Footer'
+
+import FaqPage2 from './FaqPage2';
+
+
+const Ux = () => {
+
+
+
     const boxes = [
         {
           id: 1,
@@ -86,19 +95,25 @@ const Mobile1 = () => {
           }
         ]
       };
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+
+
+
+    
+    
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
   }
 
     const cardsData = [
-        { title: "Flutter App Development", description: "Flutter development involves using the Flutter framework, created by Google, to build cross-platform mobile applications with a single codebase. It enables developers to create high-performance apps with a rich set of customizable widgets and a reactive UI framework."},
-        { title: "React Native App Development", description: "React Native app development involves utilizing the React Native framework, developed by Facebook, to build cross-platform mobile applications using JavaScript and React. It enables developers to create native-like experiences for both iOS and Android platforms with a single codebase." },
-        { title: "iOS App Development", description: "iOS app development involves using Apple's Swift or Objective-C programming languages and the Xcode IDE to create native applications exclusively for Apple's iOS devices, such as iPhones and iPads. Developers leverage Apple's frameworks and design guidelines to craft user-friendly and high-performance apps tailored for the iOS ecosystem." },
-        { title: "Android App Development", description: "Android app development involves using Java or Kotlin programming languages and the Android Studio IDE to create native applications for Android devices, catering to a wide range of screen sizes and hardware specifications. Developers leverage Android's robust SDK, libraries, and Material Design guidelines to build engaging and versatile apps for the Android platform." },
-        { title: "Cross Plateform App Development", description: "Cross-platform app development involves using frameworks like React Native, Flutter, or Xamarin to build applications that can run on multiple platforms, such as iOS, Android, and sometimes even web, using a single codebase. It enables developers to reach a broader audience efficiently while minimizing development time and costs. " },
-       
+        { title: "User Interface Design", description: "Interface designs for Web, Mobile, and Custom Applications by being creative and incorporating best design practices and standards.User interface design focuses on creating visually appealing and intuitive interfaces that enhance user interaction and experience with a digital product."},
+        { title: "Digital Prototyping", description: "Building a prototype for real-time User Testing and Feedback for improvements before actual development.Digital prototyping involves creating interactive, functional models of a digital product to test and refine design concepts before full-scale development. " },
+        { title: "Logo Design", description: "Your logo design is essential to your brand’s identity. Get 100% tailor made logo designs and distinguish your brand.Logo design is the process of creating a unique, memorable symbol or graphic that represents a brand's identity and values." },
+        { title: "Flow & Wireframe Designs", description: "Drawing Flows, design Wireframes, and UML Diagrams to critically understand the User Journey and System Requirements.Flow and wireframe designs are crucial in mapping out the structure and navigation of a digital product, providing a blueprint for user experience and interface development." },
+        { title: "Product Overview Video", description: "Product overview videos effectively communicate your product’s features, uses, and success stories, spotlighting its uniqueness and sparking interest and excitement among your audience. " },
+       {title:"2D Explainer Video",description:"we simplify complex concepts with creative 2D explainer videos, blending graphics, illustrations, and storytelling for an engaging and comprehensible message.A 2D explainer video uses animated graphics and narration to simplify and convey complex ideas or messages in an engaging and easily understandable way."}
       ];
 
       const testimonials = [
@@ -127,7 +142,6 @@ const Mobile1 = () => {
           text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!.'
         }
       ];
-
       const technologies = [
         { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1',title:'Laravel' }, // Replace with actual URLs
         { id: 2, image: 'https://i.pinimg.com/236x/9c/65/bd/9c65bd67c0a9685a6e8121c0ad3694e3.jpg', name: 'Tech 2',title:'Laravel' },
@@ -138,6 +152,7 @@ const Mobile1 = () => {
         { id: 7, image: 'https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-5d0f0aa79779a6.6143656815612668556205.jpg', name: 'Tech 7',title:'Laravel'  },
         { id: 8, image: 'https://i.pinimg.com/736x/7f/63/64/7f63644d631600cb5c3fcec87332a5a4.jpg', name: 'Tech 8' ,title:'Laravel' }
       ];
+    
       
       const images = [
         image9,
@@ -162,25 +177,24 @@ image22,
       ];
     
     
+  
+  
   return (
     <>
     <CNavbar/>
     <div class="containerx mx-auto  bg-black p-8">
-  <div class="flex flex-col md:flex-row items-center mt-28">
+  <div class="flex flex-col md:flex-row items-center mt-28 ">
     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
-      <h1 class="sm:text-6xl font-bold mb-4 text-white">Mobile Application Development...</h1>
+      <h1 class="sm:text-7xl font-bold mb-4 text-white">UX/UI Designing...</h1>
       <h3 class="sm:text-2xl text-white">
-        <Link to="/" class="text-red-600 hover:underline">Home</Link> /Mobile Application Development 
+        <Link to="/" class="text-red-600 hover:underline">Home</Link> /UX/UI Designing 
       </h3>
     </div>
     <div class="md:w-1/2 h-full mb-9 text-right">
-      <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5kcm9pZHxlbnwwfHwwfHx8MA%3D%3D" alt="About Image" class="w-full h-auto"/>
+      <img src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Image" class="w-full h-auto"/>
     </div>
   </div>
 </div>
-
-
-
 
 <div className="main-page">
       <button className="contact-button" onClick={togglePopup}>Contact <i class="fa-solid fa-phone-volume"></i></button>
@@ -189,9 +203,21 @@ image22,
 
 
 
+
+
     
+
+
+
+
+
+
+
+
+
+
   <div className='se'>
-  <h1 className='tag4' >Mobile App Development Services</h1>
+  <h1 className='tag4' >UX/UI Designing</h1>
   </div>
  
     <div className="container899">
@@ -202,8 +228,7 @@ image22,
         </div>
       ))}
     </div>
-
-<div className="min-h-screen flex flex-col items-center justify-center  p-8 ">
+    <div className="min-h-screen flex flex-col items-center justify-center  p-8 ">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4 text-black">Our Technologies</h1>
         <p className="text-2xl mt-9">Being a Mobile App development and web development company Bellway Infotech consistently serving into latest Technologies
@@ -243,11 +268,11 @@ image22,
     
     <div class="card"><img src={image9} alt="Image 1"/></div>
     <div class="card"><img src={image10} alt="Image 2"/></div>
-    <div class="card"><img src={image15} alt="Image 3"/></div>
+    <div class="card"><img src={image11} alt="Image 3"/></div>
     <div class="card"><img src={image12} alt="Image 4"/></div>
     <div class="card"><img src={image13} alt="Image 5"/></div>
     <div class="card"><img src={image14} alt="Image 6"/></div>
-    <div class="card"><img src={image11} alt="Image 7"/></div>
+    <div class="card"><img src={image15} alt="Image 7"/></div>
     <div class="card"><img src={image16} alt="Image 8"/></div>
     <div class="card"><img src={image17} alt="Image 8"/></div>
     <div class="card"><img src={image18} alt="Image 8"/></div>
@@ -262,30 +287,8 @@ image22,
 
 
 
-    {/* <div className=" py-16">
-      <h2 className="text-5xl font-bold text-center text-black mb-8 mt-8">Testimonial</h2>
-      <div className="container w-full  mx-auto px-4">
-        <div className="relative overflow-hidden">
-          <div className="flex animate-slide">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="flex-none w-full  md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
-                <div className="bg-black p-28 rounded-lg text-white shadow-md">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-24 h-24 rounded-full mx-auto mb-4"
-                  />
-                  <h2 className="text-xl font-semibold text-center mb-2">{testimonial.name}</h2>
-                  <p className="text-white text-center">{testimonial.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div> */}
-    {/* <Solutions /> */}
-      <div className="w-full overflow-hidden mt-8">
+
+<div className="w-full overflow-hidden mt-8">
         <div className="w-full text-center">
           <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
         </div>
@@ -310,11 +313,11 @@ image22,
       </div>
 
 
-    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
+<div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
       <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap">
 
         <div className="w-full md:w-1/2 p-4">
-          <h2 className="text-3xl font-bold mb-4">Trusted Web & Mobile App Development Company</h2>
+          <h2 className="text-3xl font-bold mb-4">Trusted Web &  App Development Company</h2>
           <p className="mt-10">If you have any questions, feel free to reach out. We are here to help you with any queries you may have.</p>
           <div className="mt-6">
             <h3 className="text-xl font-semibold">Our Office</h3>
@@ -325,6 +328,12 @@ image22,
             <p>contact@company.com</p>
           </div>
         </div>
+        
+
+
+
+
+
         
         
         <div className="w-full md:w-1/2 p-4">
@@ -366,14 +375,18 @@ image22,
     </div>
       
 
+
+
+
+
 <div style={{marginTop:"-10px"}}>
-<FaqPage/>
+
+<FaqPage2/>
 </div>
 
 <Footer/>
-
     </>
   )
 }
 
-export default Mobile1
+export default Ux

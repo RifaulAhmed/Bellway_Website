@@ -32,6 +32,8 @@ import Web_Development from './Components/CaseStudy/Web Development/WD'
 import AI from './AI'; 
 import Mobile1 from './Mobile1';
 import Web1 from './Web1';
+import Ux from './Ux';
+import Digitalmarketing from './Digitalmarketing';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -68,6 +70,8 @@ function App() {
         <Route path="/ai" element={<AI />} /> /
         <Route path="/mobile1" element={<Mobile1 />} /> /
         <Route path="/web1" element={<Web1 />} /> /
+        <Route path="/ux" element={<Ux />} /> /
+        <Route path='/digital' element={<Digitalmarketing/>}/>
       </Routes>
       </>
   )
