@@ -19,9 +19,9 @@ const productDropdown = [
 ];
 
 const aboutDropdown = [
-  { id: 1, title: "About", path: "/about/1" },
+  { id: 1, title: "About", path: "/about-us" },
   // { id: 2, title: "Testimonial", path: "/testimonial" },
-  { id: 3, title: "Career With Us", path: "/career" },
+  { id: 3, title: "Career With Us", path: "/career-with-us" },
 ];
 
 const dropdownIcon = <span className="dropdown-icon">&#9660;</span>;
@@ -103,6 +103,9 @@ const CNavbar = () => {
             </li> */}
             <li className="nav-item">
               <Link to="/blog" className="nav-link">Blog</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/case-study/CS" className="nav-link">Case Study</Link>
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link">Contact</Link>

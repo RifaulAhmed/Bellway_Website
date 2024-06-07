@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
+import CNavbar from '../../../CNavbar';
 
 const slides = [
   {
@@ -38,25 +40,26 @@ const Cart_Eats = () => {
   };
   return (
     <>
-       <div class="container mx-auto my-5 bg-black p-8">
+    <CNavbar/>
+       <div class="containerx mx-auto  bg-black p-8 mt-20">
   <div class="flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 text-left mb-4 md:mb-0">
-      <h1 class="text-8xl font-bold mb-4 text-white">D-Cart Eats...</h1>
-      <h3 class="text-2xl text-white">
-        <a href="/" class="text-red-600 hover:underline">Home</a> / Case-Study / D-Cart Eats 
+    <div class="md:w-1/2 text-left mb-4 md:mb-0 p-8">
+      <h1 class="sm:text-8xl font-bold mb-4 text-white">D-Cart Eats...</h1>
+      <h3 class="sm:text-2xl text-white">
+        <Link to ="/" class="text-red-600 hover:underline">Home</Link> / Case-Study / D-Cart Eats 
       </h3>
     </div>
     <div class="md:w-1/2 text-right">
-      <img src="https://images.unsplash.com/photo-1564216550945-b9aca66d0a10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2QlMjBhcHB8ZW58MHx8MHx8fDA%3D" alt="Team" class="w-full h-auto"/>
+      <img src="https://images.unsplash.com/photo-1564216550945-b9aca66d0a10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2QlMjBhcHB8ZW58MHx8MHx8fDA%3D" alt="Food Image" class="w-full h-auto"/>
     </div>
   </div>
 </div> 
 
-<div class="sm:mx-20 sm:w-100 p-8 my-10 mx-2 mybg text-black rounded-lg shadow-lg borderb">
+<div class="sm:mx-20 sm:w-100 p-8 my-10 mx-8 mt-20 mybg text-black rounded-lg shadow-lg borderb">
     <h2 class="text-3xl font-bold mb-6 text-center  hover:text-red-600">Welcome to Bellway Infotech E-commerce Solutions: Elevate Your Online Retail Experience</h2>
     
     <div class="flex justify-center mb-6">
-      <img src="https://bellwayinfotech.com/assets/uploads/media-uploader/bellway-food-poster-compressed1689941183.jpg" alt="UR-Fine doctor image Image" class="w-full max-w-md h-auto rounded-lg shadow-lg"/>
+      <img src="https://bellwayinfotech.com/assets/uploads/media-uploader/bellway-food-poster-compressed1689941183.jpg" alt="Food Image" class="w-full max-w-md h-auto rounded-lg shadow-lg"/>
     </div>
     
     <p class="text-black mb-6 sm:text-left  sm:mx-10">
@@ -99,16 +102,16 @@ Getting started with the Bellway Food App is simple and straightforward. First, 
           </div>
     </div>
 
-    <div className="container mx-auto py-8">
+    <div className=" mx-auto py-8">
       <h2 className="text-3xl font-bold mb-6 text-center hover:text-red-600">Our Related Case Studies</h2>
 
-      <div className="relative w-full max-w-3xl mx-auto">
+      <div className="relative w-full max-w-3xl mx-auto mt-10">
         <div className="overflow-hidden relative">
           <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {slides.map((slide, index) => (
               <div key={index} className="w-full flex-shrink-0 text-center">
                 <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-lg" />
-                <a href={slide.url} className="inline-block mt-8 bg-black text-white px-32 py-5 rounded">{slide.buttonText}</a>
+                <Link to ={slide.url} className="inline-block mt-8 bg-black text-white px-32 py-4 rounded">{slide.buttonText}</Link>
               </div>
             ))}
           </div>
