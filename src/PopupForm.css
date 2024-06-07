@@ -39,6 +39,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
+    margin-left: 25px;
 }
 
 input {
@@ -65,19 +66,8 @@ input {
     transition: background 0.3s ease;
 }
 
-/* .submit-button:hover {
-    background: #45a049;
-  } */
 
-.cancel-button {
-    background: #f44336;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
+
 
 .cancel-button:hover {
     background: #d32f2f;

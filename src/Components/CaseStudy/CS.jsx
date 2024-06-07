@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CNavbar from '../../CNavbar';
 
 
@@ -9,12 +10,11 @@ const Card = ({ image, title, link }) => (
       <div className="font-bold text-4xl mb-2 text-center">{title}</div>
     </div>
     <div className="px-6 pt-4 pb-2 text-center">
-      <a
-        href={link}
+      <Link to={link}
         className="inline-block bg-black text-white font-bold px-20 py-4 rounded"
       >
         Visit
-      </a>
+      </Link>
     </div>
   </div>
 );
@@ -23,24 +23,36 @@ const CS = () => {
   return (
     <>
     <CNavbar/>
- <div class="containerx mx-auto my-5 bg-black p-8">
+ {/* <div class="containerx mx-auto  bg-black p-8">
   <div class="flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 text-left mb-4 md:mb-0">
-      <h1 class="text-8xl font-bold mb-4 text-white">Case Study...</h1>
-      <h3 class="text-2xl text-white">
-        <a href="/" class="text-red-600 hover:underline">Home</a> / Case-Study 
+    <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
+      <h1 class="sm:text-8xl font-bold mb-4 text-white">Case Study...</h1>
+      <h3 class="sm:text-2xl text-white">
+        <Link to="/" class="text-red-600 hover:underline">Home</Link> / Case-Study 
       </h3>
     </div>
     <div class="md:w-1/2 text-right">
       <img src="https://plus.unsplash.com/premium_photo-1661396926941-b7bb38f76313?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhc2UlMjBzdHVkeXxlbnwwfHwwfHx8MA%3D%3D" alt="Web Image" class="w-full h-auto"/>
     </div>
   </div>
+</div> */}
+
+
+<div class=" mx-auto  bg-black p-8 mt-20">
+  <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 text-left mb-4 md:mb-0 p-8">
+      <h1 class="sm:text-8xl font-bold mb-4   text-white">Case Study...</h1>
+      <h3 class="sm:text-2xl text-white">
+        <Link to="/" class="text-red-600 hover:underline">Home</Link> / Case Study</h3>
+    </div>
+    <div class="md:w-1/2 text-right">
+      <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Question Image" class="w-full h-auto"/>
+    </div>
+  </div>
 </div>
 
-
-
     <div className="min-h-screen flex flex-col items-center bg-gray-100 py-8">
-      <h1 className="text-5xl font-bold mb-12 text-black">Our Case Studies</h1>
+      <h1 className="text-5xl font-bold mb-12 mt-14 text-black">Our Case Studies</h1>
       <Card
         image="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
         title="Graphic Design"

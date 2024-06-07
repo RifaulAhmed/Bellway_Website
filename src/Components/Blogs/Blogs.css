@@ -1,0 +1,31 @@
+html{
+  size: 62.5%;
+  
+}
+
+body{
+  background-color: #ebf0f5;
+
+}
+.mybg{
+  background-color: #ebf0f5;
+}
+.btext{
+  color: black;
+}
+
+.bgblack{
+background-color: black;
+}
+
+.borderb{
+  border: 2px solid black;
+}
+.boldText{
+font-weight: bold;
+font-size: 2rem;
+}
+
+.clrNew{
+  background-color: hsl(0, 5%, 83%);
+}

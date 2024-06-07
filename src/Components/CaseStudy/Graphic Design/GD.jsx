@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CNavbar from '../../../CNavbar';
+
 
 const Card = ({ image, title, link }) => (
   <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
@@ -7,13 +9,12 @@ const Card = ({ image, title, link }) => (
     <div className="px-6 py-4">
       <div className="font-bold text-xl text-center mb-2">{title}</div>
     </div>
-    <div className="px-6 pt-4 pb-2 text-center">
-      <a
-        href={link}
-        className="inline-block bg-black  text-white font-bold px-28 py-4 rounded"
+    <div className="px-6  pb-2 text-center">
+      <Link to ={link}
+        className="inline-block bg-black  text-white font-bold px-28 py-2 rounded"
       >
         Visit
-      </a>
+      </Link>
     </div>
   </div>
 );
@@ -21,16 +22,16 @@ const GD = () => {
   return (
     <>
     <CNavbar/>
-   <div class="containerx mx-auto my-5 bg-black p-8">
+   <div class="containerx mx-auto  bg-black p-8 mt-20">
   <div class="flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 text-left mb-4 md:mb-0">
-      <h1 class="text-8xl font-bold mb-4 text-white">Graphic Design...</h1>
-      <h3 class="text-2xl text-white">
-        <a href="/" class="text-red-600 hover:underline">Home</a> / Case-Study / Graphic Design
+    <div class="md:w-1/2 text-left mb-4 md:mb-0 p-8">
+      <h1 class="sm:text-8xl font-bold mb-4 text-white">Graphic Design...</h1>
+      <h3 class="sm:text-2xl text-white">
+        <Link to ="/" class="text-red-600 hover:underline">Home</Link> / Case-Study / Graphic Design
       </h3>
     </div>
     <div class="md:w-1/2 text-right">
-      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D" alt="Team" class="w-full h-auto"/>
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D" alt="Graphic Design Image" class="w-full h-auto"/>
     </div>
   </div>
 </div>  

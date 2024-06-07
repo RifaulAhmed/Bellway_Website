@@ -1,0 +1,144 @@
+
+.titleOffer{
+  position:absolute;
+  margin-top: -20rem;
+  /* margin-left: 2rem; */
+  font-weight: bold;
+  font-size:2rem;
+}
+.containerC {
+  position: relative;
+  width: 300px;
+  margin: 300px auto 0 auto;
+  perspective: 1000px;
+  height: 500px;
+  margin-top: 25rem;
+}
+
+.carousel {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 287px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.3);
+  display: flex;
+}
+
+.spanOffer {
+  margin: auto;
+  /* font-size: 2rem; */
+  color:white;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY2fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://plus.unsplash.com/premium_photo-1681487857509-abb58345e594?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA1fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://plus.unsplash.com/premium_photo-1685283298967-88bdc86e9c40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://plus.unsplash.com/premium_photo-1661727547850-3d7c020a64a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8fDA%3D");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5kcm9pZHxlbnwwfHwwfHx8MA%3D%3Dphotos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+
+.maxW{
+  max-width: 78rem;
+  
+}
+
+
+
+.hover-button-bellway{
+  padding: 10px 20px;
+  background: linear-gradient(to right,#000000 50%,#ebf0f5  50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: black; /* Initial text color */
+  border: 2px solid rgb(228, 29, 29); /* Border */
+  cursor: pointer;
+  padding: 10px 50px ;
+  /* font-size: 2rem; */
+
+  transition: all 0.3s;
+ }
+ .hover-button-bellway:hover {
+  background-position: left bottom; 
+  /* Immediate change on hover */
+  color:rgb(249, 246, 246);
+  border: 2px solid rgb(234, 22, 22);
+   /* Text color on hover */
+}
+
+
+
+.container8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  margin-left:auto;
+ 
+  margin-right: auto; 
+  max-width: 1200px; 
+ 
+}
+
+.card {
+  flex: 0 0 calc(25% - 30px); 
+  max-width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
