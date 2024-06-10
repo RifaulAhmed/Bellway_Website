@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState,useEffect } from 'react'
-
-import PopupForm from './PopupForm';
 import image9 from './assets/image9.png'
 import image10 from './assets/image10.png'
 import image11 from './assets/image11.png'
@@ -20,82 +18,21 @@ import image22 from './assets/image23.png'
 import image23 from './assets/image24.png'
 import image24 from './assets/image25.png'
 import CNavbar from './CNavbar'
-<<<<<<< HEAD
-import './Form2.css'
-import Slider from 'react-slick';
-import Client1 from './assets/ClientTest1.jpg'
-import Client2 from './assets/ClientTest2.jpg';
-import Client3 from './assets/ClientTest3.jpg';
-import Client4 from './assets/ClientTest4.jpg';
-import Client5 from './assets/ClientTest5.png';
-import Client6 from './assets/ClientTest6.png';
-=======
 import './Form1.css'
+
+
+import Footer from './Footer'
+
+import FaqPage4 from './FaqPage4';
+import PopupForm from './PopupForm';
 import Slider from 'react-slick';
 import Client1 from './assets/face1.jpeg'
 import Client2 from './assets/face2.jpeg';
 import Client3 from './assets/face3.jpeg';
 import Client4 from './assets/face4.jpeg';
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
-
-// import image8 from './assets/image8.avif'
-
-import Footer from './Footer'
-
-import FaqPage2 from './FaqPage2';
 
 
-const Ux = () => {
-
-<<<<<<< HEAD
-  const boxes = [
-    {
-      id: 1,
-      text: 'The team did the required enhancement on the site with excellent communication skills. He is very proactive and technically!',
-      image: Client1,
-      name: 'Radomi',
-      position: 'Founder, POPOPDEAL',
-    },
-    {
-      id: 2,
-      text: 'We wanted a top-quality comparison website on which you could compare to the market Unified Infotech you gave us exactly.',
-      image: Client2,
-      name: 'Gregory Doe',
-      position: 'Founder',
-    },
-    {
-      id: 3,
-      text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!',
-      image: Client3,
-      name: 'Kendra',
-      position: 'Founder, The KB Hair',
-    },
-    {
-      id: 4,
-      text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!',
-      image: Client4,
-      name: 'Karen Agresti',
-      position: 'Founder',
-    },
-    {
-      id: 5,
-      text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!',
-      image: Client5,
-      name: 'Manish Nair',
-      position: 'CEO',
-    },
-    {
-      id: 6,
-      text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!',
-      image: Client6,
-      name: 'Gnana Prakash',
-      position: 'Founder',
-    }
-  ];
-
-=======
-
-
+const Digitalmarketing = () => {
     const boxes = [
         {
           id: 1,
@@ -126,7 +63,6 @@ const Ux = () => {
           position: 'Designer, E-papcups',
         }
       ];;
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
     const settings = {
         dots: true,
         infinite: true,
@@ -154,32 +90,22 @@ const Ux = () => {
           }
         ]
       };
-
-
-
-
     
-    
+
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
   }
 
-    const cardsData = [
-        { title: "User Interface Design", description: "Interface designs for Web, Mobile, and Custom Applications by being creative and incorporating best design practices and standards.User interface design focuses on creating visually appealing and intuitive interfaces that enhance user interaction and experience with a digital product."},
-        { title: "Digital Prototyping", description: "Building a prototype for real-time User Testing and Feedback for improvements before actual development.Digital prototyping involves creating interactive, functional models of a digital product to test and refine design concepts before full-scale development. " },
-        { title: "Logo Design", description: "Your logo design is essential to your brand’s identity. Get 100% tailor made logo designs and distinguish your brand.Logo design is the process of creating a unique, memorable symbol or graphic that represents a brand's identity and values." },
-        { title: "Flow & Wireframe Designs", description: "Drawing Flows, design Wireframes, and UML Diagrams to critically understand the User Journey and System Requirements.Flow and wireframe designs are crucial in mapping out the structure and navigation of a digital product, providing a blueprint for user experience and interface development." },
-<<<<<<< HEAD
-        { title: "Product Overview Video", description: "Product overview videos effectively communicate your product’s features, uses, and success stories, spotlighting its uniqueness and sparking interest and excitement among your audience.A product overview video provides a concise visual summary of a product's features, benefits, and functionality to engage and inform potential customers." },
-       {title:"2D Explainer Video",description:"we simplify complex concepts with creative 2D explainer videos, blending graphics, illustrations, and storytelling for an engaging and comprehensible message.A 2D explainer video uses animated graphics and narration to simplify and convey complex ideas or messages in an engaging and easily understandable way."}
-      ];
 
+    const cardsData = [
+        { title: "Search Engine Optimization", description: "Our SEO experts are working continuously on the latest strategies so that your business ranks on top. We follow every strategy that can be relevant to your business."},
+        { title: "Social Media Management", description: "We will handle all your social media profiles and respond to customers 24/7 for any query. Experts in social media marketing strategies and crafting interesting content that goes with the trend and aligns with the customer." },
+        { title: "Google My Business", description: "Google My Business listing is a free tool that small businesses can use to create and manage their Google business information when customers find a business in Google Search and Maps. It helps companies attract new customers and share what makes them special." },
+        { title: "Paid Marketing", description: "A paid ad helps you to target a selected demographic, and you could be as unique or as vast as you’d like to. When making an ad, you set a budget and bid for every click or thousand impressions that your ad can receive." },
+        { title: "Pay-Per-Click", description: "In an ideal world, combined SEO and PPC advertising strategies work best at driving targeted results. Integrated SEO and PPC campaigns offer maximum visibility, drive relevant traffic and deliver long-term benefits. However, if you have a short window to promote your brand offerings and make an impact on your niche market, pay per click internet marketing might be the best option for you." },
       
-=======
-        { title: "Product Overview Video", description: "Product overview videos effectively communicate your product’s features, uses, and success stories, spotlighting its uniqueness and sparking interest and excitement among your audience. " },
-       {title:"2D Explainer Video",description:"we simplify complex concepts with creative 2D explainer videos, blending graphics, illustrations, and storytelling for an engaging and comprehensible message.A 2D explainer video uses animated graphics and narration to simplify and convey complex ideas or messages in an engaging and easily understandable way."}
       ];
 
       const testimonials = [
@@ -208,18 +134,7 @@ const Ux = () => {
           text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!.'
         }
       ];
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
-      const technologies = [
-        { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1',title:'Laravel' }, // Replace with actual URLs
-        { id: 2, image: 'https://i.pinimg.com/236x/9c/65/bd/9c65bd67c0a9685a6e8121c0ad3694e3.jpg', name: 'Tech 2',title:'Laravel' },
-        { id: 3, image: 'https://w7.pngwing.com/pngs/414/85/png-transparent-nodejs-javascript-runtime-backend-node-js-logo-3d-icon.png', name: 'Tech 3',title:'Laravel'  },
-        { id: 4, image: 'https://w7.pngwing.com/pngs/18/497/png-transparent-black-and-blue-atom-icon-screenshot-react-javascript-responsive-web-design-github-angularjs-github-logo-electric-blue-signage.png', name: 'Tech 4',title:'Laravel' },
-        { id: 5, image: 'https://static-00.iconduck.com/assets.00/applications-java-icon-2048x2026-4gh120pq.png', name: 'Tech 5' ,title:'Laravel' },
-        { id: 6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEy7NDZaJgOuppMzPYrA32_z6IHI777Tn9g&s', name: 'Tech 6',title:'Laravel'  },
-        { id: 7, image: 'https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-5d0f0aa79779a6.6143656815612668556205.jpg', name: 'Tech 7',title:'Laravel'  },
-        { id: 8, image: 'https://i.pinimg.com/736x/7f/63/64/7f63644d631600cb5c3fcec87332a5a4.jpg', name: 'Tech 8' ,title:'Laravel' }
-      ];
-    
+
       
       const images = [
         image9,
@@ -242,7 +157,18 @@ image22,
         "https://www.appslure.com/wp-content/uploads/2021/10/03-min-300x120-1.webp",
         
       ];
-    
+      const technologies = [
+        { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1',title:'Laravel' }, // Replace with actual URLs
+        { id: 2, image: 'https://i.pinimg.com/236x/9c/65/bd/9c65bd67c0a9685a6e8121c0ad3694e3.jpg', name: 'Tech 2',title:'Laravel' },
+        { id: 3, image: 'https://w7.pngwing.com/pngs/414/85/png-transparent-nodejs-javascript-runtime-backend-node-js-logo-3d-icon.png', name: 'Tech 3',title:'Laravel'  },
+        { id: 4, image: 'https://w7.pngwing.com/pngs/18/497/png-transparent-black-and-blue-atom-icon-screenshot-react-javascript-responsive-web-design-github-angularjs-github-logo-electric-blue-signage.png', name: 'Tech 4',title:'Laravel' },
+        { id: 5, image: 'https://static-00.iconduck.com/assets.00/applications-java-icon-2048x2026-4gh120pq.png', name: 'Tech 5' ,title:'Laravel' },
+        { id: 6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEy7NDZaJgOuppMzPYrA32_z6IHI777Tn9g&s', name: 'Tech 6',title:'Laravel'  },
+        { id: 7, image: 'https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-5d0f0aa79779a6.6143656815612668556205.jpg', name: 'Tech 7',title:'Laravel'  },
+        { id: 8, image: 'https://i.pinimg.com/736x/7f/63/64/7f63644d631600cb5c3fcec87332a5a4.jpg', name: 'Tech 8' ,title:'Laravel' }
+      ];
+      
+
     
   
   
@@ -252,13 +178,13 @@ image22,
     <div class="containerx mx-auto  bg-black p-8">
   <div class="flex flex-col md:flex-row items-center mt-28 ">
     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
-      <h1 class="sm:text-7xl font-bold mb-4 text-white">UX/UI Designing...</h1>
+      <h1 class="sm:text-7xl font-bold mb-4 text-white">Digital Marketing...</h1>
       <h3 class="sm:text-2xl text-white">
-        <Link to="/" class="text-red-600 hover:underline">Home</Link> /UX/UI Designing 
+        <Link to="/" class="text-red-600 hover:underline">Home</Link> /Digital Marketing 
       </h3>
     </div>
-    <div class="md:w-1/2 h-full mb-9 text-right">
-      <img src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Image" class="w-full h-auto"/>
+    <div class="md:w-1/2  mb-9 text-right">
+      <img src="https://i.pinimg.com/736x/e0/7f/04/e07f0453097a02a13d63788d6124881e.jpg" alt="About Image" class="w-full h-auto"/>
     </div>
   </div>
 </div>
@@ -270,6 +196,7 @@ image22,
 
 
 
+      
 
 
     
@@ -284,7 +211,7 @@ image22,
 
 
   <div className='se'>
-  <h1 className='tag4' >UX/UI Designing</h1>
+  <h1 className='tag4' >Digital Marketing </h1>
   </div>
  
     <div className="container899">
@@ -322,6 +249,8 @@ image22,
     </div>
 
 
+
+
   
 
 
@@ -331,15 +260,15 @@ image22,
 <h1 className='tag' >We Have Worked For</h1>
 </div>
 
-<div class="container8" style={{marginTop:"60px"}}>
+    <div class="container8" style={{marginTop:"60px"}}>
     
     <div class="card"><img src={image9} alt="Image 1"/></div>
     <div class="card"><img src={image10} alt="Image 2"/></div>
-    <div class="card"><img src={image11} alt="Image 3"/></div>
+    <div class="card"><img src={image15} alt="Image 3"/></div>
     <div class="card"><img src={image12} alt="Image 4"/></div>
     <div class="card"><img src={image13} alt="Image 5"/></div>
     <div class="card"><img src={image14} alt="Image 6"/></div>
-    <div class="card"><img src={image15} alt="Image 7"/></div>
+    <div class="card"><img src={image11} alt="Image 7"/></div>
     <div class="card"><img src={image16} alt="Image 8"/></div>
     <div class="card"><img src={image17} alt="Image 8"/></div>
     <div class="card"><img src={image18} alt="Image 8"/></div>
@@ -351,17 +280,7 @@ image22,
 
 
 
-
-
-
-<<<<<<< HEAD
-    
-    
-<div className="w-full overflow-hidden mt-28">
-=======
-
 <div className="w-full overflow-hidden mt-8">
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
         <div className="w-full text-center">
           <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
         </div>
@@ -373,18 +292,11 @@ image22,
                   <div className="client-image mb-4">
                     <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
                   </div>
-<<<<<<< HEAD
-                  <div className="text-gray-700 text-lg font-bold mb-1">{box.name}</div>
-                  <div className="text-gray-600 text-sm">{box.position}</div>
-                  <br/>
-                  <div className="text-gray-700 text-lg">{box.text}</div>
-=======
                   <div className="text-gray-700 text-lg mb-4">{box.text}</div>
                   <div className="absolute bottom-2 left-2 text-left">
                     <p className="text-gray-800 font-bold mb-1">{box.name}</p>
                     <p className="text-gray-600 text-sm">{box.position}</p>
                   </div>
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
                 </div>
               </div>
             ))}
@@ -393,10 +305,7 @@ image22,
       </div>
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
 <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
       <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap">
 
@@ -404,19 +313,6 @@ image22,
           <h2 className="text-3xl font-bold mb-4">Trusted Web &  App Development Company</h2>
           <p className="mt-10">If you have any questions, feel free to reach out. We are here to help you with any queries you may have.</p>
           <div className="mt-6">
-<<<<<<< HEAD
-              <h3 className="text-xl font-semibold">Our Office</h3>
-              <p>B-405 Anmol Space Baikunth Dham, <br />
-                Khajrana Main Road,<br /> Indore, 452018</p>
-            </div>
-            <div className='mt-6'>
-              <h3 className="text-xl font-semibold">Contact Us </h3>
-              <p>Email: info@bellwayinfotech.com</p>
-              <p>Phone: +91-9981866409</p>
-            </div>
-          </div>
-
-=======
             <h3 className="text-xl font-semibold">Our Office</h3>
             <p>1234 Street Name<br />City, State, ZIP Code</p>
           </div>
@@ -426,7 +322,6 @@ image22,
           </div>
         </div>
         
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
 
 
 
@@ -466,11 +361,7 @@ image22,
               <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
               <textarea className="w-full px-3 py-2 border rounded" id="message" name="message" rows="4" required></textarea>
             </div>
-<<<<<<< HEAD
-            <button className="w-full  text-white py-2 rounded bg-black">Submit</button>
-=======
             <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Submit</button>
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
           </form>
         </div>
       </div>
@@ -482,8 +373,7 @@ image22,
 
 
 <div style={{marginTop:"-10px"}}>
-
-<FaqPage2/>
+<FaqPage4/>
 </div>
 
 <Footer/>
@@ -491,4 +381,4 @@ image22,
   )
 }
 
-export default Ux
+export default Digitalmarketing

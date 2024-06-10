@@ -1,0 +1,109 @@
+.app-main3 {
+    height: 90vh;
+    background-color: antiquewhite;
+    position: relative; 
+    margin-top: -2rem;
+}
+
+.clients {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 6.5rem;
+    color: black;
+    margin-top: 15rem;
+    font-weight: 700;
+    left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .clients {
+        font-size: 5rem;
+        margin-top: 8rem;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+.app-main4t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    /* position: relative; */
+    /* top: -35rem; */
+    margin-top: -37rem;
+}
+
+.container {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.container-item {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.container-item:nth-of-type(1) {
+    background: url(./assets/Alonso.jpg) no-repeat 50% / cover;
+}
+.container-item:nth-of-type(2) {
+    background: url(./assets/Kimi.jpg) no-repeat 50% / cover;
+}
+.container-item:nth-of-type(3) {
+    background: url(./assets/SEB.jpg) no-repeat 50% / cover;
+}
+.container-item:nth-of-type(4) {
+    background: url(./assets/Lewis.jpg) no-repeat 50% / cover;
+}
+
+.container-item .content {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: rgb(2, 2, 46);
+    background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+}
+
+.container-item:hover {
+    flex: 0 0 250px;
+    box-shadow: 1px 3px 15px black;
+    transform: translateY(-30px);
+}
+
+.container-item:hover .content {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.container-item .content span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
