@@ -1,10 +1,9 @@
-
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background:black;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +18,13 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 800px; 
+    max-width: 1200px;
     position: relative;
 }
 
 .navbar-brand img {
-    width: 150px;
+    width: 12rem;
+    margin-left: 1rem;
 }
 
 .navbar-toggle {
@@ -119,60 +119,67 @@
 
 @media (max-width: 768px) {
     .navbar-toggle {
-    display: flex;
+        display: flex;
     }
 
     .navbar-collapse {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #1b1919;
-    position: absolute;
-    top: 100%;
-    left: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #1b1919;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 
-.navbar-collapse.show {
-    display: flex;
+    .navbar-collapse.show {
+        display: flex;
     }
 
-.navbar-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 10px;
-}
-
-.nav-item {
-    margin-left: 0;
-    width: 100%;
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
     }
 
-.nav-link {
-    width: 100%;
-    text-align: left;
-    padding: 15px 20px;
+    .nav-item {
+        margin-left: 0;
+        width: 100%;
     }
 
-.services-submenu {
-    position: static;
-    width: 100%;
+    .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px;
     }
-}
 
-.logo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 30px; 
+    .services-submenu {
+        position: static;
+        width: 100%;
+    }
+
+    .logo {
+        position: static;
+        transform: translateY(0);
+        margin: 0 auto;
+        left: 0;
+    }
 }
 
 @media (min-width: 768px) {
-.navbar-nav {
-    flex-direction: row;
+    .navbar-nav {
+        flex-direction: row;
     }
 
-.navbar-collapse {
-    display: flex !important;
+    .navbar-collapse {
+        display: flex !important;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
     }
 }

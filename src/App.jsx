@@ -31,7 +31,7 @@ import CyberSecurity from './Components/Blogs/CyberSecurity'
 import CryptoBlog from './Components/Blogs/CryptoBlog'
 
 
-import Case_Study  from './Components/CaseStudy/CS'
+import Case_Study from './Components/CaseStudy/CS'
 
 import App_Development from './Components/CaseStudy/App Development/AD'
 import GoToAstro_AD from './Components/CaseStudy/App Development/GoToAstro'
@@ -78,7 +78,7 @@ import Dedicated from './Dedicated'
 // import Digital_Marketing from './Components/CaseStudy/Digital Marketing/DM'
 import Design from './Design'
 import Figma from './Figma'
-import Commerce from './Product2'
+import Product2 from './Product2'
 // import MobileApp from './MobileApp'
 import Digital2 from './Digital2'
 import Web4 from './Web4'
@@ -86,109 +86,106 @@ import Web4 from './Web4'
 // import Graphic_Design from './Components/CaseStudy/Graphic Design/GD'
 // import App_Development from './Components/CaseStudy/App Development/AD'
 // import Web_Development from './Components/CaseStudy/Web Development/WD'
-import AI from './AI'; 
+import AI from './AI';
 import Mobile1 from './Mobile1';
 import Web1 from './Web1';
-<<<<<<< HEAD
-import Ux from './Ux';
+// import Ux from '/Ux';
 import Digitalmarketing from './Digitalmarketing';
-=======
+// import Product2 from './Product2';
 
 
-
->>>>>>> eec8f164d31f802172944ae9d694df58edcfd977
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-  <>
-  
-    <Routes>
+    <>
 
-    <Route path='/blog' element={<Blogs></Blogs>}></Route>
-    <Route path="/blogs/mobileApplicationBlog" element={<MobileBlog></MobileBlog>}></Route>
-    <Route path="/blogs/seoManagementBlog" element={<SeoManagement></SeoManagement>}></Route>
-    <Route path="/blogs/scratchEcommerceBlog" element={<EcommerceBlog></EcommerceBlog>}></Route>
-    <Route path="/blogs/internalLinkingBlog" element={<LinkingBlog></LinkingBlog>}></Route>
-    <Route path="/blogs/futureTechBlog" element={<FutureTech></FutureTech>}></Route>
-    <Route path="/blogs/reactBlog" element={<ReactBlog></ReactBlog>}></Route>
-    <Route path="/blogs/laravelBlog" element={<LaravelBlog></LaravelBlog>}></Route>
-    <Route path="/blogs/digitalMarketingBlog" element={<DigitalMarketing></DigitalMarketing>}></Route>
-    <Route path="/blogs/cyberSecurityBlog" element={<CyberSecurity></CyberSecurity>}></Route>
-    <Route path="/blogs/cryptoMarketBlog" element={<CryptoBlog></CryptoBlog>}></Route>
+      <Routes>
 
-    <Route path="/about-us" element={<AboutUs></AboutUs>}></Route>
-    <Route path="/career-with-us" element={<Career></Career>}></Route>
-    <Route path="/traineeForm" element={<TraineeForm></TraineeForm>}></Route>
-    <Route path="/experienceJoineeForm" element={<ExperienceJoineeForm></ExperienceJoineeForm>}></Route>
+        <Route path='/blog' element={<Blogs></Blogs>}></Route>
+        <Route path="/blogs/mobileApplicationBlog" element={<MobileBlog></MobileBlog>}></Route>
+        <Route path="/blogs/seoManagementBlog" element={<SeoManagement></SeoManagement>}></Route>
+        <Route path="/blogs/scratchEcommerceBlog" element={<EcommerceBlog></EcommerceBlog>}></Route>
+        <Route path="/blogs/internalLinkingBlog" element={<LinkingBlog></LinkingBlog>}></Route>
+        <Route path="/blogs/futureTechBlog" element={<FutureTech></FutureTech>}></Route>
+        <Route path="/blogs/reactBlog" element={<ReactBlog></ReactBlog>}></Route>
+        <Route path="/blogs/laravelBlog" element={<LaravelBlog></LaravelBlog>}></Route>
+        <Route path="/blogs/digitalMarketingBlog" element={<DigitalMarketing></DigitalMarketing>}></Route>
+        <Route path="/blogs/cyberSecurityBlog" element={<CyberSecurity></CyberSecurity>}></Route>
+        <Route path="/blogs/cryptoMarketBlog" element={<CryptoBlog></CryptoBlog>}></Route>
 
-    <Route path="/case-study/web/lazy-bazar" element={<Lazy_Bazar></Lazy_Bazar>}></Route>
-    <Route path="/case-study/graphic-design/ur-fine" element={<Ur_Fine></Ur_Fine>}></Route>
-    <Route path="/case-study/graphic-design/make-your-trip" element={<Make_Your_Trip></Make_Your_Trip>}></Route>
-    <Route path="/case-study/graphic-design/team-11" element={<Team_11></Team_11>}></Route>
-    <Route path="/case-study/graphic-design/property-dekho" element={<PropertyDekho_GD></PropertyDekho_GD>}></Route>
-    <Route path="/case-study/graphic-design/GD" element={<Graphic_Design></Graphic_Design>}></Route>
-    <Route path="/case-study/graphic-design/hazel-jewells" element={<HazelJewells_GD></HazelJewells_GD>}></Route>
-    <Route path="/case-study/graphic-design/movikat" element={<MoviKat></MoviKat>}></Route>
+        <Route path="/about-us" element={<AboutUs></AboutUs>}></Route>
+        <Route path="/career-with-us" element={<Career></Career>}></Route>
+        <Route path="/traineeForm" element={<TraineeForm></TraineeForm>}></Route>
+        <Route path="/experienceJoineeForm" element={<ExperienceJoineeForm></ExperienceJoineeForm>}></Route>
 
-   <Route path="/case-study/web/eat-cart" element={<Cart_Eats></Cart_Eats>}></Route>
+        <Route path="/case-study/web/lazy-bazar" element={<Lazy_Bazar></Lazy_Bazar>}></Route>
+        <Route path="/case-study/graphic-design/ur-fine" element={<Ur_Fine></Ur_Fine>}></Route>
+        <Route path="/case-study/graphic-design/make-your-trip" element={<Make_Your_Trip></Make_Your_Trip>}></Route>
+        <Route path="/case-study/graphic-design/team-11" element={<Team_11></Team_11>}></Route>
+        <Route path="/case-study/graphic-design/property-dekho" element={<PropertyDekho_GD></PropertyDekho_GD>}></Route>
+        <Route path="/case-study/graphic-design/GD" element={<Graphic_Design></Graphic_Design>}></Route>
+        <Route path="/case-study/graphic-design/hazel-jewells" element={<HazelJewells_GD></HazelJewells_GD>}></Route>
+        <Route path="/case-study/graphic-design/movikat" element={<MoviKat></MoviKat>}></Route>
 
-   <Route path="/case-study/digital-marketing/DM" element={<Digital_Marketing></Digital_Marketing>}></Route>
-   <Route path="/case-study/digital-marketing/seo" element={<Seo></Seo>}></Route>
-   <Route path="/case-study/digital-marketing/ur-fine" element={<Ur_Fine_DM></Ur_Fine_DM>}></Route>
-   <Route path="/case-study/digital-marketing/calorie-care" element={<CalorieCare_DM></CalorieCare_DM>}></Route>
-   <Route path="/case-study/digital-marketing/oneapp-plus" element={<OneAppPlus_DM></OneAppPlus_DM>}></Route>
-  
-   <Route path="/case-study/app/AD" element={<App_Development></App_Development>}></Route>
-   <Route path="/case-study/app/eat-cart" element={<Cart_Eats_AD></Cart_Eats_AD>}></Route>
-   <Route path="/case-study/app/lazy-bazar" element={<Lazy_Bazar_AD></Lazy_Bazar_AD>}></Route>
-   <Route path="/case-study/app/goto-astro" element={<GoToAstro_AD></GoToAstro_AD>}></Route>
-   <Route path="/case-study/app/flying-volt" element={<FlyingVolt_AD></FlyingVolt_AD>}></Route>
+        <Route path="/case-study/web/eat-cart" element={<Cart_Eats></Cart_Eats>}></Route>
 
-   <Route path="/case-study/web/WD" element={<Web_Development></Web_Development>}></Route>
-   <Route path="/case-study/web/goto-astro" element={<GoToAstro></GoToAstro>}></Route>
-   <Route path="/case-study/web/property-dekho" element={<PropertyDekho></PropertyDekho>}></Route>
-   <Route path="/case-study/web/oneapp-plus" element={<OneAppPlus></OneAppPlus>}></Route>
-   <Route path="/case-study/web/calorie-care" element={<CalorieCare></CalorieCare>}></Route>
-   <Route path="/case-study/web/flying-volt" element={<FlyingVolt></FlyingVolt>}></Route>
-   <Route path="/case-study/web/hazel-jewells" element={<HazelJewells></HazelJewells>}></Route>
-   <Route path="/case-study/CS" element={<Case_Study></Case_Study>}></Route>
+        <Route path="/case-study/digital-marketing/DM" element={<Digital_Marketing></Digital_Marketing>}></Route>
+        <Route path="/case-study/digital-marketing/seo" element={<Seo></Seo>}></Route>
+        <Route path="/case-study/digital-marketing/ur-fine" element={<Ur_Fine_DM></Ur_Fine_DM>}></Route>
+        <Route path="/case-study/digital-marketing/calorie-care" element={<CalorieCare_DM></CalorieCare_DM>}></Route>
+        <Route path="/case-study/digital-marketing/oneapp-plus" element={<OneAppPlus_DM></OneAppPlus_DM>}></Route>
+
+        <Route path="/case-study/app/AD" element={<App_Development></App_Development>}></Route>
+        <Route path="/case-study/app/eat-cart" element={<Cart_Eats_AD></Cart_Eats_AD>}></Route>
+        <Route path="/case-study/app/lazy-bazar" element={<Lazy_Bazar_AD></Lazy_Bazar_AD>}></Route>
+        <Route path="/case-study/app/goto-astro" element={<GoToAstro_AD></GoToAstro_AD>}></Route>
+        <Route path="/case-study/app/flying-volt" element={<FlyingVolt_AD></FlyingVolt_AD>}></Route>
+
+        <Route path="/case-study/web/WD" element={<Web_Development></Web_Development>}></Route>
+        <Route path="/case-study/web/goto-astro" element={<GoToAstro></GoToAstro>}></Route>
+        <Route path="/case-study/web/property-dekho" element={<PropertyDekho></PropertyDekho>}></Route>
+        <Route path="/case-study/web/oneapp-plus" element={<OneAppPlus></OneAppPlus>}></Route>
+        <Route path="/case-study/web/calorie-care" element={<CalorieCare></CalorieCare>}></Route>
+        <Route path="/case-study/web/flying-volt" element={<FlyingVolt></FlyingVolt>}></Route>
+        <Route path="/case-study/web/hazel-jewells" element={<HazelJewells></HazelJewells>}></Route>
+        <Route path="/case-study/CS" element={<Case_Study></Case_Study>}></Route>
 
 
 
         <Route path="/" element={<Home />} />
         {/* <Route path="/about/:id" element={<About/>} /> */}
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/product" element={<Product/>} />
-        <Route path="/service/:id" element={<Service/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/service/:id" element={<Service />} />
         {/* <Route path="/casestudy" element={<CaseStudy/>} /> */}
         {/* <Route path="/blog" element={<Blog />} /> */}
-        <Route path="/web" element={<Web/>} />
-        <Route path="/cloud" element={<Cloud/>} />
-        <Route path="/data" element={<Data/>} />
-        <Route path="/dedicated" element={<Dedicated/>} />
+        <Route path="/web" element={<Web />} />
+        <Route path="/cloud" element={<Cloud />} />
+        <Route path="/data" element={<Data />} />
+        <Route path="/dedicated" element={<Dedicated />} />
         {/* <Route path="/career" element={<Career/>} /> */}
         {/* <Route path="/testimonial" element={<Testimonial/>} /> */}
         {/* <Route path="/traineeform" element={<TraineeForm/>} /> */}
         {/* <Route path="/experienceJoineeForm" element={<ExperienceJoineeForm/>} /> */}
-        <Route path="/design" element={<Design/>} />
-        <Route path="/figma" element={<Figma/>} />
-        <Route path="/commerce" element={<Commerce/>} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/figma" element={<Figma />} />
+        <Route path="/product2" element={<Product2/>} />
         {/* <Route path="/mobileapp" element={<MobileApp/>} /> */}
-        <Route path="/digital2" element={<Digital2/>} />
-        <Route path="/web4" element={<Web4/>} />
+        <Route path="/digital2" element={<Digital2 />} />
+        <Route path="/web4" element={<Web4 />} />
         {/* <Route path="/case-study/CS" element={<Case_Study></Case_Study>}></Route> */}
         {/* <Route path="/case-study/graphic-design/GD" element={<Graphic_Design></Graphic_Design>}></Route> */}
         {/* <Route path="/case-study/digital-marketing/DM" element={<Digital_Marketing></Digital_Marketing>}></Route> */}
         {/* <Route path="/case-study/app/AD" element={<App_Development></App_Development>}></Route> */}
         {/* <Route path="/case-study/web/WD" element={<Web_Development></Web_Development>}></Route> */}
-        <Route path="/ai" element={<AI />} /> /
-        <Route path="/mobile1" element={<Mobile1 />} /> /
-        <Route path="/web1" element={<Web1 />} /> /
-        <Route path="/ux" element={<Ux />} /> /
-        <Route path='/digital' element={<Digitalmarketing/>}/>
+        <Route path="/ai" element={<AI />} /> 
+        <Route path="/mobile1" element={<Mobile1 />} /> 
+        <Route path="/web1" element={<Web1 />} /> 
+        {/*<Route path="/ux" element={<Ux />} />*/} 
+        <Route path='/digital' element={<Digitalmarketing />} />
       </Routes>
-      </>
+    </>
   )
 }
 

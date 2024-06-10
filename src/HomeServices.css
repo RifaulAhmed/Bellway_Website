@@ -1,22 +1,22 @@
-.app-main3 {
+.app-main-home {
     height: 90vh;
     background-color: antiquewhite;
     position: relative; 
-    margin-top: -2rem;
+    margin-top: 5rem;
 }
 
-.clients {
+.services {
     position: absolute;
     transform: rotate(-90deg);
     font-size: 6.5rem;
     color: black;
-    margin-top: 15rem;
+    margin-top: 13rem;
     font-weight: 700;
-    left: 2rem;
+    left: -8rem;
 }
 
 @media (max-width: 768px) {
-    .clients {
+    .services {
         font-size: 5rem;
         margin-top: 8rem;
     }
@@ -24,28 +24,26 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
-.app-main4t {
+.app-main4-home {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 1rem 0;
-    /* position: relative; */
-    /* top: -35rem; */
-    margin-top: -37rem;
 }
 
-.container {
+.container-home {
     display: flex;
     justify-content: end;
     gap: 10px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem;
+    padding: 1rem;
+    margin-top: -32rem;
 }
 
-.container-item {
+.container-item-home {
     flex: 0 0 120px;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
@@ -56,20 +54,23 @@
     height: 400px;
 }
 
-.container-item:nth-of-type(1) {
-    background: url(./assets/Alonso.jpg) no-repeat 50% / cover;
+.container-item-home:nth-of-type(1) {
+    background: url(./assets/ai1.jpeg) no-repeat 50% / cover;
 }
-.container-item:nth-of-type(2) {
-    background: url(./assets/Kimi.jpg) no-repeat 50% / cover;
+.container-item-home:nth-of-type(2) {
+    background: url(./assets/mobileapp1.jpeg) no-repeat 50% / cover;
 }
-.container-item:nth-of-type(3) {
-    background: url(./assets/SEB.jpg) no-repeat 50% / cover;
+.container-item-home:nth-of-type(3) {
+    background: url(./assets/webapp1.jpeg) no-repeat 50% / cover;
 }
-.container-item:nth-of-type(4) {
-    background: url(./assets/Lewis.jpg) no-repeat 50% / cover;
+.container-item-home:nth-of-type(4) {
+    background: url(./assets/ui-ux.gif) no-repeat 50% / cover;
+}
+.container-item-home:nth-of-type(5) {
+    background: url(./assets/marketing.jpeg) no-repeat 50% / cover;
 }
 
-.container-item .content {
+.container-item-home .content {
     font-size: 1.5rem;
     color: #fff;
     display: flex;
@@ -90,19 +91,19 @@
     visibility: hidden;
 }
 
-.container-item:hover {
+.container-item-home:hover {
     flex: 0 0 250px;
     box-shadow: 1px 3px 15px black;
     transform: translateY(-30px);
 }
 
-.container-item:hover .content {
+.container-item-home:hover .content {
     opacity: 1;
     transform: translateY(0%);
     visibility: visible;
 }
 
-.container-item .content span {
+.container-item-home .content span {
     display: block;
     margin-top: 5px;
     font-size: 1.2rem;

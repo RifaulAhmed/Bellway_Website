@@ -1,99 +1,98 @@
 .footer {
-    background-color: black;
-    color: white;
-    padding: 30px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    width: 100vw;
-    /* margin-left: -12px; */
+  background-color: black;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .footer-section {
-    flex: 1 1 200px;
-    margin: 10px;
-    min-width: 60px;
+  flex: 1 1 200px;
+  margin: 10px;
+  min-width: 60px;
 }
 
 .footer-logo {
-    height: auto;
-    width: 100%;
-    max-width: 200px;
+  height: auto;
+  width: 100%;
+  max-width: 200px;
 }
 
 .footer-description {
-    margin: 15px 0;
-    font-size: 14px;
-    line-height: 1.5;
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .social-icons i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .footer-title {
-    font-size: 20px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-link {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .footer-link i {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .social-icons a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: blue;
+  color: blue;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .contact-item i {
-    margin-right: 10px;
-    font-size: 18px;
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 .dmca-rights {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-    .footer {
-        padding: 20px 10px;
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer {
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-section {
-        flex: 1 1 100%;
-        margin: 20px 0;
-        text-align: center;
-    }
+  .footer-section {
+    flex: 1 1 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
 
-    .footer-logo {
-        max-width: 150px;
-        margin-bottom: 20px;
-    }
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;/
+  }
 }

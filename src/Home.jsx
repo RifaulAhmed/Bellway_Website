@@ -44,7 +44,7 @@ import Solutions from './Solutions';
 import './cards.css'
 import HomeSlider from './HomeSlider';
 import WhyBell from './WhyBell';
-// import HomeServices from './HomeServices';
+import HomeServices from './HomeServices';
 const Wrapper = styled.div`
   justify-content: space-around;
   margin: auto;
@@ -184,7 +184,7 @@ const Home = () => {
 
       <WhyBell />
 
-      {/* <HomeServices/> */}
+      <HomeServices/>
 
       <Industries />
 
@@ -195,9 +195,9 @@ const Home = () => {
         </div>
       </div>
 
-      <HomeSlider />
+      <HomeSlider/>
 
-      <Solutions />
+      <Solutions/>
 
       <div className="w-full overflow-hidden">
         <div className="w-full text-center">
@@ -221,11 +221,11 @@ const Home = () => {
         </div>
       </div>
 
-      <br /><br />
+      <br/><br/>
 
-      <Faq />
+      <Faq/>
 
-      <Footer />
+      <Footer/>
 
     </div>
 

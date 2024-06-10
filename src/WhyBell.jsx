@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './WhyBell.css';
 
 const WhyBell = () => {
     const [selectedButton, setSelectedButton] = useState(1);
@@ -8,14 +9,14 @@ const WhyBell = () => {
     };
 
     return (
-        <div className="flex h-screen ml-16">
+        <div className="flex h-full ml-16 mt-5">
             <div className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                     <div className="flex flex-col items-center justify-center">
                         <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center md:text-3xl lg:text-4xl xl:text-5xl">
                             Why should you hire Bellway Infotech?
                         </h1>
-                        <div className="flex space-x-2 mb-4 flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
+                        <div className="button-group flex space-x-2 mb-4 flex-wrap">
                             <button
                                 onClick={() => buttonClickHandler(1)}
                                 className={`bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-1 rounded focus:outline-none focus:shadow-outline ${selectedButton === 1 && 'bg-black'}`}
@@ -47,7 +48,7 @@ const WhyBell = () => {
                             )}
                         </div>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="image-container flex justify-center">
                         <img
                             src="https://images.unsplash.com/photo-1610097453820-0c3c8aac0202?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             className="w-3/4 rounded-lg"

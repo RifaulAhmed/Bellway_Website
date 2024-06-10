@@ -48,7 +48,7 @@ function Header() {
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 text-center md:text-left">
                         <header className="mt-2 ml-8">
-                            <h1 className="text-4xl md:text-5xl font-bold mt-2 bg-gradient-to-r from-red-600 to-white bg-clip-text text-transparent animate-redFlow text-left">
+                            <h1 className="text-4xl md:text-5xl font-bold mt-5 bg-gradient-to-r from-red-600 to-white bg-clip-text text-transparent animate-redFlow text-left">
                                 Custom App <br />
                                 Development <br />Company
                             </h1>
@@ -62,7 +62,7 @@ function Header() {
                             </div>
                         </header>
                     </div>
-                    <div className="md:w-1/2 text-center mt-1 md:mt-0">
+                    <div className="md:w-1/2 text-center mt-5 md:mt-0">
                         <video
                             autoPlay
                             loop
