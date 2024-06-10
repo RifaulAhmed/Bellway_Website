@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CNavbar from '../../CNavbar';
+import Footer from '../../Footer';
 
 
 const Card = ({ image, title, link }) => (
@@ -23,19 +24,7 @@ const CS = () => {
   return (
     <>
     <CNavbar/>
- {/* <div class="containerx mx-auto  bg-black p-8">
-  <div class="flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
-      <h1 class="sm:text-8xl font-bold mb-4 text-white">Case Study...</h1>
-      <h3 class="sm:text-2xl text-white">
-        <Link to="/" class="text-red-600 hover:underline">Home</Link> / Case-Study 
-      </h3>
-    </div>
-    <div class="md:w-1/2 text-right">
-      <img src="https://plus.unsplash.com/premium_photo-1661396926941-b7bb38f76313?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhc2UlMjBzdHVkeXxlbnwwfHwwfHx8MA%3D%3D" alt="Web Image" class="w-full h-auto"/>
-    </div>
-  </div>
-</div> */}
+<div className="mgbg">
 
 
 <div class=" mx-auto  bg-black p-8 mt-20">
@@ -74,7 +63,8 @@ const CS = () => {
         title="App Development"
         link="/case-study/app/AD"
       />
-    
+    </div>
+    <Footer/>
     </div>
     </>
   )

@@ -2,6 +2,7 @@ import React from 'react'
 import './Blogs.css'
 import { Link } from 'react-router-dom'
 import CNavbar from '../../CNavbar';
+import Footer from '../../Footer';
 
 
 const blogs = [
@@ -15,7 +16,7 @@ const blogs = [
   {
     id: 2,
     title: 'Use Of React',
-    description: 'Best practices for creating user-friendly mobile app interfaces.And Make the experiences beautiful using React.',
+    description: 'Best practices for creating user-friendly mobile app. And Make the experiences beautiful using React.',
     imageUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
     pageUrl:'/blogs/reactBlog'
   },
@@ -143,6 +144,7 @@ Driven by a genuine passion for innovation and a profound understanding of marke
         ))}
       </div>
     </div>
+    <Footer/>
     </div>
     </>
   )

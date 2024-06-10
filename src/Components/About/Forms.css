@@ -1,6 +1,6 @@
 .form-container {
   max-width: 650px;
-  /* margin: 0 auto; */
+
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.3);
@@ -9,8 +9,8 @@
   -webkit-backdrop-filter: blur(20px); 
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
-  /* margin:30% 30% 30% 30%;  */
-   /* margin-bottom: 65px; */
+
+  
   margin-left: 2rem;
 
 }
@@ -32,6 +32,8 @@ h2 {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: black;
+  margin-left: 4rem;
 }
 
 .form-group input,
@@ -48,8 +50,10 @@ h2 {
 }
 
 .buttonS {
-  display: block;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   padding: 10px;
   background-color:#ccc;
   color:black;
@@ -57,6 +61,14 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
+  /* margin-left: 10%; */
+  border-radius: 20px;
+}
+.cx{
+
+  display: flex;
+  justify-content: center;
+  /* margin-top: -17px; */
 }
 
 .buttonS:hover {
@@ -69,6 +81,7 @@ label{
   margin-top: 20px;
   text-align: left;
   margin-left: 57px;
+
 }
 
 .head{
@@ -76,8 +89,8 @@ label{
 }
 
 select{
-  height: 4rem;
-  width: 30rem;
+  height: 3rem;
+  width:18rem;
 }
 .bg{
   background-image: url('https://images.unsplash.com/photo-1713947504519-755547cf930e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');

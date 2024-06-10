@@ -12,6 +12,7 @@ import Img3 from '../../assets/img3.jpg'
 import Img16 from '../../assets/img16.png'
 import Img18 from '../../assets/img18.png'
 import Img13 from '../../assets/img13.jpg'
+import Img99 from '../../assets/mst.png'
 
 
 import Img31 from '../../assets/img31.png'
@@ -48,43 +49,59 @@ import image22 from '../../assets/image22.png'
 
 
 import Slider2 from 'react-slick';
-import Client1 from '../../assets/face1.jpeg'
-import Client2 from '../../assets/face2.jpeg';
-import Client3 from '../../assets/face3.jpeg';
-import Client4 from '../../assets/face4.jpeg';
+import Client1 from '../../assets/ClientTest1.jpg'
+import Client2 from '../../assets/ClientTest2.jpg';
+import Client3 from '../../assets/ClientTest3.jpg';
+import Client4 from '../../assets/ClientTest4.jpg';
+import Client5 from '../../assets/ClientTest5.png';
+import Client6 from '../../assets/ClientTest6.png';
 
 
 const AboutUs = () => {
   const boxes = [
     {
       id: 1,
-      text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
+      text: 'The team did the required enhancement on the site with excellent communication skills. He is very proactive and technically!',
       image: Client1,
-      name: 'Ana Perez',
-      position: 'CEO, ITgers',
+      name: 'Radomi',
+      position: 'Founder, POPOPDEAL',
     },
     {
       id: 2,
-      text: '"Highly recommend tapping into their unparalleled expertise and innovative solutions for any business striving to excel and thrive in today\'s fiercely competitive landscape."',
+      text: 'We wanted a top-quality comparison website on which you could compare to the market Unified Infotech you gave us exactly.',
       image: Client2,
-      name: 'Nick Divris',
-      position: 'CTO, Coursera',
+      name: 'Gregory Doe',
+      position: 'Founder',
     },
     {
       id: 3,
-      text: '"Their commitment to delivering outstanding service alongside groundbreaking and forward-looking solutions has been pivotal for our continued and remarkable success."',
+      text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!',
       image: Client3,
-      name: 'Yuki ',
-      position: 'Manager, Alpine',
+      name: 'Kendra',
+      position: 'Founder, The KB Hair',
     },
     {
       id: 4,
-      text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
+      text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!',
       image: Client4,
-      name: 'Zehan Darula',
-      position: 'Designer, E-papcups',
+      name: 'Karen Agresti',
+      position: 'Founder',
+    },
+    {
+      id: 5,
+      text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!',
+      image: Client5,
+      name: 'Manish Nair',
+      position: 'CEO',
+    },
+    {
+      id: 6,
+      text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!',
+      image: Client6,
+      name: 'Gnana Prakash',
+      position: 'Founder',
     }
-  ];;
+  ];
 const settings = {
     dots: true,
     infinite: true,
@@ -118,9 +135,7 @@ const settings = {
 
   return (
     <>
- {/* <div className="sticky-nav">
-        <Navbar />
-      </div> */}
+
       <CNavbar/>
       <div className='mybg'>
 <div class="containerx mx-auto  bg-black p-8 mt-20">
@@ -175,7 +190,7 @@ const settings = {
       </div>
       <div class="md:w-1/2 md:pl-8">
         <h3 class="text-3xl font-bold  hover:text-red-600 text-center">Who We Are?</h3>
-        <p class="text-xl mb-4 mt-8">Bellway Infotech is a top-rated website and mobile app (Android/iOS) marketing firm with over 500 projects completed.
+        <p class="text-xl mb-4 mt-8">Bellway Infotech is a top-rated website and mobile app (Android/iOS) marketing firm with over 200+ projects completed.
         <br/><br/>
         The application development team gained excellent practical experience as well as in-depth technical skills in order to create business-centric B2B and B2C mobile apps that help businesses stay ahead of the competition.
         <br/><br/>
@@ -231,24 +246,7 @@ const settings = {
     <div class="carousel__face  mx-auto"><span className='spanOffer'>INTERNSHIPS</span></div>
   </div>
 </div>
-</div> */}
-
-<div className="flex items-center justify-center mybg mb-8 ">
-      <div className="mybg p-6 rounded-lg shadow-md text-center maxW sm:mx-auto ">
-        <h1 className="sm:text-4xl font-bold mb-4 text-black mx-8 ">"We have Global Network of Clients"</h1>
-        <p className="sm:text-lg mb-4 text-center mt-9 ">At our company, we pride ourselves on our expansive and diverse global network of clients. Spanning continents and cultures, our partnerships reach far and wide, embodying a rich tapestry of innovation, collaboration, and mutual growth. We have built strong, lasting relationships with clients from various industries, each contributing to our dynamic and ever-evolving ecosystem. Our commitment to excellence and our ability to deliver tailored solutions has earned us the trust and loyalty of businesses around the world. By leveraging our extensive network, we are able to stay ahead of market trends, foster cross-border collaborations, and provide unparalleled value to our clients. Join us, and become part of a thriving global community that is shaping the future of business.</p>
-        <div className="button-wrapper-2 mt-20">
-            <Link to="/">
-              <button className="hover-button-bellway">Learn More</button>
-              {/* <button className="bg-black border border-red-500 text-white px-7 py-3">Learn More</button> */}
-              </Link>
-            </div>
-      </div>
-    </div>
-
-
-
-    <div class="container8" style={{marginTop:"120px"}}>
+</div> */}<div class="container8" style={{marginTop:"'70px"}}>
     <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4 text-black">We Have Worked For</h1>
         <p className="text-2xl mt-9">
@@ -296,7 +294,7 @@ const settings = {
     {/* Images and Names in the Same Line */}
     <div className="flex justify-center w-full mb-8 ">
       <div className="flex flex-col items-center">
-        <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGh1bWFufGVufDB8fDB8fHww" alt="Founder Image" className="rounded-full w-32 h-32 mb-2" />
+        <img src={Img99} alt="Founder Image" className="rounded-full w-32 h-32 mb-2" />
         <p className="text-lg">Mohit Shrivastava, CEO</p>
       </div>
       <div className="flex flex-col items-center px-8">
@@ -340,9 +338,7 @@ const settings = {
             
             
         >
-            <Slider.Slide>
-                <img src={Img31} alt="any" className='w-auto' />
-            </Slider.Slide>
+          
             <Slider.Slide>
                 <img src={Img33} alt="any2" className='w-auto' />
             </Slider.Slide>
@@ -419,11 +415,10 @@ const settings = {
                   <div className="client-image mb-4">
                     <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
                   </div>
-                  <div className="text-gray-700 text-lg mb-4">{box.text}</div>
-                  <div className="absolute bottom-2 left-2 text-left">
-                    <p className="text-gray-800 font-bold mb-1">{box.name}</p>
-                    <p className="text-gray-600 text-sm">{box.position}</p>
-                  </div>
+                  <div className="text-gray-700 text-lg font-bold mb-1">{box.name}</div>
+                  <div className="text-gray-600 text-sm">{box.position}</div>
+                  <br/>
+                  <div className="text-gray-700 text-lg">{box.text}</div>
                 </div>
               </div>
             ))}
@@ -432,11 +427,9 @@ const settings = {
       </div>
 
 
-
-        </div>
-
-
+<br/><br/>
       <Footer/>
+      </div>
     </>
   )
 }

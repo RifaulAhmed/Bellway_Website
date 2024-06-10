@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CNavbar from '../../../CNavbar';
+import Footer from '../../../Footer';
 
 
 
@@ -24,6 +25,7 @@ const DM = () => {
   return (
     <>
     <CNavbar/>
+    <div className="mybg">
      <div class="containerx mx-auto  bg-black p-8 mt-20">
   <div class="flex flex-col md:flex-row items-center">
     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-8">
@@ -65,7 +67,9 @@ const DM = () => {
         />
       </div>
     </div>
-
+<br/>
+<Footer/>
+</div>
     
     </>
   )

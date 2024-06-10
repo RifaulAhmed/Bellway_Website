@@ -2,6 +2,7 @@ import React from 'react'
 import './Blogs.css'
 import { Link } from 'react-router-dom'
 import CNavbar from '../../CNavbar';
+import Footer from '../../Footer';
 
 
 
@@ -150,6 +151,7 @@ Driven by a genuine love for problem-solving and a relentless pursuit of excelle
         ))}
       </div>
     </div>
+    <Footer/>
     </div>
  </>
   )

@@ -1,6 +1,8 @@
 import React from 'react'
 import './Forms.css'
 import { useState } from 'react';
+import CNavbar from '../../CNavbar';
+import Footer from '../../Footer';
 
 
 
@@ -29,9 +31,9 @@ const TraineeForm = () => {
   };
 
   return (
-
-    
-  <div className="bg">
+    <>
+    <CNavbar/>
+  <div className="bg mt-20">
     <div className="form">
     <div className="form-container">
       <h2 className='head'>Apply as a Intern</h2>
@@ -95,14 +97,16 @@ const TraineeForm = () => {
             required
           ></textarea>
         </div>
-
-        
-        <button className='buttonS' type="submit">Submit Application</button>
+<br/>
+        <div className="cx">
+        <button className='buttonS' type="submit">Submit Application</button></div>
         
       </form>
       </div>
    </div>
    </div>
+   <Footer/>
+   </>
   );
 }
 

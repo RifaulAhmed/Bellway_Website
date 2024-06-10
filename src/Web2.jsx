@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState,useEffect } from 'react'
-import Slider from 'react-slick';
-import CNavbar from './CNavbar'
-import PopupForm from './PopupForm';
+
 import image9 from './assets/image9.png'
 import image10 from './assets/image10.png'
 import image11 from './assets/image11.png'
@@ -20,62 +18,68 @@ import image21 from './assets/image22.png'
 import image22 from './assets/image23.png'
 import image23 from './assets/image24.png'
 import image24 from './assets/image25.png'
-import Solutions from './Solutions';
+
+import PopupForm from './PopupForm';
+
+import CNavbar from './CNavbar'
+import './Form2.css'
+import image4 from './assets/image6.png'
 
 import Footer from './Footer'
+import FaqPage1 from './FaqPage1';
+
+import Slider from 'react-slick';
 import Client1 from './assets/ClientTest1.jpg'
 import Client2 from './assets/ClientTest2.jpg';
 import Client3 from './assets/ClientTest3.jpg';
 import Client4 from './assets/ClientTest4.jpg';
 import Client5 from './assets/ClientTest5.png';
 import Client6 from './assets/ClientTest6.png';
-import Faqpagem from './Faqpagem';
-const Mobile1 = () => {
-    const boxes = [
-        {
-          id: 1,
-          text: 'The team did the required enhancement on the site with excellent communication skills. He is very proactive and technically!',
-          image: Client1,
-          name: 'Radomi',
-          position: 'Founder, POPOPDEAL',
-        },
-        {
-          id: 2,
-          text: 'We wanted a top-quality comparison website on which you could compare to the market Unified Infotech you gave us exactly.',
-          image: Client2,
-          name: 'Gregory Doe',
-          position: 'Founder',
-        },
-        {
-          id: 3,
-          text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!',
-          image: Client3,
-          name: 'Kendra',
-          position: 'Founder, The KB Hair',
-        },
-        {
-          id: 4,
-          text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!',
-          image: Client4,
-          name: 'Karen Agresti',
-          position: 'Founder',
-        },
-        {
-          id: 5,
-          text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!',
-          image: Client5,
-          name: 'Manish Nair',
-          position: 'CEO',
-        },
-        {
-          id: 6,
-          text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!',
-          image: Client6,
-          name: 'Gnana Prakash',
-          position: 'Founder',
-        }
-      ];
-    
+const Web2 = () => {
+  const boxes = [
+    {
+      id: 1,
+      text: 'The team did the required enhancement on the site with excellent communication skills. He is very proactive and technically!',
+      image: Client1,
+      name: 'Radomi',
+      position: 'Founder, POPOPDEAL',
+    },
+    {
+      id: 2,
+      text: 'We wanted a top-quality comparison website on which you could compare to the market Unified Infotech you gave us exactly.',
+      image: Client2,
+      name: 'Gregory Doe',
+      position: 'Founder',
+    },
+    {
+      id: 3,
+      text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!',
+      image: Client3,
+      name: 'Kendra',
+      position: 'Founder, The KB Hair',
+    },
+    {
+      id: 4,
+      text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!',
+      image: Client4,
+      name: 'Karen Agresti',
+      position: 'Founder',
+    },
+    {
+      id: 5,
+      text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!',
+      image: Client5,
+      name: 'Manish Nair',
+      position: 'CEO',
+    },
+    {
+      id: 6,
+      text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!',
+      image: Client6,
+      name: 'Gnana Prakash',
+      position: 'Founder',
+    }
+  ];
     const settings = {
         dots: true,
         infinite: true,
@@ -110,40 +114,16 @@ const Mobile1 = () => {
   }
 
     const cardsData = [
-        { title: "Flutter App Development", description: "Flutter development involves using the Flutter framework, created by Google, to build cross-platform mobile applications with a single codebase. It enables developers to create high-performance apps with a rich set of customizable widgets and a reactive UI framework."},
-        { title: "React Native App Development", description: "React Native app development involves utilizing the React Native framework, developed by Facebook, to build cross-platform mobile applications using JavaScript and React. It enables developers to create native-like experiences for both iOS and Android platforms with a single codebase." },
-        { title: "iOS App Development", description: "iOS app development involves using Apple's Swift or Objective-C programming languages and the Xcode IDE to create native applications exclusively for Apple's iOS devices, such as iPhones and iPads. Developers leverage Apple's frameworks and design guidelines to craft user-friendly and high-performance apps tailored for the iOS ecosystem." },
-        { title: "Android App Development", description: "Android app development involves using Java or Kotlin programming languages and the Android Studio IDE to create native applications for Android devices, catering to a wide range of screen sizes and hardware specifications. Developers leverage Android's robust SDK, libraries, and Material Design guidelines to build engaging and versatile apps for the Android platform." },
-        { title: "Cross Plateform App Development", description: "Cross-platform app development involves using frameworks like React Native, Flutter, or Xamarin to build applications that can run on multiple platforms, such as iOS, Android, and sometimes even web, using a single codebase. It enables developers to reach a broader audience efficiently while minimizing development time and costs. " },
-       
+        { title: "React Web Development", description: "React web development involves creating dynamic, efficient, and scalable user interfaces using React, a popular JavaScript library developed by Facebook. It allows developers to build reusable UI components and manage application state effectively, enhancing the overall user experience and performance."},
+        { title: "Laravel Web Development", description: "Laravel web development focuses on building robust, secure, and scalable web applications using the Laravel framework, a popular PHP-based framework. It offers an elegant syntax and a range of built-in tools for tasks such as routing, authentication, and database management, streamlining the development process." },
+        { title: "MERN Stack Development", description: "MERN stack web development utilizes MongoDB, Express.js, React, and Node.js to build full-stack JavaScript applications. This stack enables developers to create efficient, scalable, and dynamic web applications, allowing seamless front-end and back-end integration." },
+        { title: "Content Management System", description: "A Content Management System (CMS) is a software application that enables users to create, manage, and publish digital content on the web without requiring extensive technical knowledge. It streamlines content creation and modification processes, allowing for easy collaboration, version control, and website maintenance." },
+        { title: "Ecommerce Development", description: " Ecommerce web development involves creating online platforms that facilitate buying and selling goods or services over the internet, integrating features such as shopping carts, payment gateways, and inventory management systems. It aims to provide seamless user experiences, robust security measures, and scalable infrastructure to support businesses in conducting transactions online." },
+       {title:"Magento Web Development",description:"Magento web development involves building powerful, customizable, and scalable ecommerce websites using the Magento platform, known for its extensive feature set and flexibility. It empowers businesses to create unique online stores with advanced functionalities, such as product management, order processing, and customer engagement tools."}
       ];
 
-      const testimonials = [
-        {
-          id: 1,
-          image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/gnana-prakash1693908767.png',
-          name: 'Rifaul',
-          text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!'
-        },
-        {
-          id: 2,
-          image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/karen-agresti1694611721.jpg',
-          name: 'Yachna',
-          text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!.'
-        },
-        {
-          id: 3,
-          image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/karen-agresti1694611721.jpg',
-          name: 'Sakshi',
-          text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!.'
-        },
-        {
-          id: 4,
-          image: 'https://bellwayinfotech.com/assets/uploads/media-uploader/gnana-prakash1693908767.png',
-          name: 'Kuldeep',
-          text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!.'
-        }
-      ];
+     
+
 
       const technologies = [
         { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1',title:'Laravel' }, // Replace with actual URLs
@@ -155,7 +135,7 @@ const Mobile1 = () => {
         { id: 7, image: 'https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-5d0f0aa79779a6.6143656815612668556205.jpg', name: 'Tech 7',title:'Laravel'  },
         { id: 8, image: 'https://i.pinimg.com/736x/7f/63/64/7f63644d631600cb5c3fcec87332a5a4.jpg', name: 'Tech 8' ,title:'Laravel' }
       ];
-      
+    
       const images = [
         image9,
         image10,
@@ -179,25 +159,24 @@ image22,
       ];
     
     
+  
+  
   return (
     <>
     <CNavbar/>
     <div class="containerx mx-auto  bg-black p-8">
-  <div class="flex flex-col md:flex-row items-center mt-28">
+  <div class="flex flex-col md:flex-row items-center mt-28 ">
     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
-      <h1 class="sm:text-6xl font-bold mb-4 text-white">Mobile Application Development...</h1>
+      <h1 class="sm:text-7xl font-bold mb-4 text-white">Web Application Development...</h1>
       <h3 class="sm:text-2xl text-white">
-        <Link to="/" class="text-red-600 hover:underline">Home</Link> /Mobile Application Development 
+        <Link to="/" class="text-red-600 hover:underline">Home</Link> /Web Application Development 
       </h3>
     </div>
     <div class="md:w-1/2 h-full mb-9 text-right">
-      <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5kcm9pZHxlbnwwfHwwfHx8MA%3D%3D" alt="About Image" class="w-full h-auto"/>
+      <img src={image4} alt="About Image" class="w-full h-auto"/>
     </div>
   </div>
 </div>
-
-
-
 
 <div className="main-page">
       <button className="contact-button" onClick={togglePopup}>Contact <i class="fa-solid fa-phone-volume"></i></button>
@@ -206,9 +185,30 @@ image22,
 
 
 
+
+
+
+
+
+
+
     
+      
+
+
+    
+
+
+
+
+
+
+
+
+
+
   <div className='se'>
-  <h1 className='tag4' >Mobile App Development Services</h1>
+  <h1 className='tag4' >Web App Development Services</h1>
   </div>
  
     <div className="container899">
@@ -219,7 +219,12 @@ image22,
         </div>
       ))}
     </div>
+{/* <div className='se'>
+<h1 className='tag' >Our Technologies</h1>
+</div> */}
 
+
+    
 <div className="min-h-screen flex flex-col items-center justify-center  p-8 ">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4 text-black">Our Technologies</h1>
@@ -247,8 +252,10 @@ image22,
     </div>
 
 
-  
 
+
+  
+    
 
 
 
@@ -256,7 +263,7 @@ image22,
 <h1 className='tag' >We Have Worked For</h1>
 </div>
 
-<div class="container8" style={{marginTop:"60px"}}>
+    <div class="container8" style={{marginTop:"60px"}}>
     
     <div class="card"><img src={image9} alt="Image 1"/></div>
     <div class="card"><img src={image10} alt="Image 2"/></div>
@@ -273,11 +280,6 @@ image22,
     <div class="card"><img src={image21} alt="Image 8"/></div>
     <div class="card"><img src={image22} alt="Image 8"/></div>
 </div>
-
-
-
-
-
 
     
     
@@ -306,11 +308,13 @@ image22,
 
 
 
-    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
+    
+
+<div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
       <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap">
 
         <div className="w-full md:w-1/2 p-4">
-          <h2 className="text-3xl font-bold mb-4">Trusted Web & Mobile App Development Company</h2>
+          <h2 className="text-3xl font-bold mb-4">Trusted Web &  App Development Company</h2>
           <p className="mt-10">If you have any questions, feel free to reach out. We are here to help you with any queries you may have.</p>
           <div className="mt-6">
               <h3 className="text-xl font-semibold">Our Office</h3>
@@ -323,6 +327,12 @@ image22,
               <p>Phone: +91-9981866409</p>
             </div>
           </div>
+
+
+
+
+
+        
         
         <div className="w-full md:w-1/2 p-4">
           <h2 className="text-2xl font-bold mb-4">Enquiry Form</h2>
@@ -356,14 +366,19 @@ image22,
               <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
               <textarea className="w-full px-3 py-2 border rounded" id="message" name="message" rows="4" required></textarea>
             </div>
-            <button className="w-full bg-black text-white py-2 rounded ">Submit</button>
+            <button className="w-full bg-black text-white py-2 rounded">Submit</button>
           </form>
         </div>
       </div>
     </div>
       
+
+
+
+
+
 <div style={{marginTop:"-10px"}}>
-<Faqpagem/>
+<FaqPage1/>
 </div>
 
 <Footer/>
@@ -371,4 +386,5 @@ image22,
   )
 }
 
-export default Mobile1
+export default Web2
+ 
