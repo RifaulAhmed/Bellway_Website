@@ -12,10 +12,12 @@ import Footer from './Footer';
 
 
 import Slider2 from 'react-slick';
-import Client1 from './assets/face1.jpeg'
-import Client2 from './assets/face2.jpeg';
-import Client3 from './assets/face3.jpeg';
-import Client4 from './assets/face4.jpeg';
+import Client1 from './assets/ClientTest1.jpg'
+import Client2 from './assets/ClientTest2.jpg';
+import Client3 from './assets/ClientTest3.jpg';
+import Client4 from './assets/ClientTest4.jpg';
+import Client5 from './assets/ClientTest5.png';
+import Client6 from './assets/ClientTest6.png';
 
 
 const AI = () => {
@@ -27,36 +29,7 @@ const AI = () => {
 
 
 
-  const boxes = [
-    {
-      id: 1,
-      text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
-      image: Client1,
-      name: 'Ana Perez',
-      position: 'CEO, ITgers',
-    },
-    {
-      id: 2,
-      text: '"Highly recommend tapping into their unparalleled expertise and innovative solutions for any business striving to excel and thrive in today\'s fiercely competitive landscape."',
-      image: Client2,
-      name: 'Nick Divris',
-      position: 'CTO, Coursera',
-    },
-    {
-      id: 3,
-      text: '"Their commitment to delivering outstanding service alongside groundbreaking and forward-looking solutions has been pivotal for our continued and remarkable success."',
-      image: Client3,
-      name: 'Yuki ',
-      position: 'Manager, Alpine',
-    },
-    {
-      id: 4,
-      text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
-      image: Client4,
-      name: 'Zehan Darula',
-      position: 'Designer, E-papcups',
-    }
-  ];;
+
 const settings = {
     dots: true,
     infinite: true,
@@ -85,7 +58,50 @@ const settings = {
     ]
   };
 
-
+  const boxes = [
+    {
+      id: 1,
+      text: 'The team did the required enhancement on the site with excellent communication skills. He is very proactive and technically!',
+      image: Client1,
+      name: 'Radomi',
+      position: 'Founder, POPOPDEAL',
+    },
+    {
+      id: 2,
+      text: 'We wanted a top-quality comparison website on which you could compare to the market Unified Infotech you gave us exactly.',
+      image: Client2,
+      name: 'Gregory Doe',
+      position: 'Founder',
+    },
+    {
+      id: 3,
+      text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!',
+      image: Client3,
+      name: 'Kendra',
+      position: 'Founder, The KB Hair',
+    },
+    {
+      id: 4,
+      text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!',
+      image: Client4,
+      name: 'Karen Agresti',
+      position: 'Founder',
+    },
+    {
+      id: 5,
+      text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!',
+      image: Client5,
+      name: 'Manish Nair',
+      position: 'CEO',
+    },
+    {
+      id: 6,
+      text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!',
+      image: Client6,
+      name: 'Gnana Prakash',
+      position: 'Founder',
+    }
+  ];
 
 
 
@@ -284,7 +300,9 @@ const settings = {
       <br /><br />
 
 
-      <div className="w-full overflow-hidden mt-20">
+         
+    
+<div className="w-full overflow-hidden mt-20">
         <div className="w-full text-center">
           <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
         </div>
@@ -296,17 +314,17 @@ const settings = {
                   <div className="client-image mb-4">
                     <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
                   </div>
-                  <div className="text-gray-700 text-lg mb-4">{box.text}</div>
-                  <div className="absolute bottom-2 left-2 text-left">
-                    <p className="text-gray-800 font-bold mb-1">{box.name}</p>
-                    <p className="text-gray-600 text-sm">{box.position}</p>
-                  </div>
+                  <div className="text-gray-700 text-lg font-bold mb-1">{box.name}</div>
+                  <div className="text-gray-600 text-sm">{box.position}</div>
+                  <br/>
+                  <div className="text-gray-700 text-lg">{box.text}</div>
                 </div>
               </div>
             ))}
           </Slider2>
         </div>
       </div>
+
 
       <FaqPage />
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './Blogs.css'
 import { Link } from 'react-router-dom'
 import CNavbar from '../../CNavbar';
+import Footer from '../../Footer';
 
 
 const blogs = [
@@ -142,6 +143,7 @@ Driven by a deep-seated desire to make a meaningful impact, I leverage my expert
         ))}
       </div>
     </div>
+    <Footer/>
     </div>
     </>
   )

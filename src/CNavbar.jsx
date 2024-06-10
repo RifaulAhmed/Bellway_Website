@@ -5,10 +5,23 @@ import './Navbar.css';
 
 const serviceDropdown = [
   { id: 1, title: "AI", path: "/ai", cName: "submenu-item" },
+<<<<<<< HEAD
+  { id: 2, title: "Mobile Application Development", path: "/mobile", cName: "submenu-item" },
+  { id: 1, title: "Web Application Development", path: "/web2", cName: "submenu-item" },
+  { id: 3, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
+  { id: 4, title: "Digital Marketing", path: "/marketing", cName: "submenu-item" },
+=======
   { id: 2, title: "Mobile Application Development", path: "/mobile1", cName: "submenu-item" },
+<<<<<<< HEAD
   { id: 3, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
   { id: 4, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
   { id: 5, title: "Digital Marketing", path: "/digital", cName: "submenu-item" },
+=======
+  { id: 1, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
+  { id: 3, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
+  { id: 4, title: "Digital Marketing", path: "/digital", cName: "submenu-item" },
+>>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
+>>>>>>> 740ee1dc875fa2d9b06e3bb92d888433ef54fb15
 ];
 
 const productDropdown = [

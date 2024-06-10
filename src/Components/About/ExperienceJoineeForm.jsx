@@ -1,6 +1,8 @@
 import React from 'react'
 import './Forms.css'
 import { useState } from 'react';
+import CNavbar from '../../CNavbar';
+import Footer from '../../Footer';
 
 const ExperienceJoineeForm = () => {
   const [formData, setFormData] = useState({
@@ -31,10 +33,13 @@ const ExperienceJoineeForm = () => {
   };
 
   return (
-    <div className="bg">
+    <>
+    <CNavbar/>
+       <div className="bg mt-20">
+   
       <div className="form">
     <div className="form-container">
-      <h2 className='head'>Join Us with Your Experience</h2>
+      <h2 className='head'>Join with your Experience</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Full Name</label>
@@ -53,7 +58,7 @@ const ExperienceJoineeForm = () => {
           <input
             type="email"
             id="email"
-            name="email"
+            name="email"Join Us with Your Experience
             value={formData.email}
             onChange={handleChange}
             required
@@ -130,10 +135,10 @@ const ExperienceJoineeForm = () => {
             onChange={handleChange}
             required
           />
-        </div>
+        </div><br/>
 
         <div className="form-group">
-          <label htmlFor="role">Preferred Role</label>
+          {/* <label htmlFor="role">Preferred Role</label> */}
           <select
             id="role"
             name="role"
@@ -146,17 +151,24 @@ const ExperienceJoineeForm = () => {
             <option value="laravel">Laravel Developer</option>
             <option value="node">Node.js Developer</option>
           </select>
-        </div>
+        </div><br/>
 
-        <button className='buttonS' type="submit">Submit Application</button>
+       <div className='cx'>
+       <button className='buttonS' type="submit">Submit Application</button>
+        </div> 
       </form>
     </div>
     </div>
+
     </div>
+    <Footer/>
+    </>
   );
 }
 
 export default ExperienceJoineeForm
+
+
 
 
 

@@ -86,12 +86,28 @@ import Web4 from './Web4'
 // import Graphic_Design from './Components/CaseStudy/Graphic Design/GD'
 // import App_Development from './Components/CaseStudy/App Development/AD'
 // import Web_Development from './Components/CaseStudy/Web Development/WD'
+<<<<<<< HEAD
 import AI from './AI';
+=======
+import AI from './AI'; 
+<<<<<<< HEAD
+
+import Web2 from './Web2';
+import Mob from './Mobile1'
+import Ux from './Ux';
+import Digitalmarketing1 from './Digitalmarketing1';
+=======
+>>>>>>> 740ee1dc875fa2d9b06e3bb92d888433ef54fb15
 import Mobile1 from './Mobile1';
 import Web1 from './Web1';
 // import Ux from '/Ux';
 import Digitalmarketing from './Digitalmarketing';
+<<<<<<< HEAD
 // import Product2 from './Product2';
+=======
+=======
+>>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
+>>>>>>> 740ee1dc875fa2d9b06e3bb92d888433ef54fb15
 
 
 function App() {
@@ -179,11 +195,26 @@ function App() {
         {/* <Route path="/case-study/digital-marketing/DM" element={<Digital_Marketing></Digital_Marketing>}></Route> */}
         {/* <Route path="/case-study/app/AD" element={<App_Development></App_Development>}></Route> */}
         {/* <Route path="/case-study/web/WD" element={<Web_Development></Web_Development>}></Route> */}
+<<<<<<< HEAD
         <Route path="/ai" element={<AI />} /> 
         <Route path="/mobile1" element={<Mobile1 />} /> 
         <Route path="/web1" element={<Web1 />} /> 
         {/*<Route path="/ux" element={<Ux />} />*/} 
         <Route path='/digital' element={<Digitalmarketing />} />
+=======
+        <Route path="/ai" element={<AI />} /> /
+<<<<<<< HEAD
+        <Route path="/mobile" element={<Mob />} /> /
+        <Route path="/web2" element={<Web2 />} /> /
+        <Route path="/ux" element={<Ux />} /> /
+        <Route path="/marketing" element={<Digitalmarketing1 />} /> /
+=======
+        <Route path="/mobile1" element={<Mobile1 />} /> /
+        <Route path="/web1" element={<Web1 />} /> /
+        <Route path="/ux" element={<Ux />} /> /
+        <Route path='/digital' element={<Digitalmarketing/>}/>
+>>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
+>>>>>>> 740ee1dc875fa2d9b06e3bb92d888433ef54fb15
       </Routes>
     </>
   )
