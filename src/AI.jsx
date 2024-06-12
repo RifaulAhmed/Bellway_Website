@@ -3,21 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CNavbar from './CNavbar';
 import './ai.css'
-import FaqPage from './AIFaq';
 import PopupForm from './PopupForm';
-
 
 import Footer from './Footer';
 
+import Solutions from './Solutions';
 
+import HomeTestimonials from './HomeTestimonials';
 
-import Slider2 from 'react-slick';
-import Client1 from './assets/ClientTest1.jpg'
-import Client2 from './assets/ClientTest2.jpg';
-import Client3 from './assets/ClientTest3.jpg';
-import Client4 from './assets/ClientTest4.jpg';
-import Client5 from './assets/ClientTest5.png';
-import Client6 from './assets/ClientTest6.png';
+import HomeFaq from './HomeFaq';
 
 
 const AI = () => {
@@ -26,9 +20,6 @@ const AI = () => {
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
   }
-
-
-
 
 const settings = {
     dots: true,
@@ -57,54 +48,6 @@ const settings = {
       }
     ]
   };
-
-  const boxes = [
-    {
-      id: 1,
-      text: 'The team did the required enhancement on the site with excellent communication skills. He is very proactive and technically!',
-      image: Client1,
-      name: 'Radomi',
-      position: 'Founder, POPOPDEAL',
-    },
-    {
-      id: 2,
-      text: 'We wanted a top-quality comparison website on which you could compare to the market Unified Infotech you gave us exactly.',
-      image: Client2,
-      name: 'Gregory Doe',
-      position: 'Founder',
-    },
-    {
-      id: 3,
-      text: 'Experience top-tier service with Mohit & his team! Reputed for their exceptional problem-solving skills, delivering excellence for 2 years!',
-      image: Client3,
-      name: 'Kendra',
-      position: 'Founder, The KB Hair',
-    },
-    {
-      id: 4,
-      text: 'The team stood out because of their swift response time and patience. Bellway infotech provided one contact person!',
-      image: Client4,
-      name: 'Karen Agresti',
-      position: 'Founder',
-    },
-    {
-      id: 5,
-      text: 'Experience exceptional software development and customer support with lightning-fast response times. Great overall experience!',
-      image: Client5,
-      name: 'Manish Nair',
-      position: 'CEO',
-    },
-    {
-      id: 6,
-      text: 'Appreciable efforts and customer support are very good, It is very valuable for the business to continue to improve!',
-      image: Client6,
-      name: 'Gnana Prakash',
-      position: 'Founder',
-    }
-  ];
-
-
-
 
   const technologies = [
     { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1', title: 'Laravel' }, // Replace with actual URLs
@@ -152,7 +95,7 @@ const settings = {
               alt="Machine Learning"
               className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' }}
             />
-            <div className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
+            <div className="md:ml-28 mt-4 md:mt-0 text-center  ">
               <h2 className="text-4xl font-semibold">Machine Learning</h2>
               <p className="mt-9 text-lg"> Machine learning is a branch of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit instructions. By using data-driven approaches, machine learning systems can identify patterns, make predictions, and improve over time based on experience. It encompasses various techniques such as supervised learning, unsupervised learning, and reinforcement learning. These techniques are applied in numerous fields, including natural language processing, image recognition, and predictive analytics, making machine learning a crucial area of study for advancing technology and solving complex problems.<br /><br />
                 At our company, we leverage the power of machine learning to turn data into actionable insights, driving innovation and efficiency across industries. Our advanced algorithms and predictive models enable businesses to make data-driven decisions, optimize operations, and enhance customer experiences. From automating processes to uncovering hidden patterns in large datasets, our machine learning solutions are designed to meet the unique needs of each client, ensuring they stay ahead in a competitive market.</p>
@@ -215,7 +158,7 @@ const settings = {
         </div>
       </div>
 
-      <div className="min-h-screen flex flex-col items-center justify-center  p-8 ">
+      {/* <div className="min-h-screen flex flex-col items-center justify-center  p-8 ">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4 text-black">Our Technologies</h1>
           <p className="text-2xl mt-9">Being a Mobile App development and web development company Bellway Infotech consistently serving into latest Technologies
@@ -238,12 +181,14 @@ const settings = {
 
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <Solutions/>
+
 
 
       <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-20 p-20"  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
         <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap ">
-          {/* Left Div */}
           <div className="w-full md:w-1/2 p-4">
             <h2 className="text-3xl font-bold mb-4">Trusted Web & Mobile App Development Company</h2>
             <p className="mt-10">If you have any questions, feel free to reach out. We are here to help you with any queries you may have.</p>
@@ -258,8 +203,6 @@ const settings = {
               <p>Phone: +91-9981866409</p>
             </div>
           </div>
-
-          {/* Right Div - Enquiry Form */}
           <div className="w-full md:w-1/2 p-4">
             <h2 className="text-2xl font-bold mb-4">Enquiry Form</h2>
             <form>
@@ -300,9 +243,8 @@ const settings = {
       <br /><br />
 
 
-         
     
-<div className="w-full overflow-hidden mt-20">
+{/* <div className="w-full overflow-hidden mt-20">
         <div className="w-full text-center">
           <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
         </div>
@@ -323,10 +265,11 @@ const settings = {
             ))}
           </Slider2>
         </div>
-      </div>
+      </div> */}
+      <HomeTestimonials/>
 
 
-      <FaqPage />
+      <HomeFaq/>
 
       <Footer/>
     </>

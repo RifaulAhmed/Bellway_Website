@@ -15,7 +15,7 @@ import games from './assets/games.png';
 
 const Industries = () => {
     return (
-        <div className="containerx mx-auto py-5 px-4 sm:px-6 lg:px-8">
+        <div className="containerx mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
                 <h2 className="text-4xl font-bold mb-4">Industries We Serve</h2>
                 <p className="text-lg text-gray-600 mb-8">

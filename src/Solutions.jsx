@@ -9,12 +9,12 @@ import vue from './assets/vue.png';
 import python from './assets/python.png';
 import net from './assets/net.png';
 import android from './assets/androidapp.png';
-import crm from './assets/crm.png';
-import apple from './assets/apple.png';
+import crm from './assets/apple.png';
+import apple from './assets/node1.jpeg';
 
 const Solutions = () => {
     return (
-        <div className="containerx mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="containerx mx-auto py-15 px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
                 <h2 className="text-4xl font-bold mb-4">Solutions</h2>
                 <p className="text-lg text-gray-600 mb-8">
@@ -46,14 +46,14 @@ const solutionsData = [
     { image: flutter, alt: "Flutter", title: "Flutter Solutions" },
     { image: js, alt: "JavaScript", title: "JavaScript Solutions" },
     { image: php, alt: "PHP", title: "PHP" },
-    { image: magneto, alt: "Magneto", title: "Magneto Solutions" },
+    { image: magneto, alt: "Magneto", title: "Magento Solutions" },
     { image: react, alt: "React", title: "React App Solutions" },
     { image: python, alt: "Python", title: "Python Solutions" },
-    { image: net, alt: ".NET", title: "NET Solutions" },
+    { image: net, alt: ".NET", title: ".NET Solutions" },
     { image: android, alt: "Android App", title: "Android App Development" },
-    { image: crm, alt: "CRM", title: "CRM Solutions" },
+    { image: crm, alt: "CRM", title: "iOS Development" },
     { image: vue, alt: "Vue.js", title: "Vue.js" },
-    { image: apple, alt: "iOS", title: "iOS Development" },
+    { image: apple, alt: "iOS", title: "Node js" },
 ];
 
 export default Solutions;

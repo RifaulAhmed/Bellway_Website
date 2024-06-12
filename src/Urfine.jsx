@@ -1,61 +1,25 @@
-// import React from "react";
-// import './Product2.css';
-// import CNavbar from "./CNavbar";
-// import Applications2 from "./Applications2";
-// import Footer from './Footer';
-// function Product2(){
-//     return (
-//         <>
-//             <CNavbar/>
-//             <div className="rifaul-grocery2">
-//                 <div className="hollow-border-rectangle"></div>
-//                 <div className="text-container">
-//                     <p className="bellway">BELLWAY</p>
-//                     <p className="grocery">GROCERY</p>
-//                 </div>
-//             </div>
-//             <Applications2/>
-//             <Footer/>
-//         </>
-//     );
-// }
-
-// export default Product2;
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CNavbar from './CNavbar';
 import './ai.css'
-// import FaqPage from './AIFaq';
+import FaqPage from './AIFaq';
+import PopupForm from './PopupForm';
 import burgir from './assets/grocery2.jpg';
 import burgir2 from './assets/grocery.jpg';
-
-
+import fresh from './assets/fresh.webp'
 import Footer from './Footer';
-
-
-
 import Slider2 from 'react-slick';
-import HomeTestimonials from './HomeTestimonials'
-
-
+import red from './assets/red.webp'
+import doctor from './assets/doctor.webp'
+import doctor2 from './assets/doctor2.webp'
+import HomeTestimonials from './HomeTestimonials';
 
 const Product2 = () => {
-
     const [isPopupVisible, setIsPopupVisible] = useState(false);
     const togglePopup = () => {
         setIsPopupVisible(!isPopupVisible);
     }
-
-
-
-
-
-
-
-
-
-
     const technologies = [
         { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1', title: 'Laravel' }, // Replace with actual URLs
         { id: 2, image: 'https://i.pinimg.com/564x/56/0c/43/560c4353b21b4948e5f0e9508ea07597.jpg', name: 'Tech 2', title: 'Laravel' },
@@ -75,13 +39,13 @@ const Product2 = () => {
             <div class="containerx mx-auto  bg-black p-8">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
-                        <h1 class="sm:text-8xl font-bold mb-4 text-white">Bellway Grocery</h1>
+                        <h1 class="sm:text-8xl font-bold mb-4 text-white">Ur Fine</h1>
                         <h3 class="sm:text-2xl text-white">
-                            <Link to="/" class="text-red-600 hover:underline">Home</Link> / Bellway Grocery
+                            <Link to="/" class="text-red-600 hover:underline">Home</Link> / Ur Fine
                         </h3>
                     </div>
                     <div class="md:w-1/2 text-right">
-                        <img src="https://i.pinimg.com/564x/76/47/91/76479136673ca92fb3ebfb7d1d552a26.jpg" alt="About Image" class="w-full h-auto" />
+                        <img src="https://i.pinimg.com/564x/5e/a6/21/5ea621de2522c3d61804ae12345f5697.jpg" alt="About Image" class="w-full h-auto" />
                     </div>
                 </div>
             </div>
@@ -95,33 +59,28 @@ const Product2 = () => {
                 {/* <h1 class="sm:text-5xl  font-bold mb-4 text-black mt-16">"Accelerate Business Growth with
           Our AI Services"</h1> */}
 
-                <div className="space-y-20 mt-12 mx-auto">
+                <div  className="space-y-20 mt-12 mx-auto">
                     <div className="flex flex-col md:flex-row  text-white">
                         <img
-                            src={burgir}
-                            alt="Bellway Grocery"
-                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' ,borderRadius:'6%'}}
+                            src={doctor}
+                            alt="Fresh and red delivery"
+                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)',borderRadius:'6%' }}
                         />
                         <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
-                            <h2 className="text-4xl font-bold" style={{color:'black'}}>Bellway Grocery</h2>
-                            <p className="mt-9 text-lg" style={{textAlign:'start',color:'black'}}> A grocery application, also known as a grocery shopping app, is a mobile <br />or web-based application that allows users to shop for groceries and other household items online.These apps provide a convenient way for users to browse through a<br /> wide range of products.<br /><br />
-
-                                Product Catalog: The app displays a comprehensive catalogue of grocery items, including fruits, vegetables, dairy products, canned goods, beverages, and more. Products are usually organized into categories for easy navigation.<br /><br />
-                                Search and Filters: Users can search for specific products or use filters to narrow down their search results based on criteria like brand, price, dietary preferences, etc.<br /><br />
-
-                                Shopping Cart: Users can add items to their shopping cart as they browse through the app. The cart keeps track of selected items until the user is ready to checkout.<br /><br />
-
-                                Checkout and Payment: Users can review their cart, select the delivery or pickup options, and proceed to payment. The app supports various payment methods, including credit/debit cards, digital wallets, and cash on delivery.<br /><br />
-
-
-
-                                Order History: The app typically maintains a history of past orders, making it easier for users to reorder items they frequently purchase.
-                                <br /><br />
-                                Deals and Discounts: Grocery apps often showcase special deals, discounts, and offers on various products to attract users and promote sales.
-
-                                <br /><br />
-
-                                Customer Support: The app may include a customer support feature, such as live chat or a helpline, to assist users with any issues or inquiries.
+                            <h2 className="text-4xl font-bold" style={{color:'black'}}>Ur Fine</h2>
+                            <p className="mt-9 text-lg"style={{color:'black',textAlign:'start'}}> Here's a brief explanation of how such online medical consultation services work:
+<br/><br/>
+Registration: Patients typically need to sign up on the platform and create an account before using the service.
+<br/><br/>
+Search and Select: Patients can search for doctors based on their speciality, experience, or availability. They can select a doctor based on their preferences.
+<br/><br/>
+Booking: Patients can schedule an appointment with the chosen doctor at a convenient time.
+<br/><br/>
+Consultation: The consultation takes place through a secure and private video call or chat platform, where patients can discuss their health concerns, medical history, and symptoms with the doctor.
+<br/><br/>
+Diagnosis and Treatment: Based on the information provided by the patient, the doctor may offer a diagnosis, treatment advice, or prescription, or recommend further tests or in-person consultations if necessary.
+<br/><br/>
+Follow-up: Some platforms may allow patients to have follow-up consultations with the same doctor to monitor progress or address any concerns.
 
 
                             </p>
@@ -130,20 +89,15 @@ const Product2 = () => {
 
                     <div className="flex flex-col md:flex-row-reverse items-center mt-20" >
                         <img
-                            src={burgir2}
+                            src={doctor2}
                             alt="Grocery"
                             className="w-1/2 md:w-1/3" style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' }}
                         />
                         <div className="md:mr-28 mt-4 md:mt-0 text-center md:text-left mx-9">
-                            <h2 style={{ textAlign: 'left' }} className="text-4xl font-bold">Why is Bellway Grocery a useful resource for you?<br /></h2>
-                            <p style={{ textAlign: 'left' }} className="mt-9 text-lg"> In today's hectic world, shopping for groceries can often feel like a daunting task. That's where Bellway Grocery comes in to save the day! Our service is designed to simplify your life by providing a seamless and efficient grocery shopping experience. With a vast selection of fresh produce, pantry essentials, and specialty items, we ensure you have everything you need at your fingertips.
+                            <h2 style={{ textAlign: 'left' }} className="text-4xl font-bold">Why is Ur Fine a useful resource for you?<br /></h2>
+                            <p style={{ textAlign: 'left' }} className="mt-9 text-lg">A platform like ours is invaluable for managing online consultations, appointment scheduling, patient records, prescription coordination, and other aspects of a medical practice. Our platform's core feature is customization, enabling you to adapt it to meet the specific needs of your medical practice.
 
-<br/>Do you have specific dietary needs or preferences? Customize your order to suit your lifestyle. Whether you need organic, gluten-free, or dairy-free products, we cater to your unique requirements.<br/> Planning a family gathering or a weekly meal prep? The Bellway Grocery app makes it easy to place large orders, ensuring your pantry is always stocked with your favorite items.
-
-
-
-
-
+Our flexible system adapts to your requirements, whether you need specialized modules for patient relationship management, staff scheduling, or inventory management. To enhance patient interactions, you can tailor wellness programs and marketing campaigns to your practice's identity and personalize the interface to provide your patients with a consistent experience. Thanks to our modular architecture, you can select the features you need right now and add more as your practice grows.
 
 </p>
                         </div>
@@ -152,7 +106,6 @@ const Product2 = () => {
             </div>
             <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-20 p-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
                 <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap ">
-                    
                     <div className="w-full md:w-1/2 p-4">
                         <h2 className="text-3xl font-bold mb-4">Trusted Web & Mobile App Development Company</h2>
                         <p className="mt-10">If you have any questions, feel free to reach out. We are here to help you with any queries you may have.</p>
@@ -167,8 +120,6 @@ const Product2 = () => {
                             <p>Phone: +91-9981866409</p>
                         </div>
                     </div>
-
-                
                     <div className="w-full md:w-1/2 p-4">
                         <h2 className="text-2xl font-bold mb-4">Enquiry Form</h2>
                         <form>
@@ -207,12 +158,7 @@ const Product2 = () => {
                 </div>
             </div>
             <br /><br />
-
-
             <HomeTestimonials/>
-
-            {/* <FaqPage /> */}
-
             <Footer />
         </>
     )
