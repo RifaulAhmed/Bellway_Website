@@ -48,6 +48,18 @@ const Product2 = () => {
         setIsPopupVisible(!isPopupVisible);
     }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
     const technologies = [
         { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1', title: 'Laravel' }, // Replace with actual URLs
         { id: 2, image: 'https://i.pinimg.com/564x/56/0c/43/560c4353b21b4948e5f0e9508ea07597.jpg', name: 'Tech 2', title: 'Laravel' },
@@ -84,7 +96,11 @@ const Product2 = () => {
                         <img
                             src={burgir}
                             alt="Bellway Grocery"
+<<<<<<< HEAD
                             className="w-1/2  md:w-1/3 "
+=======
+                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' ,borderRadius:'6%'}}
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
                         />
                         <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
                             <h2 className="text-4xl font-bold" style={{color:'black'}}>Bellway Grocery</h2>
@@ -183,8 +199,16 @@ const Product2 = () => {
             </div>
             <br /><br />
 
+<<<<<<< HEAD
             <HomeTestimonials/>
             <ProductStackCards/>
+=======
+
+            <HomeTestimonials/>
+
+            {/* <FaqPage /> */}
+
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
             <Footer />
         </>
     )

@@ -5,6 +5,7 @@ import './Navbar.css';
 
 const serviceDropdown = [
   { id: 1, title: "AI", path: "/ai", cName: "submenu-item" },
+<<<<<<< HEAD
   { id: 2, title: "Mobile Application Development", path: "/mobile-application-development", cName: "submenu-item" },
   { id: 3, title: "Web Application Development", path: "/web-application-development", cName: "submenu-item" },
   { id: 4, title: "UX/UI Design", path: "/ui/ux-design", cName: "submenu-item" },
@@ -15,6 +16,18 @@ const productDropdown = [
   { id: 1, title: "Bellway Grocery", path: "/bellway-grocery" },
   { id: 2, title: "Delicious Meals Delivery", path: "/delicious-meals-delivery" },
   { id: 3, title: "Fresh and Red Delivery", path: "/fresh-and-red-delivery" },
+=======
+  { id: 2, title: "Mobile Application Development", path: "/mobile1", cName: "submenu-item" },
+  { id: 3, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
+  { id: 4, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
+  { id: 5, title: "Digital Marketing", path: "/digital", cName: "submenu-item" },
+];
+
+const productDropdown = [
+  { id: 1, title: "Bellway Grocery", path: "/commerce" },
+  { id: 2, title: "Delicious Meals Delivery", path: "/product" },
+  { id: 3, title: "Fresh and Red Delivery", path: "/fresh" },
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
   { id: 4, title: "Ur Fine", path: "/urfine" },
   { id: 5, title: "Team-11", path: "/team11" },
 ];

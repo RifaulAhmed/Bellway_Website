@@ -5,8 +5,13 @@ import picture from './assets/c3.jpg';
 // import youtube from './assets/ytb.png';
 // import gmail from './assets/mail.png';
 import CNavbar from './CNavbar';
+<<<<<<< HEAD
 // import Form from './Form';
 // import Map from './Map';
+=======
+import Form from './Form';
+import Map from './Map';
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
 import Footer from './Footer';
 import ContactForm from './ContactForm';
 function Herosection() {
@@ -14,7 +19,11 @@ function Herosection() {
 
         <>
             <CNavbar />
+<<<<<<< HEAD
             {/* <div className="bg-black text-white flex flex-col items-start px-4">
+=======
+            <div className="bg-black text-white flex flex-col items-start px-4">
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
                 <div className="containerx mx-auto bg-black ">
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="main-text text-left mb-8 mt-12 md:mb-0 md:mt-0 md:w-1/2 p-16">
@@ -38,16 +47,27 @@ function Herosection() {
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div className="md:w-1/2 text-right ">
+=======
+                        <div className="md:w-1/2 text-right">
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
                             <img src={picture} alt="Contact" className="w-full h-auto object-cover mt-7" />
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div> */}
 
             <ContactForm/>
             {/* <Form /> */}
             {/* <Map /> */}
+=======
+            </div>
+
+            <Form />
+            <Map />
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
             <Footer />
         </>
     );
