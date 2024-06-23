@@ -43,10 +43,7 @@ import Footer from './Footer';
 
 
 import Slider2 from 'react-slick';
-import Client1 from './assets/face1.jpeg'
-import Client2 from './assets/face2.jpeg';
-import Client3 from './assets/face3.jpeg';
-import Client4 from './assets/face4.jpeg';
+import HomeTestimonials from './HomeTestimonials';
 
 
 const Product = () => {
@@ -58,36 +55,7 @@ const Product = () => {
 
 
 
-    const boxes = [
-        {
-            id: 1,
-            text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
-            image: Client1,
-            name: 'Ana Perez',
-            position: 'CEO, ITgers',
-        },
-        {
-            id: 2,
-            text: '"Highly recommend tapping into their unparalleled expertise and innovative solutions for any business striving to excel and thrive in today\'s fiercely competitive landscape."',
-            image: Client2,
-            name: 'Nick Divris',
-            position: 'CTO, Coursera',
-        },
-        {
-            id: 3,
-            text: '"Their commitment to delivering outstanding service alongside groundbreaking and forward-looking solutions has been pivotal for our continued and remarkable success."',
-            image: Client3,
-            name: 'Yuki ',
-            position: 'Manager, Alpine',
-        },
-        {
-            id: 4,
-            text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
-            image: Client4,
-            name: 'Zehan Darula',
-            position: 'Designer, E-papcups',
-        }
-    ];;
+
     const settings = {
         dots: true,
         infinite: true,
@@ -169,7 +137,7 @@ const Product = () => {
                         />
                         <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-1 md:mt-0 text-center md:text-left">
                             <h2 className="text-4xl font-bold">Delicious Meal Service</h2>
-                            <p className="mt-9 text-lg"> Tired after a long day? Craving your favourite cuisine? Don't worry, Delicious Meals Delivery App is here to satisfy your cravings and make mealtime a delightful experience. Discover the amazing ways you can use our app to enjoy scrumptious meals delivered right to your doorstep.
+                            <p className="mt-9 text-lg" style={{textAlign:'start'}}> Tired after a long day? Craving your favourite cuisine? Don't worry, Delicious Meals Delivery App is here to satisfy your cravings and make mealtime a delightful experience. Discover the amazing ways you can use our app to enjoy scrumptious meals delivered right to your doorstep.
 
 Open the app and explore a diverse range of restaurants and cuisines in your area. From Italian to Thai, burgers to sushi, our app offers an array of options to please every palate.
 
@@ -204,6 +172,9 @@ Planning a family dinner or a meal with friends? The app makes it easy to place 
                     </div>
                 </div>
             </div>
+
+           
+
             <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-20 p-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
                 <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap ">
                     
@@ -257,38 +228,15 @@ Planning a family dinner or a meal with friends? The app makes it easy to place 
                             </div>
                             <button className="w-full bg-black text-white py-2 rounded">Submit</button>
                         </form>
+                        
                     </div>
+                    
                 </div>
+
             </div>
+            
             <br /><br />
-
-
-            <div className="w-full overflow-hidden mt-20">
-                <div className="w-full text-center">
-                    <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
-                </div>
-                <div className="mt-10 px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-6 md:py-8 lg:py-10 bg-gray-50 shadow-md rounded-md p-4 text-center transition duration-300 hover:bg-gray-200 hover:shadow-2xl">
-                    <Slider2 {...settings}>
-                        {boxes.map((box, index) => (
-                            <div key={index} className="px-2 sm:px-4">
-                                <div className="bg-white rounded-md p-4 sm:p-6 md:p-8 text-center transition duration-300 hover:bg-gray-100 shadow-md hover:shadow-lg relative">
-                                    <div className="client-image mb-4">
-                                        <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
-                                    </div>
-                                    <div className="text-gray-700 text-lg mb-4">{box.text}</div>
-                                    <div className="absolute bottom-2 left-2 text-left">
-                                        <p className="text-gray-800 font-bold mb-1">{box.name}</p>
-                                        <p className="text-gray-600 text-sm">{box.position}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </Slider2>
-                </div>
-            </div>
-
-            {/* <FaqPage /> */}
-
+            <HomeTestimonials/>
             <Footer />
         </>
     )

@@ -24,7 +24,6 @@
     }
 }
 
-/* Ensure there is no margin at the bottom of the flex container */
 .flex-col {
     margin-bottom: 0;
     padding-bottom: 0;

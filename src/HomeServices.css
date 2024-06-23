@@ -1,7 +1,8 @@
+
 .app-main-home {
-    height: 90vh;
+    height: 100vh;
     background-color: antiquewhite;
-    position: relative; 
+    position: relative;
     margin-top: 5rem;
 }
 
@@ -15,11 +16,18 @@
     left: -8rem;
 }
 
-@media (max-width: 768px) {
-    .services {
-        font-size: 5rem;
-        margin-top: 8rem;
-    }
+.s, .e, .r, .v, .i, .c, .e2, .s2 {
+    transform: rotate(-90deg);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    transform-origin: bottom left;
+    margin-left: 15rem;
+    margin-top: -3px;
+}
+
+.content {
+    font-weight: 700;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
@@ -40,7 +48,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-    margin-top: -32rem;
+    margin-top: -34rem;
 }
 
 .container-item-home {
@@ -48,10 +56,10 @@
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    box-shadow: 1px 5px 15px #1e0e3e;
+    box-shadow: 1px 5px 15px black;
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 470px;
 }
 
 .container-item-home:nth-of-type(1) {
@@ -107,4 +115,165 @@
     display: block;
     margin-top: 5px;
     font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 1024px) {
+    .services {
+        font-size: 5.5rem;
+        margin-top: 10rem;
+        left: -7rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 2.2rem;
+        margin-left: 11rem;
+    }
+
+    .container-home {
+        margin-top: -28rem;
+    }
+
+    .container-item-home {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        font-size: 5rem;
+        margin-top: 8rem;
+        left: -6rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 2rem;
+        margin-left: 10rem;
+    }
+
+    .app-main4-home {
+        flex-direction: column;
+    }
+
+    .container-home {
+        flex-direction: column;
+        margin-top: -20rem;
+        align-items: center;
+    }
+
+    .container-item-home {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 300px;
+    }
+
+    .container-item-home:hover {
+        flex: 0 0 auto;
+        width: 100%;
+        transform: none;
+    }
+
+    .container-item-home .content {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        font-size: 4rem;
+        margin-top: 6rem;
+        left: -4rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 1.5rem;
+        margin-left: 7rem;
+    }
+
+    .container-home {
+        margin-top: -15rem;
+    }
+
+    .container-item-home {
+        height: 250px;
+    }
+
+    .container-item-home:hover {
+        width: 100%;
+        transform: none;
+    }
+
+    .container-item-home .content {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .services {
+        font-size: 8rem;
+        margin-top: 15rem;
+        left: -10rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 3rem;
+        margin-left: 15rem;
+    }
+
+    .container-home {
+        margin-top: -40rem;
+    }
+
+    .container-item-home {
+        height: 550px;
+    }
+
+    .container-item-home:hover {
+        flex: 0 0 300px;
+    }
+
+    .container-item-home .content {
+        font-size: 1.8rem;
+    }
+
+    .container-item-home .content span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .services {
+        font-size: 9rem;
+        margin-top: 17rem;
+        left: -11rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 3.5rem;
+        margin-left: 20rem;
+    }
+
+    .container-home {
+        margin-top: -45rem;
+    }
+
+    .container-item-home {
+        height: 600px;
+    }
+
+    .container-item-home:hover {
+        flex: 0 0 350px;
+    }
+
+    .container-item-home .content {
+        font-size: 2rem;
+    }
+
+    .container-item-home .content span {
+        font-size: 1.7rem;
+    }
 }

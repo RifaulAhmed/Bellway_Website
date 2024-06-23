@@ -27,8 +27,9 @@ import { Link } from 'react-router-dom';
 import CNavbar from './CNavbar';
 import './ai.css'
 // import FaqPage from './AIFaq';
-import burgir from './assets/grocery2.jpg';
-import burgir2 from './assets/grocery.jpg';
+import burgir from './assets/grocery_new.png'; 
+import burgir2 from './assets/grocery_new.png';
+import ProductStackCards from './ProductStackCards';
 
 
 import Footer from './Footer';
@@ -36,10 +37,8 @@ import Footer from './Footer';
 
 
 import Slider2 from 'react-slick';
-import Client1 from './assets/face1.jpeg'
-import Client2 from './assets/face2.jpeg';
-import Client3 from './assets/face3.jpeg';
-import Client4 from './assets/face4.jpeg';
+import HomeTestimonials from './HomeTestimonials'
+
 
 
 const Product2 = () => {
@@ -48,71 +47,6 @@ const Product2 = () => {
     const togglePopup = () => {
         setIsPopupVisible(!isPopupVisible);
     }
-
-
-
-    const boxes = [
-        {
-            id: 1,
-            text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
-            image: Client1,
-            name: 'Ana Perez',
-            position: 'CEO, ITgers',
-        },
-        {
-            id: 2,
-            text: '"Highly recommend tapping into their unparalleled expertise and innovative solutions for any business striving to excel and thrive in today\'s fiercely competitive landscape."',
-            image: Client2,
-            name: 'Nick Divris',
-            position: 'CTO, Coursera',
-        },
-        {
-            id: 3,
-            text: '"Their commitment to delivering outstanding service alongside groundbreaking and forward-looking solutions has been pivotal for our continued and remarkable success."',
-            image: Client3,
-            name: 'Yuki ',
-            position: 'Manager, Alpine',
-        },
-        {
-            id: 4,
-            text: '"Exceptional service delivery, coupled with their innovative solutions, has truly propelled our business forward. Highly recommended for their dedication and expertise!"',
-            image: Client4,
-            name: 'Zehan Darula',
-            position: 'Designer, E-papcups',
-        }
-    ];;
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-
-
-
-
-
 
     const technologies = [
         { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1', title: 'Laravel' }, // Replace with actual URLs
@@ -144,30 +78,20 @@ const Product2 = () => {
                 </div>
             </div>
 
-            {/* <div className="main-page">
-        <button className="contact-button" onClick={togglePopup}>Contact <i class="fa-solid fa-phone-volume"></i></button>
-        {isPopupVisible && <PopupForm onClose={togglePopup} />}
-      </div> */}
-
             <div class="md:w-full text-center mb-4 md:mb-0 p-16">
-                {/* <h1 class="sm:text-5xl  font-bold mb-4 text-black mt-16">"Accelerate Business Growth with
-          Our AI Services"</h1> */}
-
-                <div className="space-y-20 mt-12 mx-auto">
+                <div className="space-y-20 mt-12 mx-auto ">
                     <div className="flex flex-col md:flex-row  text-white">
                         <img
                             src={burgir}
                             alt="Bellway Grocery"
-                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' }}
+                            className="w-1/2  md:w-1/3 "
                         />
-                        <div style={{ backgroundColor: '#048722' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
-                            <h2 className="text-4xl font-semibold">Bellway Grocery</h2>
-                            <p className="mt-9 text-lg"> A grocery application, also known as a grocery shopping app, is a mobile <br />or web-based application that allows users to shop for groceries and other household items online.These apps provide a convenient way for users to browse through a<br /> wide range of products.<br /><br />
+                        <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
+                            <h2 className="text-4xl font-bold" style={{color:'black'}}>Bellway Grocery</h2>
+                            <p className="mt-9 text-lg" style={{textAlign:'start',color:'black'}}> A grocery application, also known as a grocery shopping app, is a mobile <br />or web-based application that allows users to shop for groceries and other household items online.These apps provide a convenient way for users to browse through a<br /> wide range of products.<br /><br />
 
                                 Product Catalog: The app displays a comprehensive catalogue of grocery items, including fruits, vegetables, dairy products, canned goods, beverages, and more. Products are usually organized into categories for easy navigation.<br /><br />
-                                Search and Filters: Users can search for specific products or use filters to narrow down their search results based on criteria like brand, price, dietary preferences, etc.<br /><br />
-
-                                Shopping Cart: Users can add items to their shopping cart as they browse through the app. The cart keeps track of selected items until the user is ready to checkout.<br /><br />
+                                
 
                                 Checkout and Payment: Users can review their cart, select the delivery or pickup options, and proceed to payment. The app supports various payment methods, including credit/debit cards, digital wallets, and cash on delivery.<br /><br />
 
@@ -196,14 +120,7 @@ const Product2 = () => {
                             <h2 style={{ textAlign: 'left' }} className="text-4xl font-bold">Why is Bellway Grocery a useful resource for you?<br /></h2>
                             <p style={{ textAlign: 'left' }} className="mt-9 text-lg"> In today's hectic world, shopping for groceries can often feel like a daunting task. That's where Bellway Grocery comes in to save the day! Our service is designed to simplify your life by providing a seamless and efficient grocery shopping experience. With a vast selection of fresh produce, pantry essentials, and specialty items, we ensure you have everything you need at your fingertips.
 
-<br/>Do you have specific dietary needs or preferences? Customize your order to suit your lifestyle. Whether you need organic, gluten-free, or dairy-free products, we cater to your unique requirements.<br/> Planning a family gathering or a weekly meal prep? The Bellway Grocery app makes it easy to place large orders, ensuring your pantry is always stocked with your favorite items.
-
-
-
-
-
-
-</p>
+<br/>Do you have specific dietary needs or preferences? Customize your order to suit your lifestyle. Whether you need organic, gluten-free, or dairy-free products, we cater to your unique requirements.<br/> Planning a family gathering or a weekly meal prep? The Bellway Grocery app makes it easy to place large orders, ensuring your pantry is always stocked with your favorite items.</p>
                         </div>
                     </div>
                 </div>
@@ -266,33 +183,8 @@ const Product2 = () => {
             </div>
             <br /><br />
 
-
-            <div className="w-full overflow-hidden mt-20">
-                <div className="w-full text-center">
-                    <h1 className="appreciation text-4xl font-bold mb-8">Stories From Our Clients</h1>
-                </div>
-                <div className="mt-10 px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-6 md:py-8 lg:py-10 bg-gray-50 shadow-md rounded-md p-4 text-center transition duration-300 hover:bg-gray-200 hover:shadow-2xl">
-                    <Slider2 {...settings}>
-                        {boxes.map((box, index) => (
-                            <div key={index} className="px-2 sm:px-4">
-                                <div className="bg-white rounded-md p-4 sm:p-6 md:p-8 text-center transition duration-300 hover:bg-gray-100 shadow-md hover:shadow-lg relative">
-                                    <div className="client-image mb-4">
-                                        <img src={box.image} alt={`Client ${index + 1}`} className="w-16 h-16 rounded-full mx-auto" />
-                                    </div>
-                                    <div className="text-gray-700 text-lg mb-4">{box.text}</div>
-                                    <div className="absolute bottom-2 left-2 text-left">
-                                        <p className="text-gray-800 font-bold mb-1">{box.name}</p>
-                                        <p className="text-gray-600 text-sm">{box.position}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </Slider2>
-                </div>
-            </div>
-
-            {/* <FaqPage /> */}
-
+            <HomeTestimonials/>
+            <ProductStackCards/>
             <Footer />
         </>
     )

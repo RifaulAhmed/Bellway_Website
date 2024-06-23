@@ -5,28 +5,18 @@ import './Navbar.css';
 
 const serviceDropdown = [
   { id: 1, title: "AI", path: "/ai", cName: "submenu-item" },
-<<<<<<< HEAD
-  { id: 2, title: "Mobile Application Development", path: "/mobile", cName: "submenu-item" },
-  { id: 1, title: "Web Application Development", path: "/web2", cName: "submenu-item" },
-  { id: 3, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
-  { id: 4, title: "Digital Marketing", path: "/marketing", cName: "submenu-item" },
-=======
-  { id: 2, title: "Mobile Application Development", path: "/mobile1", cName: "submenu-item" },
-<<<<<<< HEAD
-  { id: 3, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
-  { id: 4, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
-  { id: 5, title: "Digital Marketing", path: "/digital", cName: "submenu-item" },
-=======
-  { id: 1, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
-  { id: 3, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
-  { id: 4, title: "Digital Marketing", path: "/digital", cName: "submenu-item" },
->>>>>>> d23d364d1b7d18e512d9f3eecbda682150a98080
->>>>>>> 740ee1dc875fa2d9b06e3bb92d888433ef54fb15
+  { id: 2, title: "Mobile Application Development", path: "/mobile-application-development", cName: "submenu-item" },
+  { id: 3, title: "Web Application Development", path: "/web-application-development", cName: "submenu-item" },
+  { id: 4, title: "UX/UI Design", path: "/ui/ux-design", cName: "submenu-item" },
+  { id: 5, title: "Digital Marketing", path: "/digital-marketing", cName: "submenu-item" },
 ];
 
 const productDropdown = [
-  { id: 1, title: "Ecommerce Business", path: "/product2" },
-  { id: 2, title: "Food Delivery Business", path: "/product" },
+  { id: 1, title: "Bellway Grocery", path: "/bellway-grocery" },
+  { id: 2, title: "Delicious Meals Delivery", path: "/delicious-meals-delivery" },
+  { id: 3, title: "Fresh and Red Delivery", path: "/fresh-and-red-delivery" },
+  { id: 4, title: "Ur Fine", path: "/urfine" },
+  { id: 5, title: "Team-11", path: "/team11" },
 ];
 
 const aboutDropdown = [

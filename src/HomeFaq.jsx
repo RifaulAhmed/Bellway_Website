@@ -11,26 +11,25 @@ const HomeFaq = () => {
     }
 
     return (
-        <div className="mx-auto py-4 bg-gray-100 h-full">
-            <div className="max-w-3xl mx-auto">
-                <h1 className="text-3xl font-bold mb-4 sm:mx-6 mx-9 text-black mt-4 text-center">Frequently Asked Questions</h1>
-                <div className="accordion sm:mt-6 mx-4 sm:mx-0">
+        <div className="mx-auto py-2 bg-gray-100 h-full">
+            <div className="max-w-full mx-auto">
+                <h1 className="text-3xl font-bold mb-8 sm:mx-6 mx-9 text-black mt-8 text-center ">Frequently Asked Questions</h1>
+                <div className="accordion sm:mt-12 mx-4 sm:mx-0">
                     {FAQ_DATA.map((faq, index) => (
                         <div
                             key={index}
-                            className="border border-gray-300 rounded-md overflow-hidden mb-2"
-                            style={{ maxHeight: activeIndex === index ? 'unset' : '72px' }}
+                            className=" rounded-md overflow-hidden "
                         >
                             <div
-                                className="accordion-title sm:text-xl font-semibold p-3 cursor-pointer bg-white transition duration-300 flex justify-between items-center"
+                                className="accordion-title sm:text-xl font-semibold p-1 cursor-pointer bg-white hover:bg-gray-100 transition duration-300 flex justify-between items-center"
                                 onClick={() => toggleAccordion(index)}
                             >
-                                <span>{faq.question}</span>
+                                <span className='py-3'>{faq.question}</span>
                                 <FontAwesomeIcon icon={activeIndex === index ? faChevronUp : faChevronDown} className="text-gray-500" />
                             </div>
                             <div
                                 className={`accordion-content p-3 bg-white transition-all duration-300 ${
-                                    activeIndex === index ? 'opacity-100' : 'opacity-0 overflow-hidden'
+                                    activeIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                                 }`}
                             >
                                 <p className='text-black text-lg'>{faq.answer}</p>
@@ -61,12 +60,6 @@ const FAQ_DATA = [
             "Get a year of free support with our readymade mobile app purchases! Secure, easy-to-use apps designed for efficiency with us!."
     },
 
-    // {
-    //     question: "What does a mobile app development company do?",
-    //     answer:
-    //         "A mobile app development company specializes in creating software applications for mobile devices such as developers, designers, and testers, Developers use programming languages like Java, Swift, flutter, Laravel."
-    // },
-
     {
         question: "How can your services benefit my business?",
         answer:
@@ -77,11 +70,6 @@ const FAQ_DATA = [
         answer:
             "We specialize in custom software development, mobile app development, web development, and enterprise software solutions.."
     },
-    // {
-    //     question: "How does your project management process work?",
-    //     answer:
-    //         "Our process typically includes initial consultation, planning, design, development, testing, and deployment, followed by ongoing support and maintenance."
-    // },
 ];
 
 export default HomeFaq;
