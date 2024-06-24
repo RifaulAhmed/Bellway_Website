@@ -11,6 +11,7 @@ const About = () => {
 
   return (
     <>
+     
 <CNavbar/>
 
 <div class="containerx mx-auto  bg-black p-8">

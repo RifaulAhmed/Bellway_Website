@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import CNavbar from '../../CNavbar'
 import Footer from '../../Footer'
-
 const Blogs = () => {
   return (
    <>
+  
 <CNavbar/>
 <div className='mybg'> 
 <div class="containerx mx-auto  bg-black p-8 mt-20">
@@ -19,7 +19,7 @@ const Blogs = () => {
       </h3>
     </div>
     <div class="md:w-1/2 text-right">
-      <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGJsb2d8ZW58MHx8MHx8fDA%3D" alt="Blog Image" class="w-full h-auto"/>
+      <img src="https://i.pinimg.com/736x/7e/50/84/7e508402466bc0fa026c2b750739bfc2.jpg" alt="Blog Image" class="w-full h-auto"/>
     </div>
   </div>
 </div>

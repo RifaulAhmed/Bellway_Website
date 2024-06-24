@@ -14,7 +14,7 @@ import Img18 from '../../assets/img18.png'
 import Img13 from '../../assets/img13.jpg'
 import Img99 from '../../assets/mst.png'
 
-
+import {Helmet} from "react-helmet";
 import Img31 from '../../assets/img31.png'
 import Img32 from '../../assets/img32.png'
 import Img33 from '../../assets/img33.png'
@@ -139,7 +139,11 @@ const AboutUs = () => {
 
   return (
     <>
-
+<Helmet>
+                <title>About - BELLWAY INFOTECH</title>
+                <meta name="description" content="At Bellway Infotech, we have an experienced software development team specializing in scalable, efficient solutions for web, mobile, and enterprise applications." />
+        
+            </Helmet>
       <CNavbar />
       <div className='mybg'>
         <div class="containerx mx-auto  bg-black p-8 mt-20">

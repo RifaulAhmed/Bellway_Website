@@ -33,7 +33,7 @@ import Slider from 'react-slick';
 // import Client2 from './assets/face2.jpeg';
 // import Client3 from './assets/face3.jpeg';
 // import Client4 from './assets/face4.jpeg';
-
+import {Helmet} from "react-helmet";
 import Solutions from './Solutions';
 import HomeFaq from './HomeFaq'
 import HomeTestimonials from './HomeTestimonials';
@@ -120,6 +120,11 @@ const Web1 = () => {
 
   return (
     <>
+      <Helmet>
+                <title>Web Application Development | Service - BELLWAY INFOTECH</title>
+                <meta name="description" content="Discover Bellway Infotech's comprehensive web application development services. From concept to deployment, our team delivers tailored solutions for your business" />
+        
+            </Helmet>
       <CNavbar />
       <div class="containerx mx-auto  bg-black p-8">
         <div class="flex flex-col md:flex-row items-center mt-28 ">

@@ -115,3 +115,20 @@
     }
 } */
 
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1); /* Specific to glass-card */
+    border-radius: 10px; /* Specific to glass-card */
+    padding: 20px; /* Specific to glass-card */
+    transition: transform 0.3s; /* Specific to glass-card */
+}
+
+
+
+
+

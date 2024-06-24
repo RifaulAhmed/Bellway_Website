@@ -15,7 +15,7 @@ import apple from './assets/node1.jpeg';
 const Solutions = () => {
     return (
         <div className="containerx mx-auto py-15 px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8">
+            <div className="text-center mt-9">
                 <h2 className="text-4xl font-bold mb-4">Solutions</h2>
                 <p className="text-lg text-gray-600 mb-8">
                     Being a Mobile App development and web development company Bellway consistently acumen into latest Technologies 

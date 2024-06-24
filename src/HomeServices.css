@@ -1,8 +1,7 @@
-
 .app-main-home {
-    height: 90vh;
+    height: 100vh;
     background-color: antiquewhite;
-    position: relative; 
+    position: relative;
     margin-top: 5rem;
 }
 
@@ -11,9 +10,10 @@
     transform: rotate(-90deg);
     font-size: 6.5rem;
     color: black;
-    margin-top: 13rem;
+    margin-top: 16rem;
     font-weight: 700;
     left: -8rem;
+
 }
 
 .s, .e, .r, .v, .i, .c, .e2, .s2 {
@@ -21,8 +21,8 @@
     font-size: 2.5rem;
     font-weight: 500;
     color: black;
-    transform-origin: bottom left; 
-    margin-left: 13rem;
+    transform-origin: bottom left;
+    margin-left: 15rem;
     margin-top: -1px;
 }
 
@@ -60,22 +60,39 @@
     position: relative;
     overflow: hidden;
     height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-item-home:nth-of-type(1) {
-    background: url(./assets/ai1.jpeg) no-repeat 50% / cover;
+    background: url(./assets/AI9.jpg) no-repeat 50% / cover;
 }
 .container-item-home:nth-of-type(2) {
-    background: url(./assets/mobileapp1.jpeg) no-repeat 50% / cover;
+    background: url(./assets/app10.png) no-repeat 50% / cover;
 }
 .container-item-home:nth-of-type(3) {
-    background: url(./assets/webapp1.jpeg) no-repeat 50% / cover;
+    background: url(./assets/WebApp2.jpg) no-repeat 50% / cover;
 }
 .container-item-home:nth-of-type(4) {
-    background: url(./assets/ui-ux.gif) no-repeat 50% / cover;
+    background: url(./assets/ui2.jpg) no-repeat 50% / cover;
 }
 .container-item-home:nth-of-type(5) {
-    background: url(./assets/marketing.jpeg) no-repeat 50% / cover;
+    background: url(./assets/digital2.jpg) no-repeat 50% / cover;
+}
+
+.container-item-home .heading {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 32px;
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left top;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    text-wrap: nowrap;
+    text-align: center;
 }
 
 .container-item-home .content {
@@ -111,11 +128,17 @@
     visibility: visible;
 }
 
+.container-item-home:hover .heading {
+    opacity: 0;
+}
+
 .container-item-home .content span {
     display: block;
     margin-top: 5px;
     font-size: 1.2rem;
 }
+
+
 
 
 @media (max-width: 1024px) {
@@ -127,7 +150,7 @@
 
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 2.2rem;
-        margin-left: 11rem; 
+        margin-left: 11rem;
     }
 
     .container-home {
@@ -145,10 +168,10 @@
         margin-top: 8rem;
         left: -6rem;
     }
-    
+
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 2rem;
-        margin-left: 10rem; 
+        margin-left: 10rem;
     }
 
     .app-main4-home {
@@ -185,10 +208,10 @@
         margin-top: 6rem;
         left: -4rem;
     }
-    
+
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 1.5rem;
-        margin-left: 7rem; 
+        margin-left: 7rem;
     }
 
     .container-home {
@@ -198,7 +221,7 @@
     .container-item-home {
         height: 250px;
     }
-    
+
     .container-item-home:hover {
         width: 100%;
         transform: none;
@@ -208,3 +231,73 @@
         font-size: 1rem;
     }
 }
+
+
+
+@media (min-width: 1200px) {
+    .services {
+        font-size: 8rem;
+        margin-top: 16rem;
+        left: -10rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 3rem;
+        margin-left: 17rem;
+    
+    }
+
+    .container-home {
+        margin-top: -40rem;
+    }
+
+    .container-item-home {
+        height: 550px;
+    }
+
+    .container-item-home:hover {
+        flex: 0 0 300px;
+    }
+
+    .container-item-home .content {
+        font-size: 1.8rem;
+    }
+
+    .container-item-home .content span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .services {
+        font-size: 9rem;
+        margin-top: 17rem;
+        left: -11rem;
+    }
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 3.5rem;
+        margin-left: 20rem;
+    }
+
+    .container-home {
+        margin-top: -45rem;
+    }
+
+    .container-item-home {
+        height: 600px;
+    }
+
+    .container-item-home:hover {
+        flex: 0 0 350px;
+    }
+
+    .container-item-home .content {
+        font-size: 2rem;
+    }
+
+    .container-item-home .content span {
+        font-size: 1.7rem;
+    }
+}
+

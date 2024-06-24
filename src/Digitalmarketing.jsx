@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import {Helmet} from "react-helmet";
 // import image9 from './assets/image9.png'
 // import image10 from './assets/image10.png'
 // import image11 from './assets/image11.png'
@@ -117,6 +118,11 @@ const Digitalmarketing = () => {
 
   return (
     <>
+    <Helmet>
+                <title>Digital Business Transformation| Service - BELLWAY INFOTECH</title>
+                <meta name="description" content="At Bellway Infotech, a digital transformation strategy is essential for modern businesses to innovate, streamline operations, and enhance customer experiences effectively." />
+        
+            </Helmet>
       <CNavbar />
       <div class="containerx mx-auto  bg-black p-8">
         <div class="flex flex-col md:flex-row items-center mt-28 ">

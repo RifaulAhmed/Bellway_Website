@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Slider from 'react-slick';
 import CNavbar from './CNavbar'
 import PopupForm from './PopupForm';
+import {Helmet} from "react-helmet";
 // import image9 from './assets/image9.png'
 // import image10 from './assets/image10.png'
 // import image11 from './assets/image11.png'
@@ -106,6 +107,11 @@ const Mobile1 = () => {
 
   return (
     <>
+     <Helmet>
+                <title>Mobile Application Development | Service - BELLWAY INFOTECH</title>
+                <meta name="description" content="Discover Bellway Infotech's comprehensive mobile application development services. From concept to deployment our team delivers best solutions for your business." />
+        
+            </Helmet>
       <CNavbar />
       <div class="containerx mx-auto  bg-black p-8">
         <div class="flex flex-col md:flex-row items-center mt-28">

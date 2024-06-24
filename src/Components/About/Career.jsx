@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CNavbar from '../../CNavbar';
 import Msg from '../../assets/msgBox.png'
 import Footer from '../../Footer';
-
+import {Helmet} from "react-helmet";
 
 
 const Career = () => {
@@ -47,6 +47,11 @@ const Career = () => {
   
   return (
     <>
+    <Helmet>
+                <title>Career With Us - BELLWAY INFOTECH</title>
+                <meta name="description" content="At Bellway Infotech we have great career opportunities which includes UI/UX designing, software, cloud & app developments & many more for a great career building" />
+        
+            </Helmet>
     <CNavbar/> 
     <div className="mybg">
 <div class="containerx mx-auto  bg-black p-9 mt-20">

@@ -103,7 +103,7 @@
 }
 
 .services-submenu li {
-    width: 195px;
+    width: 215px;
 }
 
 .services-submenu li a {
@@ -116,7 +116,36 @@
 .services-submenu li a:hover {
     background: #d62b2b;
 }
+/* Add styles for the nested dropdown */
+.services-submenu .submenu-item {
+    position: relative;
+  }
+  
+  .services-submenu .submenu-item .nested-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    white-space: wrap;
+    background-color: black;
 
+    z-index: 1000;
+  }
+  
+  .services-submenu .submenu-item:hover .nested-submenu {
+    display: block;
+  }
+  
+  .services-submenu .nested-submenu .submenu-item {
+    padding: 10px;
+    background-color: white;
+
+  }
+  
+  .services-submenu .nested-submenu .submenu-item:hover {
+    background-color: #f1f1f1;
+  }
+  
 @media (max-width: 768px) {
     .navbar-toggle {
         display: flex;

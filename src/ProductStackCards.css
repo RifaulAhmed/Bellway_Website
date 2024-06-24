@@ -1,0 +1,144 @@
+body {
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+:root {
+  --cards: 4;
+  --cardHeight: 87vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  margin-bottom: var(--cardMargin);
+  margin-top: 3rem;
+  margin-left: 0;
+}
+
+.card-body {
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  height: var(--cardHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  width: 90vw;
+  height: 75vh;
+}
+
+.card1 .card-body {
+  background-color: #52B2CF;
+}
+
+.card2 .card-body {
+  background-color: #E5A36F;
+}
+
+.card3 .card-body {
+  background-color: #9CADCE;
+}
+
+.card4 .card-body {
+  background-color: #D4AFB9;
+}
+
+.slick-slider .slick-arrow {
+  display: none !important;
+}
+
+.slick-slider .slick-dots {
+  bottom: 10px
+}
+
+.slick-slider .slick-dots li button:before {
+  color: black;
+}
+
+.card1 {
+  position: sticky;
+  top: 10rem;
+}
+
+.card2 {
+  position: sticky;
+  top: 6rem;
+}
+
+.card3 {
+  position: sticky;
+  top: 12rem;
+}
+
+.card4 {
+  position: sticky;
+  top: 1rem;
+}
+
+.slider-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-md {
+  border-radius: 0.375rem; /* Adjust the value to make the images rounded as needed */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #cards {
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+
+  .card-body {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-body {
+    width: 100vw;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-body {
+    width: 80vw;
+  }
+}
+
+
+ 

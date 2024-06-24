@@ -1,73 +1,200 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
 import CNavbar from '../../CNavbar';
-import Footer from '../../Footer';
+import './CS.css'
+import brobo from '../../assets/Rectangle 40460.png'
+import desi from '../../assets/connect.png'
+import dcart from '../../assets/counter2.png'
+import grow from '../../assets/grow.png'
+import LLN from '../../assets/LLN2.png'
+import munch from '../../assets/munch.png'
+import jyotish from '../../assets/ShriJyotish.png'
+import match from '../../assets/match.png'
+import haze from '../../assets/haze2.png'
+import app from '../../assets/app.png'
+import logo from '../../assets/logo2.png'
+import logo2 from '../../assets/logo3.png'
+import logo4 from '../../assets/logo4.png'
+import logo5 from '../../assets/logo5.png'
+import logo6 from '../../assets/logo6.png'
+import logo7 from '../../assets/logo7.png'
+import logo8 from '../../assets/logo8.png'
+import logo12 from '../../assets/logo12.png'
+import logo13 from '../../assets/logo13.png'
+import logo15 from '../../assets/logo15.png'
+import logo16 from '../../assets/logo16.png'
+import logo17 from '../../assets/logo17.png'
+import online from '../../assets/Online3.png'
+import yml from '../../assets/Rectangle 40471.png'
+import dCart from '../../assets/Rectangle 40469 (1).png'
+import { Helmet } from "react-helmet";
+const Card = ({ image, category, title, description, logo, url }) => {
+  return (
+    <div className="max-w-sm h-50  rounded overflow-hidden shadow-lg m-4">
+      <div className="relative">
+        <img
+          src={image}
+          alt="Card Image"
+          className="w-full h-auto object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+        />
+        <div style={{
+          backgroundColor: '#ff1493',
+          backgroundImage: 'linear-gradient(319deg, #ff1493 0%, #0000ff 37%, #ff8c00 100%)'
+        }}
+          className="absolute top-0 left-0  bg-opacity-50 text-white text-xs font-bold uppercase p-2">
+          {category}
+        </div>
+      </div>
+      <div className="px-4 py-4">
+        <h2 className="font-bold text-xl mb-2 text-left">{title}</h2>
+        <p className="text-gray-700 text-base">{description}</p>
+      </div>
+      <div className="px-6 py-4 flex justify-between items-center">
+        <img src={logo} alt="Logo" className="h-8 w-18" />
+        <a href={url}><button className='custom-button'>
+          View Case Study
+        </button></a>
 
 
-const Card = ({ image, title, link }) => (
-  <div className="w-2/3  bg-white rounded overflow-hidden shadow-lg mx-auto my-8 p-4 " style={{ boxShadow: '0 0 30px rgba(0, 0, 0, 0.8)' }}>
-    <img className="w-full h-96 rounded" src={image} alt={title} />
-    <div className="px-6 py-4">
-      <div className="font-bold text-4xl mb-2 text-center">{title}</div>
+
+      </div>
     </div>
-    <div className="px-6 pt-4 pb-2 text-center">
-      <Link to={link}
-        className="inline-block bg-black text-white font-bold px-20 py-4 rounded"
-      >
-        Visit
-      </Link>
-    </div>
-  </div>
-);
+  );
+};
 
 const CS = () => {
+  const cardsData = [
+    {
+      image: brobo,
+      category: 'brobo',
+      title: 'Brobo',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo2,
+      url: '/brobo'
+    },
+    {
+      image: desi,
+      category: 'Go Connect',
+      title: 'Go Connect',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo4,
+      url: '/brobo'
+    },
+    {
+      image: dcart,
+      category: 'Coupon Counter',
+      title: 'Coupon Counter',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo5,
+      url: '/brobo'
+    },
+    {
+      image: grow,
+      category: 'Desi Grow',
+      title: 'Desi Grow',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo,
+      url: '/brobo'
+    },
+    {
+      image: LLN,
+      category: 'LLN',
+      title: 'LLN',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo6,
+      url: '/brobo'
+    },
+    {
+      image: munch,
+      category: 'Maza Munch',
+      title: 'Maza Munch',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo7,
+      url: '/brobo'
+    },
+    {
+      image: jyotish,
+      category: 'Shri Jyotish',
+      title: 'Shri Jyotish',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo8,
+      url: '/brobo'
+    },
+    {
+      image: haze,
+      category: 'Truely Match',
+      title: 'Truely Match',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo12,
+      url: '/brobo'
+    },
+    {
+      image: app,
+      category: 'OneApp plus',
+      title: 'OneApp plus',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo13,
+      url: '/brobo'
+    },
+    {
+      image: online,
+      category: 'Online Store Web',
+      title: 'Online Store Web',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo15,
+      url: '/brobo'
+    },
+    {
+      image: yml,
+      category: 'YML Mart',
+      title: 'YML Mart',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo16,
+      url: '/brobo'
+    },
+    {
+      image: dCart,
+      category: 'DCart',
+      title: 'DCart',
+      description: 'A HIPAA compliant Telemedicine App for USA where patient and doctors can register to give',
+      logo: logo17,
+      url: '/brobo'
+    }
+  ];
+
   return (
     <>
-    <CNavbar/>
-<div className="mgbg">
+      <Helmet>
+        <title>BELLWAY INFOTECH | Case Study - Innovation In Action</title>
+        <meta name="description" content="Explore our in-depth case studies showcasing our expertise. Discover how we've helped clients achieve their business goals through innovative solutions and strategic insights" />
 
-
-<div class=" mx-auto  bg-black p-8 mt-20">
-  <div class="flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 text-left mb-4 md:mb-0 p-8">
-      <h1 class="sm:text-8xl font-bold mb-4   text-white">Case Study...</h1>
-      <h3 class="sm:text-2xl text-white">
-        <Link to="/" class="text-red-600 hover:underline">Home</Link> / Case Study</h3>
-    </div>
-    <div class="md:w-1/2 text-right">
-      <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Question Image" class="w-full h-auto"/>
-    </div>
-  </div>
-</div>
-
-    <div className="min-h-screen flex flex-col items-center bg-gray-100 py-8">
-      <h1 className="text-5xl font-bold mb-12 mt-14 text-black">Our Case Studies</h1>
-      <Card
-        image="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
-        title="Graphic Design"
-        link="/case-study/graphic-design/GD"
-      />
-         <Card
-        image="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D"
-        title="Digital Marketing"
-        link="/case-study/digital-marketing/DM"
-      />
-      <Card
-        image="https://plus.unsplash.com/premium_photo-1661375427386-64ac35086427?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FzZSUyMHN0dWR5fGVufDB8fDB8fHww"
-        title="Web Development"
-        link="/case-study/web/WD"
-      />
-
-      <Card
-        image="https://images.unsplash.com/photo-1587840178393-079769787b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW5kcm9pZHxlbnwwfHwwfHx8MA%3D%3D"
-        title="App Development"
-        link="/case-study/app/AD"
-      />
-    </div>
-    <Footer/>
-    </div>
+      </Helmet>
+      <CNavbar />
+      <div className="flex flex-col items-center mt-8">
+        <h1 className="text-2xl font-semibold mt-20 text-black">CASE STUDIES</h1>
+        <p className="text-4xl mt-2">
+          <span className="font-bold text-black">Explore</span> Our Recent <span className="font-bold text-black">Work</span>
+        </p>
+        <h1 className='font-semi-bold text-black text-center font-sans mt-2'>People expect more experience than ever before. Bellway intersects customer experiences and design to create<br /> immersive solutions that shouts details. Making it easy and everlastingly memorable. Scroll to feel.</h1>
+        <div className="flex flex-wrap justify-center mt-12">
+          {cardsData.map((card, index) => (
+            <Card
+              key={index}
+              image={card.image}
+              category={card.category}
+              title={card.title}
+              description={card.description}
+              logo={card.logo}
+              url={card.url}
+            />
+          ))}
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default CS
+export default CS;
+
+
+
+

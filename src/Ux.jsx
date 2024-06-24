@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-
+import {Helmet} from "react-helmet";
 import PopupForm from './PopupForm';
 // import image9 from './assets/image9.png'
 // import image10 from './assets/image10.png'
@@ -116,6 +116,11 @@ const Ux = () => {
 
   return (
     <>
+     <Helmet>
+                <title>BELLWAY INFOTECH | UI/UX Designing - Digital Experiences</title>
+                <meta name="description" content="Bellway Infotech specializes in ui/ux designing, creating exceptional digital experiences. User experience (UX) design & user interface (UI) design in this full guide" />
+        
+            </Helmet>
       <CNavbar />
       <div class="containerx mx-auto  bg-black p-8">
         <div class="flex flex-col md:flex-row items-center mt-28 ">

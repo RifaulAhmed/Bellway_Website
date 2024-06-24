@@ -47,7 +47,7 @@
 .recent-work {
     text-align: center;
     font-size: 3rem; /* Adjust as needed */
-    margin-bottom: 3rem; /* Adjust as needed */
+    margin-bottom: -3rem;
 }
 
 .slider {

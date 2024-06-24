@@ -36,7 +36,7 @@ const WhyBell = () => {
                                 Consumer Help Service
                             </button>
                         </div>
-                        <div className="text-sm text-gray-700 mb-6" style={{ height: '100px', overflowY: 'auto' }}>
+                        <div className="text-300 text-gray-700 mb-6" style={{ height: '130px', overflowY: 'auto' }}>
                             {selectedButton === 1 && (
                                 "As a premier application development company, we ensure that our proficient mobile app developers are with you every step of the way, from inception to completion. Our approach begins with a deep understanding of your specific demands and requirements. We then identify the most suitable resources, devise potential solutions, and implement effective methods to enhance your business through our comprehensive app development services. Our goal is to build robust and efficient applications tailored to your needs, helping you achieve sustained growth and success."
                             )}
@@ -51,7 +51,7 @@ const WhyBell = () => {
                     <div className="image-container flex justify-center">
                         <img
                             src="https://images.unsplash.com/photo-1610097453820-0c3c8aac0202?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            className="w-3/4 rounded-lg"
+                            className="w-5/2 rounded-lg"
                         />
                     </div>
                 </div>

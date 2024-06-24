@@ -97,7 +97,7 @@ const settings = {
             />
             <div className="md:ml-28 mt-4 md:mt-0 text-center  ">
               <h2 className="text-4xl font-semibold">Machine Learning</h2>
-              <p className="mt-9 text-lg"> Machine learning is a branch of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit instructions. By using data-driven approaches, machine learning systems can identify patterns, make predictions, and improve over time based on experience. It encompasses various techniques such as supervised learning, unsupervised learning, and reinforcement learning. These techniques are applied in numerous fields, including natural language processing, image recognition, and predictive analytics, making machine learning a crucial area of study for advancing technology and solving complex problems.<br /><br />
+              <p className="mt-9 text-lg " style={{textAlign:'left'}}> Machine learning is a branch of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit instructions. By using data-driven approaches, machine learning systems can identify patterns, make predictions, and improve over time based on experience. It encompasses various techniques such as supervised learning, unsupervised learning, and reinforcement learning. These techniques are applied in numerous fields, including natural language processing, image recognition, and predictive analytics, making machine learning a crucial area of study for advancing technology and solving complex problems.<br /><br />
                 At our company, we leverage the power of machine learning to turn data into actionable insights, driving innovation and efficiency across industries. Our advanced algorithms and predictive models enable businesses to make data-driven decisions, optimize operations, and enhance customer experiences. From automating processes to uncovering hidden patterns in large datasets, our machine learning solutions are designed to meet the unique needs of each client, ensuring they stay ahead in a competitive market.</p>
             </div>
           </div>
@@ -110,7 +110,7 @@ const settings = {
             />
             <div className="md:mr-28 mt-4 md:mt-0 text-center md:text-left mx-9">
               <h2 className="text-4xl font-semibold">Deep Learning</h2>
-              <p className="mt-9 text-lg">Deep learning is a subset of machine learning that focuses on neural networks with many layers (hence "deep") to model complex patterns in data. It mimics the structure and function of the human brain to process vast amounts of information, enabling systems to perform tasks such as image and speech recognition, natural language processing, and autonomous driving. By leveraging large datasets and high-performance computing, deep learning algorithms can learn intricate representations and features directly from raw data, leading to breakthroughs in artificial intelligence. This field of study is pivotal for advancing technology, as it drives innovations in various industries by solving problems that were previously considered intractable.<br /><br />
+              <p className="mt-9 text-lg" style={{textAlign:'left'}}>Deep learning is a subset of machine learning that focuses on neural networks with many layers (hence "deep") to model complex patterns in data. It mimics the structure and function of the human brain to process vast amounts of information, enabling systems to perform tasks such as image and speech recognition, natural language processing, and autonomous driving. By leveraging large datasets and high-performance computing, deep learning algorithms can learn intricate representations and features directly from raw data, leading to breakthroughs in artificial intelligence. This field of study is pivotal for advancing technology, as it drives innovations in various industries by solving problems that were previously considered intractable.<br /><br />
                 Deep learning is revolutionizing industries by enabling companies to harness the full potential of their data. Our company leverages deep learning to develop sophisticated models that drive innovation and efficiency across various applications. From enhancing image and speech recognition capabilities to automating complex tasks and improving decision-making processes, our deep learning solutions are tailored to meet the specific needs of your business. By utilizing state-of-the-art neural networks and leveraging vast amounts of data, we empower your organization to achieve unprecedented accuracy, efficiency, and insight, keeping you at the forefront of technological advancement and competitive edge.</p>
             </div>
           </div>
@@ -123,7 +123,7 @@ const settings = {
             />
             <div className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-4xl font-semibold">Natural Language Processing</h2>
-              <p className="mt-9 text-lg">Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. At our company, we harness the power of NLP to develop advanced solutions that enable machines to understand, interpret, and respond to human language in a valuable way. Our NLP technologies are designed to enhance customer interactions, streamline operations, and provide deep insights from textual data. Whether it's through chatbots, sentiment analysis, or language translation, our cutting-edge NLP solutions help your business to improve communication, automate tasks, and gain a competitive edge in today's data-driven world.
+              <p className="mt-9 text-lg"style={{textAlign:'left'}}>Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. At our company, we harness the power of NLP to develop advanced solutions that enable machines to understand, interpret, and respond to human language in a valuable way. Our NLP technologies are designed to enhance customer interactions, streamline operations, and provide deep insights from textual data. Whether it's through chatbots, sentiment analysis, or language translation, our cutting-edge NLP solutions help your business to improve communication, automate tasks, and gain a competitive edge in today's data-driven world.
                 <br /><br />
                 Natural Language Processing (NLP) is transforming the way companies interact with data and customers by enabling computers to understand and respond to human language. At our company, we leverage NLP to enhance customer service through intelligent chatbots, automate document processing, and extract valuable insights from unstructured text data. Our advanced NLP solutions improve efficiency, streamline communication, and provide a deeper understanding of customer sentiments and market trends. By integrating NLP into your business processes, we help you stay ahead in a competitive market, ensuring better decision-making and more personalized customer experiences.</p>
             </div>
@@ -267,10 +267,7 @@ const settings = {
         </div>
       </div> */}
       <HomeTestimonials/>
-
-
       <HomeFaq/>
-
       <Footer/>
     </>
   )

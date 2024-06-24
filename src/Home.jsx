@@ -46,6 +46,7 @@ import HomeSlider from './HomeSlider';
 import WhyBell from './WhyBell';
 import HomeServices from './HomeServices';
 import sister from './assets/sistercom2.png';
+import {Helmet} from "react-helmet";
 const Wrapper = styled.div`
   justify-content: space-around;
   margin: auto;
@@ -113,6 +114,11 @@ const Home = () => {
   
   return (
     <div >
+            <Helmet>
+                <title>Web & App Development Company in India - BELLWAY INFOTECH </title>
+                <meta name="description" content="We Work in IT services, App Development, Web Development & Digital Marketing at Bellway Infotech. We leverage technology for business process transformation." />
+        
+            </Helmet>
       <CNavbar />
 
       <Header />
@@ -131,25 +137,6 @@ const Home = () => {
       </div>
 
       <HomeSlider />
-
-      <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center ml-2 mt-8 p-20">
-        <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-4">
-          <h1 className="our-process m-0 p-0 ">Our Sister Company</h1>
-          <div className="flex justify-center">
-            <img src={sister} alt="Sister Company" className="img-fluid w-120 h-120" />
-          </div>
-          <div className="mt-4">
-            <a
-              href="https://cybenkotechnologies.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 mb-4 text-white bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full animate-pulse transform transition-transform duration-300 hover:scale-105"
-            >
-              Visit Cybenko
-            </a>
-          </div>
-        </div>
-      </div>
 
       <Solutions />
 
