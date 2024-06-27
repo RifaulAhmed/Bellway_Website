@@ -12,9 +12,12 @@ body {
 
 .container {
   width: 100%;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 }
 
 #cards {
@@ -27,7 +30,11 @@ body {
   padding-bottom: calc(var(--cards) * var(--cardTopPadding));
   margin-bottom: var(--cardMargin);
   margin-top: 3rem;
+<<<<<<< HEAD
   margin-left: 0;
+=======
+  margin-left: 2rem;
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 }
 
 .card-body {
@@ -76,22 +83,32 @@ body {
   position: sticky;
   top: 10rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 .card2 {
   position: sticky;
   top: 6rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 .card3 {
   position: sticky;
   top: 12rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 .card4 {
   position: sticky;
   top: 1rem;
 }
 
+<<<<<<< HEAD
 .slider-container {
   margin-top: 40px;
   display: flex;
@@ -142,3 +159,10 @@ body {
 
 
  
+=======
+.slider-container{
+  margin-top: 100px;
+  padding-left: 5rem;
+  height: 70%;
+}
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8

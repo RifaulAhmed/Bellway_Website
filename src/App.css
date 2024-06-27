@@ -40,8 +40,11 @@
 .read-the-docs {
   color: #888;
 } */
+<<<<<<< HEAD
 /* App.css */
 
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 .loading-background {
   background-color: black !important;
 }
@@ -56,5 +59,9 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8

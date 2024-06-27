@@ -25,12 +25,22 @@ import {Helmet} from "react-helmet";
 // import centerImage from './assets/Vector (2).png'
 import image from './assets/image 527.png'
 import Slider2 from 'react-slick';
+<<<<<<< HEAD
 import dpImage from './assets/dp-img3.jpg'
 import HomeTestimonials from './HomeTestimonials'
 import burgir5 from './assets/Burger5.png'
 import background from './assets/grocery6.jpg'
 import bbq from './assets/bbq2.jpeg'
 import ProductStackCards from './ProductStackCards';
+=======
+import red from './assets/red.webp'
+import HomeTestimonials from './HomeTestimonials';
+<<<<<<< HEAD
+import bbq from './assets/bbq2.jpeg';
+=======
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 const Product2 = () => {
 
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -156,7 +166,11 @@ const Product2 = () => {
             </div>
             <div class="containerx mx-auto bg-black p-8">
                 <div class="flex flex-col md:flex-row items-center">
+<<<<<<< HEAD
+                    <div class="md:w-1/2 text-left mb-38  p-16">
+=======
                     <div class="md:w-1/2 text-left mb-4 md:mb-0 p-16">
+<<<<<<< HEAD
                         <h1 class="text-5xl font-bold mb-4 text-white ">FRESH AND RED DELIVERY</h1>
                 
                         <a href="https://play.google.com/store/apps/details?id=com.bellwayinfotech.freshnred_user"
@@ -185,6 +199,20 @@ const Product2 = () => {
                     </div>
                     <div class="md:w-1/2 text-right">
                         <img src={bbq} alt="About Image" class="w-full h-auto" />
+=======
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+                        <h1 class="sm:text-8xl font-bold mb-4 text-white">Fresh and Red Delivery</h1>
+                        <h3 class="sm:text-2xl text-white">
+                            <Link to="/" class="text-red-600 hover:underline">Home</Link> / Fresh and Red Delivery
+                        </h3>
+                    </div>
+                    <div class="md:w-1/2 text-right">
+<<<<<<< HEAD
+                        <img src={bbq} alt="About Image" class="w-full h-auto" />
+=======
+                        <img src="https://i.pinimg.com/564x/f3/16/d6/f316d61da70a191d11fa6f804f356c62.jpg" alt="About Image" class="w-full h-auto" />
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
                     </div>
                 </div>
             </div>
@@ -199,6 +227,7 @@ const Product2 = () => {
                 {/* <h1 class="sm:text-5xl  font-bold mb-4 text-black mt-16">"Accelerate Business Growth with
           Our AI Services"</h1> */}
 
+<<<<<<< HEAD
                 <div className="space-y-20 mt-12 mx-auto">
                     <div className="flex flex-col md:flex-row  text-black">
                         <img
@@ -209,6 +238,67 @@ const Product2 = () => {
                         <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-1 md:mt-0 text-center md:text-left">
                             <h2 className="text-3xl font-bold text-left mt-3">A Bellway food application provides numerous benefits for users:</h2>
                             <p className="mt-9 text-lg" style={{ textAlign: 'start' }}>Convenience: Food applications offer the convenience of browsing menus, placing orders, and making payments directly from your smartphone or computer. This eliminates the need for phone calls or physical visits to restaurants, saving time and effort.<br/><br/>Variety of Choices: These apps provide a wide range of restaurants and cuisines to choose from, allowing users to explore diverse options in their area. Whether you crave pizza, sushi, or vegan dishes, you can easily find and order your favorite meals.
+=======
+<<<<<<< HEAD
+                <div className="space-y-20 mt-12 mx-auto">
+=======
+                <div  className="space-y-20 mt-12 mx-auto">
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+                    <div className="flex flex-col md:flex-row  text-white">
+                        <img
+                            src={red}
+                            alt="Fresh and red delivery"
+<<<<<<< HEAD
+                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)', borderRadius: '6%' }}
+                        />
+                        <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
+                            <h2 className="text-4xl font-bold" style={{ color: 'black' }}>Fresh And Red Delivery</h2>
+                            <p className="mt-9 text-lg" style={{ color: 'black', textAlign: 'start' }}> App Features: <br /><br />
+
+                                Seamless Ordering: Browse through a virtual marketplace featuring a wide selection of farm-fresh produce and premium red meats. With intuitive navigation, ordering your favourite ingredients has never been easier.<br />
+
+                                Customization: Personalize your orders down to the last detail.<br /> Choose your preferred cuts of meat, quantities of produce, and any additional gourmet pairings or sauces you desire.<br />
+
+                                Real-Time Updates: Stay in the loop with real-time updates on your order's status.<br /> From packing and dispatch to delivery, you'll always know where your culinary <br />treasures are.
+                                <br />
+                                Delivery Tracking: Track your delivery in real-time as it makes its way to your doorstep. No more guessing when your goodies will arrive!
+                                <br />
+                                Cooking Tips: Unlock professional cooking tips and techniques that enhance your culinary skills. Learn how to perfectly sear a steak or choose the<br /> ripest tomatoes for your dishes.<br /><br />
+
+                                App Benefits:<br /><br />
+
+                                Time-Saving Convenience: Skip the grocery store queues and the butcher shop rush. With the Fresh and Red Delivery App, your kitchen is always stocked with the finest ingredients.
+                                <br />
+                                Healthier Choices: Our commitment to quality means you can indulge in nutrient-rich red meats and fresh produce that contribute to a balanced and wholesome diet.
+                                <br />
+                                Sustainability: By choosing the Fresh and Red Delivery App, you're supporting eco-friendly practices through responsible sourcing and minimal packaging waste.
+=======
+                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)',borderRadius:'6%' }}
+                        />
+                        <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
+                            <h2 className="text-4xl font-bold" style={{color:'black'}}>Fresh And Red Delivery</h2>
+                            <p className="mt-9 text-lg"style={{color:'black',textAlign:'start'}}> App Features: <br/><br/>
+
+Seamless Ordering: Browse through a virtual marketplace featuring a wide selection of farm-fresh produce and premium red meats. With intuitive navigation, ordering your favourite ingredients has never been easier.<br/>
+
+Customization: Personalize your orders down to the last detail.<br/> Choose your preferred cuts of meat, quantities of produce, and any additional gourmet pairings or sauces you desire.<br/>
+
+Real-Time Updates: Stay in the loop with real-time updates on your order's status.<br/> From packing and dispatch to delivery, you'll always know where your culinary <br/>treasures are.
+<br/>
+Delivery Tracking: Track your delivery in real-time as it makes its way to your doorstep. No more guessing when your goodies will arrive!
+<br/>
+Cooking Tips: Unlock professional cooking tips and techniques that enhance your culinary skills. Learn how to perfectly sear a steak or choose the<br/> ripest tomatoes for your dishes.<br/><br/>
+
+App Benefits:<br/><br/>
+
+Time-Saving Convenience: Skip the grocery store queues and the butcher shop rush. With the Fresh and Red Delivery App, your kitchen is always stocked with the finest ingredients.
+<br/>
+Healthier Choices: Our commitment to quality means you can indulge in nutrient-rich red meats and fresh produce that contribute to a balanced and wholesome diet.
+<br/>
+Sustainability: By choosing the Fresh and Red Delivery App, you're supporting eco-friendly practices through responsible sourcing and minimal packaging waste.
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 
 
                             </p>
@@ -218,6 +308,7 @@ const Product2 = () => {
                         <div className="mt-4 md:mt-0 text-center md:text-left mx-9">
                             <h2 className="text-4xl font-bold text-center">Our Product Benefits<br /></h2>
 
+<<<<<<< HEAD
                             {/* Cards Container */}
                             <div style={{ borderRadius: '60%'}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 p-6">
                                 {cardData.map((card, index) => (
@@ -259,10 +350,28 @@ const Product2 = () => {
                         </div>
                         <div className="col-span-1">
                             <MainCard mainHeading="Multi Vendor:" smallCards={smallCardData2} />
+=======
+                    <div className="flex flex-col md:flex-row-reverse items-center mt-20" >
+                        <img
+                            src={fresh}
+                            alt="Grocery"
+                            className="w-1/2 md:w-1/3" style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' }}
+                        />
+                        <div className="md:mr-28 mt-4 md:mt-0 text-center md:text-left mx-9">
+                            <h2 style={{ textAlign: 'left' }} className="text-4xl font-bold">Why is Fresh and Red Delivery a useful resource for you?<br /></h2>
+<<<<<<< HEAD
+                            <p style={{ textAlign: 'left' }} className="mt-9 text-lg">A platform like this would be useful for handling online ordering, reservations for tables, delivery coordination, financial transactions, and other facets of a restaurant business. Our platform's fundamental feature is customization, which enables you to modify it to meet the particular needs of your restaurant.<br /> Our versatile system adjusts to your demands, regardless of whether you require specialized modules for customer relationship management, staff scheduling, or inventory management.<br /> To improve consumer interactions, you can tailor loyalty programs and marketing campaigns to your restaurant's identity and personalize the interface to provide your patrons a consistent experience. Because of our modular architecture, you may select the capabilities you require right now and add more as your company expands.
+                            </p>
+=======
+                            <p style={{ textAlign: 'left' }} className="mt-9 text-lg">A platform like this would be useful for handling online ordering, reservations for tables, delivery coordination, financial transactions, and other facets of a restaurant business. Our platform's fundamental feature is customization, which enables you to modify it to meet the particular needs of your restaurant.<br/> Our versatile system adjusts to your demands, regardless of whether you require specialized modules for customer relationship management, staff scheduling, or inventory management.<br/> To improve consumer interactions, you can tailor loyalty programs and marketing campaigns to your restaurant's identity and personalize the interface to provide your patrons a consistent experience. Because of our modular architecture, you may select the capabilities you require right now and add more as your company expands.
+</p>
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
 
 
@@ -273,6 +382,80 @@ const Product2 = () => {
             <HomeTestimonials />
 
             {/* <FaqPage /> */}
+=======
+            <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-20 p-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')" }}>
+                <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-6xl flex flex-wrap ">
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+                    <div className="w-full md:w-1/2 p-4">
+                        <h2 className="text-3xl font-bold mb-4">Trusted Web & Mobile App Development Company</h2>
+                        <p className="mt-10">If you have any questions, feel free to reach out. We are here to help you with any queries you may have.</p>
+                        <div className="mt-6">
+                            <h3 className="text-xl font-semibold">Our Office</h3>
+                            <p>B-405 Anmol Space Baikunth Dham, <br />
+                                Khajrana Main Road,<br /> Indore, 452018</p>
+                        </div>
+                        <div className='mt-6'>
+                            <h3 className="text-xl font-semibold">Contact Us </h3>
+                            <p>Email: mailto:info@bellwayinfotech.com</p>
+                            <p>Phone: +91-9981866409</p>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+
+=======
+                    
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+                    <div className="w-full md:w-1/2 p-4">
+                        <h2 className="text-2xl font-bold mb-4">Enquiry Form</h2>
+                        <form>
+                            <div className="mb-4 flex flex-wrap -mx-2">
+                                <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                                    <label className="block text-sm font-medium mb-1" htmlFor="name">Name</label>
+                                    <input className="w-full px-3 py-2 border rounded" type="text" id="name" name="name" required />
+                                </div>
+                                <div className="w-full md:w-1/2 px-2">
+                                    <label className="block text-sm font-medium mb-1" htmlFor="phone">Phone</label>
+                                    <input className="w-full px-3 py-2 border rounded" type="tel" id="phone" name="phone" required />
+                                </div>
+                            </div>
+                            <div className="mb-4 flex flex-wrap -mx-2">
+                                <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                                    <label className="block text-sm font-medium mb-1" htmlFor="email">Email</label>
+                                    <input className="w-full px-3 py-2 border rounded" type="email" id="email" name="email" required />
+                                </div>
+                                <div className="w-full md:w-1/2 px-2">
+                                    <label className="block text-sm font-medium mb-1" htmlFor="service">Service</label>
+                                    <select className="w-full px-3 py-2 border rounded" id="service" name="service" required>
+                                        <option value="">Select a service</option>
+                                        <option value="consultation">Consultation</option>
+                                        <option value="support">Support</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
+                                <textarea className="w-full px-3 py-2 border rounded" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button className="w-full bg-black text-white py-2 rounded">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+
+
+<<<<<<< HEAD
+            <HomeTestimonials />
+=======
+            <HomeTestimonials/>
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 
             <Footer />
         </>

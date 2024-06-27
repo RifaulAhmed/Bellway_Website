@@ -20,9 +20,20 @@
     font-size: 2.5rem;
     font-weight: 500;
     color: black;
+<<<<<<< HEAD
     transform-origin: bottom left;
     margin-left: 15rem;
+=======
+<<<<<<< HEAD
+    transform-origin: bottom left;
+    margin-left: 15rem;
+    margin-top: -3px;
+=======
+    transform-origin: bottom left; 
+    margin-left: 13rem;
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     margin-top: -1px;
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
 }
 
 .content {
@@ -138,7 +149,14 @@
 }
 
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 @media (max-width: 1024px) {
     .services {
         font-size: 5.5rem;
@@ -148,8 +166,16 @@
 
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 2.2rem;
+<<<<<<< HEAD
         margin-left: 11rem;
         /* letter-spacing: 2rem; */
+=======
+<<<<<<< HEAD
+        margin-left: 11rem;
+=======
+        margin-left: 11rem; 
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     }
 
     .container-home {
@@ -167,11 +193,25 @@
         margin-top: 8rem;
         left: -6rem;
     }
+<<<<<<< HEAD
 
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 2rem;
         margin-left: 10rem;
         /* letter-spacing: 2rem; */
+=======
+<<<<<<< HEAD
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 2rem;
+        margin-left: 10rem;
+=======
+    
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 2rem;
+        margin-left: 10rem; 
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     }
 
     .app-main4-home {
@@ -208,11 +248,25 @@
         margin-top: 6rem;
         left: -4rem;
     }
+<<<<<<< HEAD
 
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 1.5rem;
         margin-left: 7rem;
         /* letter-spacing: 2rem; */
+=======
+<<<<<<< HEAD
+
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 1.5rem;
+        margin-left: 7rem;
+=======
+    
+    .s, .e, .r, .v, .i, .c, .e2, .s2 {
+        font-size: 1.5rem;
+        margin-left: 7rem; 
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     }
 
     .container-home {
@@ -222,7 +276,15 @@
     .container-item-home {
         height: 250px;
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     .container-item-home:hover {
         width: 100%;
         transform: none;
@@ -232,20 +294,32 @@
         font-size: 1rem;
     }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 
 
 
 @media (min-width: 1200px) {
     .services {
         font-size: 8rem;
+<<<<<<< HEAD
         margin-top: 16rem;
+=======
+        margin-top: 15rem;
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
         left: -10rem;
     }
 
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 3rem;
+<<<<<<< HEAD
         margin-left: 17rem;
         /* letter-spacing: 2rem; */
+=======
+        margin-left: 15rem;
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     }
 
     .container-home {
@@ -279,7 +353,10 @@
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 3.5rem;
         margin-left: 20rem;
+<<<<<<< HEAD
         padding-top: -2px;
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     }
 
     .container-home {
@@ -302,4 +379,9 @@
         font-size: 1.7rem;
     }
 }
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8

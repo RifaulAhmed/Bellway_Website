@@ -4,7 +4,23 @@ import logo from './assets/logo9.png';
 import './Navbar.css';
 
 const serviceDropdown = [
+<<<<<<< HEAD
   { id: 1, title: "Artificial Intelligence", path: "/ai", cName: "submenu-item" },
+=======
+  { id: 1, title: "AI", path: "/ai", cName: "submenu-item" },
+<<<<<<< HEAD
+  { id: 2, title: "Mobile Application Development", path: "/mobile-application-development", cName: "submenu-item" },
+  { id: 3, title: "Web Application Development", path: "/web-application-development", cName: "submenu-item" },
+  { id: 4, title: "UX/UI Design", path: "/ui/ux-design", cName: "submenu-item" },
+  { id: 5, title: "Digital Marketing", path: "/digital-marketing", cName: "submenu-item" },
+];
+
+const productDropdown = [
+  { id: 1, title: "Bellway Grocery", path: "/bellway-grocery" },
+  { id: 2, title: "Delicious Meals Delivery", path: "/delicious-meals-delivery" },
+  { id: 3, title: "Fresh and Red Delivery", path: "/fresh-and-red-delivery" },
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
   { id: 2, title: "Mobile Application Development", path: "/mobile1", cName: "submenu-item" },
   { id: 3, title: "Web Application Development", path: "/web1", cName: "submenu-item" },
   { id: 4, title: "UX/UI Design", path: "/ux", cName: "submenu-item" },
@@ -12,6 +28,7 @@ const serviceDropdown = [
 ];
 
 const productDropdown = [
+<<<<<<< HEAD
   {
     id: 1,
     title: "On Demand Apps",
@@ -35,6 +52,14 @@ const productDropdown = [
   { id: 10, title: "Delicious Meals Delivery", path: "/product" },
   { id: 11, title: "Home-C", path: "/home-C" },
   { id: 11, title: "Daily Bills (Khata Bill Clone)", path: "/daily-bills" }
+=======
+  { id: 1, title: "Bellway Grocery", path: "/commerce" },
+  { id: 2, title: "Delicious Meals Delivery", path: "/product" },
+  { id: 3, title: "Fresh and Red Delivery", path: "/fresh" },
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+  { id: 4, title: "Ur Fine", path: "/urfine" },
+  { id: 5, title: "Team-11", path: "/team11" },
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 ];
 
 const aboutDropdown = [

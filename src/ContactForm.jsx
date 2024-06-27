@@ -1,50 +1,14 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import map from './assets/conact-page-map.jpg';
 import CNavbar from './CNavbar';
-import Footer from './Footer';
-import { Helmet } from "react-helmet";
-import vector from './assets/Vector.png'
-import ReCAPTCHA from 'react-google-recaptcha';
-//6Lc-ZgIqAAAAAJJnEsBoxdgWRYPsL0v2EaOvjM5D
-
 function ContactForm() {
-
-    //ReCAPTCHA validations
-    const[capVal, setCapVal] = useState(null)
-
-    // Handler for input change in contact number field
-    const handleContactNumberChange = (event) => {
-        const input = event.target.value;
-
-        // Validate if input is numeric and limit to 10 digits
-        if (/^\d{0,10}$/.test(input)) {
-            setContactNumber(input); // Update the state if input is valid
-        }
-        // You can add further validation or feedback if needed
-    };
-    // const [callContactNumber, setCallContactNumber] = useState('');
-    const [countryCode, setCountryCode] = useState('+1'); // Initial country code
-
-    const handleCountryCodeChange = (event) => {
-        setCountryCode(event.target.value);
-    };
-
-    const handleSubmit2 = (event) => {
-        event.preventDefault();
-        // Handle form submission here
-        console.log('Phone Number:', countryCode + callContactNumber);
-        // Reset the form fields after submission
-        setCallContactNumber('');
-        setCountryCode('+1'); // Reset to initial country code
-    };
     // State for the contact form
     const [selectedServices, setSelectedServices] = useState([]);
-    const [FullName, setFirstName] = useState('');
-    const [City, setLastName] = useState('');
-    const [Email, setEmail] = useState('');
-    const [ContactNumber, setContactNumber] = useState('');
-    const [Requirements, setRequirements] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [contactNumber, setContactNumber] = useState('');
+    const [requirements, setRequirements] = useState('');
 
     // State for the call form
     const [callFirstName, setCallFirstName] = useState('');
@@ -55,11 +19,7 @@ function ContactForm() {
     const [callMessage, setCallMessage] = useState('');
 
     const [showCallForm, setShowCallForm] = useState(false);
-    const handelContactsale = () => {
-        setTimeout(() => {
-            console.log("Hello, World!");
-        }, 2000)
-    }
+
     const handleCheckboxChange = (event) => {
         const service = event.target.value;
         if (selectedServices.includes(service)) {
@@ -73,12 +33,12 @@ function ContactForm() {
         event.preventDefault();
         // Handle form submission here
         console.log('Form submitted:', {
-            FullName,
-            City,
-            Email,
-            ContactNumber,
+            firstName,
+            lastName,
+            email,
+            contactNumber,
             selectedServices,
-            Requirements,
+            requirements,
         });
     };
 
@@ -94,34 +54,9 @@ function ContactForm() {
         });
         setShowCallForm(false);
     };
-=======
-import React from 'react';
-import picture from './assets/c3.jpg';
-// import instagram from './assets/ig.png';
-// import twitter from './assets/twt.png';
-// import youtube from './assets/ytb.png';
-// import gmail from './assets/mail.png';
-import CNavbar from './CNavbar';
-<<<<<<< HEAD
-// import Form from './Form';
-// import Map from './Map';
-=======
-import Form from './Form';
-import Map from './Map';
->>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
-import Footer from './Footer';
-import ContactForm from './ContactForm';
-function Herosection() {
->>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
     return (
         <>
-            <Helmet>
-                <title>BELLWAY INFOTECH - Contact Us</title>
-                <meta name="description" content="For any query or inquiry regarding our Web & App Development or their uses, please feel free to contact us directly. As we are just mail far from you. Contact us at info@bellwayinfotech.com" />
-
-            </Helmet>
-            <CNavbar />
-<<<<<<< HEAD
+        <CNavbar/>
             <div className="flex h-full mt-16">
                 <div className="w-1/2 bg-black text-white p-10 rounded-lg shadow-md">
                     <h1 className="text-5xl font-bold mt-24">Contact our sales team</h1>
@@ -193,20 +128,6 @@ function Herosection() {
                         <p className="text-base font-bold">hr@bellwayinfotech.com</p>
                         <p className="text-lg font-medium">Follow us</p>
                         <div className="flex gap-4">
-=======
-<<<<<<< HEAD
-            {/* <div className="bg-black text-white flex flex-col items-start px-4">
-=======
-            <div className="bg-black text-white flex flex-col items-start px-4">
->>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
-                <div className="containerx mx-auto bg-black ">
-                    <div className="flex flex-col md:flex-row items-center">
-                        <div className="main-text text-left mb-8 mt-12 md:mb-0 md:mt-0 md:w-1/2 p-16">
-                            <h1 className="sm:text-8xl font-bold mb-4 text-white">Contact Us...</h1>
-                            <div className="text-left mt-4">
-                                <p className="text-lg text-white">Looking for help? Tell us your requirements,</p>
-                                <p className="text-lg text-white">and we'll link you with the right team.</p>
->>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 
                             <a href="https://www.facebook.com/bellwayinfotechh/"><svg width={"1.8rem"} className='hover:bg-red-500 hover:text-black hover:rounded-md trasition-all duration-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path></svg></a>
 
@@ -226,7 +147,7 @@ function Herosection() {
                         <a href="/career-with-us" class="relative inline-flex items-center justify-center p-2 px-6 py-1 overflow-hidden font-medium text-red-600 transition duration-300 ease-out border-2 border-red-600 rounded-full shadow-md group ">
                             <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-red-600 group-hover:translate-x-0 ease">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                            </span>
+                            </span> 
                             <span class="absolute flex items-center justify-center w-full h-full text-red-600 transition-all duration-300 transform group-hover:translate-x-full ease">Join Now</span>
                             <span class="relative invisible">Join Now</span>
                         </a>
@@ -260,25 +181,24 @@ function Herosection() {
                         )}
                     </div>
 
-                    <h1 className="text-black text-3xl font-bold text-center mt-3">{showCallForm ? 'Schedule your call' : 'Ready to serve you first!'}</h1><br/><hr/>
+                    <h1 className="text-black text-3xl font-bold text-center mt-3">{showCallForm ? 'Schedule your call' : 'Ready to serve you first!'}</h1><br /><hr />
                     {!showCallForm ? (
-                        <form action='https://api.sheetmonkey.io/form/4cLQKKRrpSS5GpPLwYzcLz' method='post'>
+                        <form onSubmit={handleSubmit}>
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label
                                         className="block uppercase tracking-wide text-gray-900 text-sm font-bold mb-2"
                                         htmlFor="first-name"
                                     >
-                                        Full Name *
+                                        First name *
                                     </label>
                                     <input
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="first-name"
                                         type="text"
-                                        value={FullName}
+                                        value={firstName}
                                         onChange={(event) => setFirstName(event.target.value)}
                                         required
-                                        name='FullName'
                                     />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
@@ -292,10 +212,9 @@ function Herosection() {
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="last-name"
                                         type="text"
-                                        value={City}
+                                        value={lastName}
                                         onChange={(event) => setLastName(event.target.value)}
                                         required
-                                        name='City'
                                     />
                                 </div>
                             </div>
@@ -305,16 +224,15 @@ function Herosection() {
                                         className="block uppercase tracking-wide text-gray-900 text-sm font-bold mb-2"
                                         htmlFor="email"
                                     >
-                                        email address *
+                                         email address *
                                     </label>
                                     <input
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="email"
                                         type="email"
-                                        value={Email}
+                                        value={email}
                                         onChange={(event) => setEmail(event.target.value)}
                                         required
-                                        name='Email'
                                     />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
@@ -324,35 +242,16 @@ function Herosection() {
                                     >
                                         Contact number *
                                     </label>
-                                    <div
-
-                                        className="appearance-none block w-full flex  bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                                    <input
+                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="contact-number"
-                                        type="text" // Changed type to text for custom validation
-                                        value={ContactNumber}
-                                        onChange={handleContactNumberChange}
-                                        maxLength={10} // Limit the maximum length of input to 10 characters
+                                        type="text"
+                                        value={contactNumber}
+                                        onChange={(event) => setContactNumber(event.target.value)}
                                         required
-                                        name='ContactNumber'
-                                    >
-                                        <select class="w-1/4 bg-gray-200 h-full">
-                                            <option>+91</option>
-                                            <option>+1</option>
-                                            <option>+44</option>
-                                            <option>+69</option>
-
-                                        </select>
-                                        <input class="w-full bg-gray-200 border-0 focus:outline-none" type="number"
-                                            value={ContactNumber}
-                                            onChange={handleContactNumberChange}
-                                            maxLength={10}
-                                            required
-                                            name='ContactNumber'
-                                        />
-                                    </div>
+                                    />
                                 </div>
                             </div>
-
 
                             <h1 className="text-black text-xl font-bold text-center">Service of Interest</h1><br />
                             <div className="mx-auto px-4">
@@ -365,7 +264,6 @@ function Herosection() {
                                             value="Web Design & Development"
                                             className="w-6 h-6 text-red-600 border-gray-300 rounded focus:ring-red-500"
                                             onChange={handleCheckboxChange}
-                                            name='Services-Of-Interest'
                                         />
                                         <label className="ml-2 text-gray-700" htmlFor="web-design">
                                             Web Design & Development
@@ -377,7 +275,6 @@ function Herosection() {
                                             value="Graphic Design"
                                             className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
                                             onChange={handleCheckboxChange}
-                                            name='Services-Of-Interest'
                                         />
                                         <label className="ml-2 text-gray-700 mt-1" htmlFor="graphic-design">
                                             UI/UX Design
@@ -389,7 +286,6 @@ function Herosection() {
                                             value="Mobile App Development"
                                             className="w-5 h-5 text-red-600 border-gray-300 rounded focus:ring-red-500"
                                             onChange={handleCheckboxChange}
-                                            name='Services-Of-Interest'
                                         />
                                         <label className="ml-2 text-gray-700" htmlFor="mobile-app-development">
                                             Mobile App Development
@@ -401,7 +297,6 @@ function Herosection() {
                                             value="eCommerce and CMS"
                                             className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
                                             onChange={handleCheckboxChange}
-                                            name='Services-Of-Interest'
                                         />
                                         <label className="ml-2 text-gray-700" htmlFor="ecommerce">
                                             Artificial Intelligence
@@ -413,7 +308,6 @@ function Herosection() {
                                             value="Custom Software Development"
                                             className="w-6 h-6 text-red-600 border-gray-300 rounded focus:ring-red-500 "
                                             onChange={handleCheckboxChange}
-                                            name='Services-Of-Interest'
                                         />
                                         <label className="ml-2 text-gray-700" htmlFor="custom-software">
                                             Custom Software Development
@@ -425,7 +319,6 @@ function Herosection() {
                                             value="SEO"
                                             className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
                                             onChange={handleCheckboxChange}
-                                            name='Services-Of-Interest'
                                         />
                                         <label className="ml-2 text-gray-700 mt-1" htmlFor="seo">
                                             SEO
@@ -436,48 +329,38 @@ function Herosection() {
                             <div className="text-gray-700 mt-6">
                                 <h2 className="font-bold text-lg mr-32">
                                     Share your requirements*
-                                    <span className="text-gray-500 text-sm"></span>
+                                    <span className="text-gray-500 text-sm">(minimum 250 characters)</span>
                                 </h2>
                                 <hr style={{ borderColor: 'red', borderWidth: '2px', fontWeight: 'bold', marginTop: '15px' }} />
                                 <br />
                                 <textarea
                                     className="w-full mt-2 p-3 border border-gray-300 rounded-md"
                                     rows="6"
-                                    // value={requirements}
-                                    // onChange={(event) => setRequirements(event.target.value)}
+                                    value={requirements}
+                                    onChange={(event) => setRequirements(event.target.value)}
                                     required
-                                    // minLength={250}
+                                    minLength={250}
                                     placeholder="Please share your requirements..."
-                                    name='Your-Requirements'
                                 />
                             </div>
-                            <br />
-                            <ReCAPTCHA
-                            sitekey='6Lc-ZgIqAAAAAJJnEsBoxdgWRYPsL0v2EaOvjM5D'
-                            onChange={(val) => setCapVal(val)}
-                            />
-                            <br />
                             <div className="flex justify-center">
-                                <button disabled={!capVal}
+                                <button
                                     className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-                                    type="submit" value="Submit"
-                                    onClick={() => { handelContactsale() }}
+                                    type="submit"
                                 >
                                     Contact Sales
                                 </button>
                             </div>
                         </form>
-                        
                     ) : (
-
-                        <form action='https://api.sheetmonkey.io/form/fgdGfEcdRL25CCWcewUzfz' method='post'>
+                        <form onSubmit={handleCallFormSubmit}>
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label
                                         className="block uppercase tracking-wide text-gray-900 text-sm font-bold mb-2"
                                         htmlFor="first-name-call"
                                     >
-                                        Name *
+                                        First name *
                                     </label>
                                     <input
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
@@ -486,7 +369,6 @@ function Herosection() {
                                         value={callFirstName}
                                         onChange={(event) => setCallFirstName(event.target.value)}
                                         required
-                                        name='Name'
                                     />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
@@ -503,48 +385,27 @@ function Herosection() {
                                         value={callLastName}
                                         onChange={(event) => setCallLastName(event.target.value)}
                                         required
-                                        name='City'
                                     />
                                 </div>
                             </div>
-
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full px-3">
                                     <label
                                         className="block uppercase tracking-wide text-gray-900 text-sm font-bold mb-2"
                                         htmlFor="contact-number-call"
                                     >
-                                        Phone Number *
+                                        Contact number *
                                     </label>
-                                    <div className="flex gap-4">
-                                        {/* Country code dropdown */}
-                                        <select
-                                            className="bg-gray-200 w-1/4 text-gray-700 border border-gray-200 rounded-l  px-1 leading-tight h-14 focus:outline-none focus:bg-white rounded-lg
-                                                "
-                                        >
-                                            <option value="+1">+11 (USA)</option>
-                                            <option value="+91">+91 (India)</option>
-                                            <option value="+91">+01 (USA)</option>
-                                            <option value="+91">+08 (UK)</option>
-                                            <option value="+91">+32 (Iran)</option>
-                                            {/* Add more options for different country codes */}
-                                        </select>
-                                        {/* Phone number input */}
-                                        <input
-                                            className="appearance-none block w-ful bg-gray-200 text-gray-700 border border-gray-200 rounded-r py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-                                            id="contact-number-call"
-                                            type="text"
-                                            value={callContactNumber}
-                                            onChange={(event) => setCallContactNumber(event.target.value)}
-                                            required
-                                            name='Phone-Number'
-                                            placeholder="Enter your phone number"
-                                            maxLength={10}
-                                        />
-                                    </div>
+                                    <input
+                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                                        id="contact-number-call"
+                                        type="text"
+                                        value={callContactNumber}
+                                        onChange={(event) => setCallContactNumber(event.target.value)}
+                                        required
+                                    />
                                 </div>
                             </div>
-
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label
@@ -560,7 +421,6 @@ function Herosection() {
                                         value={callDate}
                                         onChange={(event) => setCallDate(event.target.value)}
                                         required
-                                        name='Date'
                                     />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
@@ -577,7 +437,6 @@ function Herosection() {
                                         value={callTime}
                                         onChange={(event) => setCallTime(event.target.value)}
                                         required
-                                        name='Time'
                                     />
                                 </div>
                             </div>
@@ -596,17 +455,11 @@ function Herosection() {
                                         value={callMessage}
                                         onChange={(event) => setCallMessage(event.target.value)}
                                         required
-                                        name='Message'
                                     />
                                 </div>
                             </div>
-                            <ReCAPTCHA
-                            sitekey='6Lc-ZgIqAAAAAJJnEsBoxdgWRYPsL0v2EaOvjM5D'
-                            onChange={(val) => setCapVal(val)}
-                            />
-                            <br />
                             <div className="flex justify-center">
-                                <button disabled = {!capVal}
+                                <button
                                     className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
                                     type="submit"
                                 >
@@ -621,12 +474,10 @@ function Herosection() {
             <div className="relative h-full">
                 <h1 className="text-2xl font-bold text-center mt-8 text-black">Locate us here!</h1><br />
                 <img src={map} alt="map" className="w-full h-full" />
-                <div className="absolute bottom-80 right-24 w-96 px-3 py-1 bg-white rounded-lg shadow-md">
+                <div className="absolute bottom-80 right-10 w-96 px-1 py-6 bg-white rounded-lg shadow-md">
                     <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full flex items-center justify-center">
-                            <img src={vector} alt="" />
+                        <div className="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center">
                         </div>
-<<<<<<< HEAD
                         <div className="ml-5">
                             <h3 className="text-lg font-bold">
                                 <a
@@ -639,34 +490,12 @@ function Herosection() {
                                 </a>
                             </h3>
                             <p className="text-gray-600">Indore (M.P.) India</p>
-=======
-<<<<<<< HEAD
-                        <div className="md:w-1/2 text-right ">
-=======
-                        <div className="md:w-1/2 text-right">
->>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
-                            <img src={picture} alt="Contact" className="w-full h-auto object-cover mt-7" />
->>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-            </div> */}
-
-            <ContactForm/>
-            {/* <Form /> */}
-            {/* <Map /> */}
-=======
             </div>
-<<<<<<< HEAD
-=======
-
-            <Form />
-            <Map />
->>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
->>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
-            <Footer />
         </>
+        
     );
 }
 

@@ -28,6 +28,7 @@ import CNavbar from './CNavbar';
 import './Product2.css'
 import './ai.css'
 // import FaqPage from './AIFaq';
+<<<<<<< HEAD
 import burgir from './assets/grocery2.jpg';
 import burgir2 from './assets/grocery.jpg';
 import image4 from './assets/groceryLogin.png'
@@ -37,6 +38,13 @@ import image7 from './assets/Food3.png'
 import image8 from './assets/Food4.png'
 import image9 from './assets/Food5.png'
 import image1 from './assets/Group 9083.png'
+=======
+import burgir from './assets/grocery_new.png'; 
+import burgir2 from './assets/grocery_new.png';
+import ProductStackCards from './ProductStackCards';
+
+
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 import Footer from './Footer';
 import icon1 from './assets/Icon1.png'
 import icon2 from './assets/Icon2.png'
@@ -60,6 +68,7 @@ const Product2 = () => {
         setIsPopupVisible(!isPopupVisible);
     }
 
+<<<<<<< HEAD
     const cardData = [
         { heading: "Convenience" },
         { heading: "Saving Time" },
@@ -74,6 +83,10 @@ const Product2 = () => {
         { heading: "Finding Everything You Need" },
         { heading: "Buying in Bulk with Ease" },
     ];
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 
     const cardData1 = [
         { heading: "Free App Deployment", image: icon1 },
@@ -125,6 +138,7 @@ const Product2 = () => {
         </div>
     );
 
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
     const technologies = [
         { id: 1, image: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/best-laravel-based-cms-that-you-should-know-224x171.webp', name: 'Tech 1', title: 'Laravel' }, // Replace with actual URLs
         { id: 2, image: 'https://i.pinimg.com/564x/56/0c/43/560c4353b21b4948e5f0e9508ea07597.jpg', name: 'Tech 2', title: 'Laravel' },
@@ -213,6 +227,7 @@ const Product2 = () => {
                 </div>
             </div>
 
+<<<<<<< HEAD
 
             {/* <div className="main-page">
         <button className="contact-button" onClick={togglePopup}>Contact <i class="fa-solid fa-phone-volume"></i></button>
@@ -225,19 +240,53 @@ const Product2 = () => {
 
                 <div className="space-y-20 mt-12 mx-auto">
                     <div className="flex flex-col md:flex-row  text-black">
+=======
+            <div class="md:w-full text-center mb-4 md:mb-0 p-16">
+                <div className="space-y-20 mt-12 mx-auto ">
+                    <div className="flex flex-col md:flex-row  text-white">
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
                         <img
                             src={image1}
                             alt="Bellway Grocery"
+<<<<<<< HEAD
                             className="w-1/2  md:w-1/2 h-1/2"
                         />
                         <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-1 md:mt-0 text-center md:text-left">
                             <h2 className="text-3xl font-bold text-left">From Aisles to Your Doorstep: Experience Seamless Grocery App Delivery</h2>
                             <p className="mt-9 text-lg" style={{ textAlign: 'start' }}>Bellway Infotech is the organization that best understands convenience in today's fast-paced environment. Grocery shopping has never been easier, thanks to our Fresh Delivery Apps. Enjoy rapid deliveries, easy navigation, and courteous service. Discover why we help thousands of individuals with their daily requirements.
                             Smooth shopping experience: Browse and purchase with ease. The user-friendly design of our app allows you to quickly find everything you need.
+=======
+<<<<<<< HEAD
+                            className="w-1/2  md:w-1/3 "
+=======
+                            className="w-1/2  md:w-1/3 " style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' ,borderRadius:'6%'}}
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
+                        />
+                        <div style={{ backgroundColor: 'white' }} className="md:ml-28 mt-4 md:mt-0 text-center md:text-left">
+                            <h2 className="text-4xl font-bold" style={{color:'black'}}>Bellway Grocery</h2>
+                            <p className="mt-9 text-lg" style={{textAlign:'start',color:'black'}}> A grocery application, also known as a grocery shopping app, is a mobile <br />or web-based application that allows users to shop for groceries and other household items online.These apps provide a convenient way for users to browse through a<br /> wide range of products.<br /><br />
+
+                                Product Catalog: The app displays a comprehensive catalogue of grocery items, including fruits, vegetables, dairy products, canned goods, beverages, and more. Products are usually organized into categories for easy navigation.<br /><br />
+                                
+
+                                Checkout and Payment: Users can review their cart, select the delivery or pickup options, and proceed to payment. The app supports various payment methods, including credit/debit cards, digital wallets, and cash on delivery.<br /><br />
+
+
+
+                                Order History: The app typically maintains a history of past orders, making it easier for users to reorder items they frequently purchase.
+                                <br /><br />
+                                Deals and Discounts: Grocery apps often showcase special deals, discounts, and offers on various products to attract users and promote sales.
+
+                                <br /><br />
+
+                                Customer Support: The app may include a customer support feature, such as live chat or a helpline, to assist users with any issues or inquiries.
+
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
 
                             </p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <div className="flex flex-col items-center justify-center mt-20">
                         <div className="mt-4 md:mt-0 text-center md:text-left mx-9">
                             <h2 className="text-4xl font-bold text-center">Our Product Benefits<br /></h2>
@@ -251,6 +300,20 @@ const Product2 = () => {
                                     </div>
                                 ))}
                             </div>
+=======
+
+                    <div className="flex flex-col md:flex-row-reverse items-center mt-20" >
+                        <img
+                            src={burgir2}
+                            alt="Grocery"
+                            className="w-1/2 md:w-1/3" style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.6)' }}
+                        />
+                        <div className="md:mr-28 mt-4 md:mt-0 text-center md:text-left mx-9">
+                            <h2 style={{ textAlign: 'left' }} className="text-4xl font-bold">Why is Bellway Grocery a useful resource for you?<br /></h2>
+                            <p style={{ textAlign: 'left' }} className="mt-9 text-lg"> In today's hectic world, shopping for groceries can often feel like a daunting task. That's where Bellway Grocery comes in to save the day! Our service is designed to simplify your life by providing a seamless and efficient grocery shopping experience. With a vast selection of fresh produce, pantry essentials, and specialty items, we ensure you have everything you need at your fingertips.
+
+<br/>Do you have specific dietary needs or preferences? Customize your order to suit your lifestyle. Whether you need organic, gluten-free, or dairy-free products, we cater to your unique requirements.<br/> Planning a family gathering or a weekly meal prep? The Bellway Grocery app makes it easy to place large orders, ensuring your pantry is always stocked with your favorite items.</p>
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
                         </div>
                     </div>
                 </div>
@@ -284,10 +347,23 @@ const Product2 = () => {
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <ProductStackCards/>
             <HomeTestimonials />
+=======
+            <br /><br />
+
+<<<<<<< HEAD
+            <HomeTestimonials/>
+            <ProductStackCards/>
+=======
+
+            <HomeTestimonials/>
+
+>>>>>>> f8f03784ef416dcfa511ebabb160754882a237d8
             {/* <FaqPage /> */}
 
+>>>>>>> b8d297e54582819edc738b99ff0bc0fa21e077e5
             <Footer />
         </>
     )
