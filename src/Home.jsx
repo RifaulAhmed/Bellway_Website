@@ -46,7 +46,7 @@ import HomeSlider from './HomeSlider';
 import WhyBell from './WhyBell';
 import HomeServices from './HomeServices';
 import sister from './assets/sistercom2.png';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 const Wrapper = styled.div`
   justify-content: space-around;
   margin: auto;
@@ -111,14 +111,14 @@ const Home = () => {
       position: '( Founder )',
     }
   ];;
-  
+
   return (
     <div >
-            <Helmet>
-                <title>Web & App Development Company in India - BELLWAY INFOTECH </title>
-                <meta name="description" content="We Work in IT services, App Development, Web Development & Digital Marketing at Bellway Infotech. We leverage technology for business process transformation." />
-        
-            </Helmet>
+      <Helmet>
+        <title>Web & App Development Company in India - BELLWAY INFOTECH </title>
+        <meta name="description" content="We Work in IT services, App Development, Web Development & Digital Marketing at Bellway Infotech. We leverage technology for business process transformation." />
+
+      </Helmet>
       <CNavbar />
 
       <Header />
@@ -165,6 +165,24 @@ const Home = () => {
       <br /><br />
 
       <Faq />
+      <div className=" mx-auto px-4 py-16 justify-start">
+        <h1 className="text-5xl font-bold mb-4 text-black">We'll help you get started</h1>
+        <div className='flex items-center justify-between'>
+        <p className=" text-[18px] text-black ">
+          Browse our blog, educational videos, and customer stories to find <br />
+          what you need to succeed as a Webflow freelancer.
+        </p>
+        <div className="text-end">
+          <a href="/contact" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-3 border-red-500 rounded-full shadow-md group">
+            <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-red-500 group-hover:translate-x-0 ease">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+            <span class="absolute flex items-center justify-center w-full h-full text-red-500 transition-all duration-300 transform group-hover:translate-x-full ease text-[20px]">Dive In</span>
+            <span class="relative invisible">Button Text</span>
+          </a>
+          </div>
+          </div>
+      </div>
 
       <Footer />
 

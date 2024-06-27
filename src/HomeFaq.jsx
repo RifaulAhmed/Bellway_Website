@@ -11,14 +11,14 @@ const HomeFaq = () => {
     }
 
     return (
-        <div className="mx-auto py-2 bg-gray-100 h-full">
+        <div className=" container mx-auto py-2 bg-gray-100 h-full shadow-lg p-6">
             <div className="max-w-full mx-auto">
                 <h1 className="text-3xl font-bold mb-8 sm:mx-6 mx-9 text-black mt-8 text-center ">Frequently Asked Questions</h1>
                 <div className="accordion sm:mt-12 mx-4 sm:mx-0">
                     {FAQ_DATA.map((faq, index) => (
                         <div
                             key={index}
-                            className=" rounded-md overflow-hidden "
+                            className=" rounded-md overflow-hidden"
                         >
                             <div
                                 className="accordion-title sm:text-xl font-semibold p-1 cursor-pointer bg-white hover:bg-gray-100 transition duration-300 flex justify-between items-center"
@@ -53,13 +53,11 @@ const FAQ_DATA = [
         answer:
             "Mobile app development companies can vary widely based on several factors. These include the complexity of the app, and the platform (iOS, Android, or both), Simple apps with basic features might cost anywhere from $1500, to $2800."
     },
-
     {
         question: "Will I get any free support services if I buy the readymade mobile app?",
         answer:
             "Get a year of free support with our readymade mobile app purchases! Secure, easy-to-use apps designed for efficiency with us!."
     },
-
     {
         question: "How can your services benefit my business?",
         answer:

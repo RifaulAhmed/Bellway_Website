@@ -2,15 +2,48 @@ import React, { useState } from 'react';
 import map from './assets/conact-page-map.jpg';
 import CNavbar from './CNavbar';
 import Footer from './Footer';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import vector from './assets/Vector.png'
+import ReCAPTCHA from 'react-google-recaptcha';
+//6Lc-ZgIqAAAAAJJnEsBoxdgWRYPsL0v2EaOvjM5D
+
 function ContactForm() {
+
+    //ReCAPTCHA validations
+    const[capVal, setCapVal] = useState(null)
+
+    // Handler for input change in contact number field
+    const handleContactNumberChange = (event) => {
+        const input = event.target.value;
+
+        // Validate if input is numeric and limit to 10 digits
+        if (/^\d{0,10}$/.test(input)) {
+            setContactNumber(input); // Update the state if input is valid
+        }
+        // You can add further validation or feedback if needed
+    };
+    // const [callContactNumber, setCallContactNumber] = useState('');
+    const [countryCode, setCountryCode] = useState('+1'); // Initial country code
+
+    const handleCountryCodeChange = (event) => {
+        setCountryCode(event.target.value);
+    };
+
+    const handleSubmit2 = (event) => {
+        event.preventDefault();
+        // Handle form submission here
+        console.log('Phone Number:', countryCode + callContactNumber);
+        // Reset the form fields after submission
+        setCallContactNumber('');
+        setCountryCode('+1'); // Reset to initial country code
+    };
     // State for the contact form
     const [selectedServices, setSelectedServices] = useState([]);
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [contactNumber, setContactNumber] = useState('');
-    const [requirements, setRequirements] = useState('');
+    const [FullName, setFirstName] = useState('');
+    const [City, setLastName] = useState('');
+    const [Email, setEmail] = useState('');
+    const [ContactNumber, setContactNumber] = useState('');
+    const [Requirements, setRequirements] = useState('');
 
     // State for the call form
     const [callFirstName, setCallFirstName] = useState('');
@@ -21,7 +54,11 @@ function ContactForm() {
     const [callMessage, setCallMessage] = useState('');
 
     const [showCallForm, setShowCallForm] = useState(false);
-
+    const handelContactsale = () => {
+        setTimeout(() => {
+            console.log("Hello, World!");
+        }, 2000)
+    }
     const handleCheckboxChange = (event) => {
         const service = event.target.value;
         if (selectedServices.includes(service)) {
@@ -35,12 +72,12 @@ function ContactForm() {
         event.preventDefault();
         // Handle form submission here
         console.log('Form submitted:', {
-            firstName,
-            lastName,
-            email,
-            contactNumber,
+            FullName,
+            City,
+            Email,
+            ContactNumber,
             selectedServices,
-            requirements,
+            Requirements,
         });
     };
 
@@ -58,12 +95,12 @@ function ContactForm() {
     };
     return (
         <>
-        <Helmet>
+            <Helmet>
                 <title>BELLWAY INFOTECH - Contact Us</title>
                 <meta name="description" content="For any query or inquiry regarding our Web & App Development or their uses, please feel free to contact us directly. As we are just mail far from you. Contact us at info@bellwayinfotech.com" />
-        
+
             </Helmet>
-        <CNavbar/>
+            <CNavbar />
             <div className="flex h-full mt-16">
                 <div className="w-1/2 bg-black text-white p-10 rounded-lg shadow-md">
                     <h1 className="text-5xl font-bold mt-24">Contact our sales team</h1>
@@ -154,7 +191,7 @@ function ContactForm() {
                         <a href="/career-with-us" class="relative inline-flex items-center justify-center p-2 px-6 py-1 overflow-hidden font-medium text-red-600 transition duration-300 ease-out border-2 border-red-600 rounded-full shadow-md group ">
                             <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-red-600 group-hover:translate-x-0 ease">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                            </span> 
+                            </span>
                             <span class="absolute flex items-center justify-center w-full h-full text-red-600 transition-all duration-300 transform group-hover:translate-x-full ease">Join Now</span>
                             <span class="relative invisible">Join Now</span>
                         </a>
@@ -188,9 +225,9 @@ function ContactForm() {
                         )}
                     </div>
 
-                    <h1 className="text-black text-3xl font-bold text-center mt-3">{showCallForm ? 'Schedule your call' : 'Ready to serve you first!'}</h1><br /><hr />
+                    <h1 className="text-black text-3xl font-bold text-center mt-3">{showCallForm ? 'Schedule your call' : 'Ready to serve you first!'}</h1><br/><hr/>
                     {!showCallForm ? (
-                        <form  action='https://api.sheetmonkey.io/form/4cLQKKRrpSS5GpPLwYzcLz' method='post'>
+                        <form action='https://api.sheetmonkey.io/form/4cLQKKRrpSS5GpPLwYzcLz' method='post'>
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label
@@ -203,10 +240,10 @@ function ContactForm() {
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="first-name"
                                         type="text"
-                                        value={firstName}
+                                        value={FullName}
                                         onChange={(event) => setFirstName(event.target.value)}
                                         required
-                                        name='FirstName'
+                                        name='FullName'
                                     />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
@@ -220,7 +257,7 @@ function ContactForm() {
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="last-name"
                                         type="text"
-                                        value={lastName}
+                                        value={City}
                                         onChange={(event) => setLastName(event.target.value)}
                                         required
                                         name='City'
@@ -233,16 +270,16 @@ function ContactForm() {
                                         className="block uppercase tracking-wide text-gray-900 text-sm font-bold mb-2"
                                         htmlFor="email"
                                     >
-                                         email address *
+                                        email address *
                                     </label>
                                     <input
                                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="email"
                                         type="email"
-                                        value={email}
+                                        value={Email}
                                         onChange={(event) => setEmail(event.target.value)}
                                         required
-                                        name='Email-Address'
+                                        name='Email'
                                     />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
@@ -252,17 +289,35 @@ function ContactForm() {
                                     >
                                         Contact number *
                                     </label>
-                                    <input
-                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                                    <div
+
+                                        className="appearance-none block w-full flex  bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                                         id="contact-number"
-                                        type="text"
-                                        value={contactNumber}
-                                        onChange={(event) => setContactNumber(event.target.value)}
+                                        type="text" // Changed type to text for custom validation
+                                        value={ContactNumber}
+                                        onChange={handleContactNumberChange}
+                                        maxLength={10} // Limit the maximum length of input to 10 characters
                                         required
-                                        name='Contact-Number'
-                                    />
+                                        name='ContactNumber'
+                                    >
+                                        <select class="w-1/4 bg-gray-200 h-full">
+                                            <option>+91</option>
+                                            <option>+1</option>
+                                            <option>+44</option>
+                                            <option>+69</option>
+
+                                        </select>
+                                        <input class="w-full bg-gray-200 border-0 focus:outline-none" type="number"
+                                            value={ContactNumber}
+                                            onChange={handleContactNumberChange}
+                                            maxLength={10}
+                                            required
+                                            name='ContactNumber'
+                                        />
+                                    </div>
                                 </div>
                             </div>
+
 
                             <h1 className="text-black text-xl font-bold text-center">Service of Interest</h1><br />
                             <div className="mx-auto px-4">
@@ -361,16 +416,25 @@ function ContactForm() {
                                     name='Your-Requirements'
                                 />
                             </div>
+                            <br />
+                            <ReCAPTCHA
+                            sitekey='6Lc-ZgIqAAAAAJJnEsBoxdgWRYPsL0v2EaOvjM5D'
+                            onChange={(val) => setCapVal(val)}
+                            />
+                            <br />
                             <div className="flex justify-center">
-                                <button
+                                <button disabled={!capVal}
                                     className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-                                    type="submit"  value="Submit"
+                                    type="submit" value="Submit"
+                                    onClick={() => { handelContactsale() }}
                                 >
                                     Contact Sales
                                 </button>
                             </div>
                         </form>
+                        
                     ) : (
+
                         <form action='https://api.sheetmonkey.io/form/fgdGfEcdRL25CCWcewUzfz' method='post'>
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -408,6 +472,7 @@ function ContactForm() {
                                     />
                                 </div>
                             </div>
+
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full px-3">
                                     <label
@@ -416,17 +481,35 @@ function ContactForm() {
                                     >
                                         Phone Number *
                                     </label>
-                                    <input
-                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-                                        id="contact-number-call"
-                                        type="text"
-                                        value={callContactNumber}
-                                        onChange={(event) => setCallContactNumber(event.target.value)}
-                                        required
-                                        name='Phone-Number'
-                                    />
+                                    <div className="flex gap-4">
+                                        {/* Country code dropdown */}
+                                        <select
+                                            className="bg-gray-200 w-1/4 text-gray-700 border border-gray-200 rounded-l  px-1 leading-tight h-14 focus:outline-none focus:bg-white rounded-lg
+                                                "
+                                        >
+                                            <option value="+1">+11 (USA)</option>
+                                            <option value="+91">+91 (India)</option>
+                                            <option value="+91">+01 (USA)</option>
+                                            <option value="+91">+08 (UK)</option>
+                                            <option value="+91">+32 (Iran)</option>
+                                            {/* Add more options for different country codes */}
+                                        </select>
+                                        {/* Phone number input */}
+                                        <input
+                                            className="appearance-none block w-ful bg-gray-200 text-gray-700 border border-gray-200 rounded-r py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                                            id="contact-number-call"
+                                            type="text"
+                                            value={callContactNumber}
+                                            onChange={(event) => setCallContactNumber(event.target.value)}
+                                            required
+                                            name='Phone-Number'
+                                            placeholder="Enter your phone number"
+                                            maxLength={10}
+                                        />
+                                    </div>
                                 </div>
                             </div>
+
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label
@@ -482,8 +565,13 @@ function ContactForm() {
                                     />
                                 </div>
                             </div>
+                            <ReCAPTCHA
+                            sitekey='6Lc-ZgIqAAAAAJJnEsBoxdgWRYPsL0v2EaOvjM5D'
+                            onChange={(val) => setCapVal(val)}
+                            />
+                            <br />
                             <div className="flex justify-center">
-                                <button
+                                <button disabled = {!capVal}
                                     className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
                                     type="submit"
                                 >
@@ -498,9 +586,10 @@ function ContactForm() {
             <div className="relative h-full">
                 <h1 className="text-2xl font-bold text-center mt-8 text-black">Locate us here!</h1><br />
                 <img src={map} alt="map" className="w-full h-full" />
-                <div className="absolute bottom-80 right-10 w-96 px-1 py-6 bg-white rounded-lg shadow-md">
+                <div className="absolute bottom-80 right-24 w-96 px-3 py-1 bg-white rounded-lg shadow-md">
                     <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center">
+                        <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                            <img src={vector} alt="" />
                         </div>
                         <div className="ml-5">
                             <h3 className="text-lg font-bold">
@@ -518,9 +607,8 @@ function ContactForm() {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
-        
     );
 }
 

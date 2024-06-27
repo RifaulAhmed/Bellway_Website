@@ -16,7 +16,7 @@ const Solutions = () => {
     return (
         <div className="containerx mx-auto py-15 px-4 sm:px-6 lg:px-8">
             <div className="text-center mt-9">
-                <h2 className="text-4xl font-bold mb-4">Solutions</h2>
+                <h2 className="text-4xl font-bold mb-4 text-black">Solutions</h2>
                 <p className="text-lg text-gray-600 mb-8">
                     Being a Mobile App development and web development company Bellway consistently acumen into latest Technologies 
                     for providing nothing <br />less than best to our Clients and Prospects.
@@ -33,7 +33,7 @@ const Solutions = () => {
                             alt={solution.alt}
                             className="w-10 h-10 mx-auto mb-2"
                         />
-                        <h3 className="text-base font-semibold">{solution.title}</h3>
+                        <h3 className="text-base font-semibold text-black">{solution.title}</h3>
                     </div>
                 ))}
             </div>

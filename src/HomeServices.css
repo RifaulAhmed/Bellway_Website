@@ -13,7 +13,6 @@
     margin-top: 16rem;
     font-weight: 700;
     left: -8rem;
-
 }
 
 .s, .e, .r, .v, .i, .c, .e2, .s2 {
@@ -140,7 +139,6 @@
 
 
 
-
 @media (max-width: 1024px) {
     .services {
         font-size: 5.5rem;
@@ -151,6 +149,7 @@
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 2.2rem;
         margin-left: 11rem;
+        /* letter-spacing: 2rem; */
     }
 
     .container-home {
@@ -172,6 +171,7 @@
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 2rem;
         margin-left: 10rem;
+        /* letter-spacing: 2rem; */
     }
 
     .app-main4-home {
@@ -212,6 +212,7 @@
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 1.5rem;
         margin-left: 7rem;
+        /* letter-spacing: 2rem; */
     }
 
     .container-home {
@@ -244,7 +245,7 @@
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 3rem;
         margin-left: 17rem;
-    
+        /* letter-spacing: 2rem; */
     }
 
     .container-home {
@@ -278,6 +279,7 @@
     .s, .e, .r, .v, .i, .c, .e2, .s2 {
         font-size: 3.5rem;
         margin-left: 20rem;
+        padding-top: -2px;
     }
 
     .container-home {

@@ -28,6 +28,7 @@ import Footer from './Footer'
 import HomeTestimonials from './HomeTestimonials';
 import HomeFaq from './HomeFaq';
 import HomeSlider from './HomeSlider';
+import MobileCard from './MobileCard';
 
 const Mobile1 = () => {
 
@@ -107,7 +108,7 @@ const Mobile1 = () => {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
                 <title>Mobile Application Development | Service - BELLWAY INFOTECH</title>
                 <meta name="description" content="Discover Bellway Infotech's comprehensive mobile application development services. From concept to deployment our team delivers best solutions for your business." />
         
@@ -131,6 +132,8 @@ const Mobile1 = () => {
         <button className="contact-button" onClick={togglePopup}>Contact <i class="fa-solid fa-phone-volume"></i></button>
         {isPopupVisible && <PopupForm onClose={togglePopup} />}
       </div>
+
+      <MobileCard/>
 
       <div className='se'>
         <h1 className='tag4' >Mobile App Development Services</h1>
